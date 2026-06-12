@@ -4,7 +4,7 @@
 
 ## 在线访问
 
-https://frontierlabai.github.io/ai-cup-26/
+https://aicup.top/
 
 ## 文件结构
 
