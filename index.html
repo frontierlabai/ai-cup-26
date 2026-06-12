@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FIFA 2026 世界杯本地数据看板</title>
-  <meta name="description" content="基于 FIFA 官方 2026 世界杯页面整理的本地赛程、分组与新闻入口">
+  <title>FIFA 2026 世界杯数据看板</title>
+  <meta name="description" content="基于 FIFA 官方 2026 世界杯页面整理的赛程、分组与新闻入口">
   <style>
     :root {
       --ink: #061226;
@@ -117,6 +117,19 @@
       align-items: center;
       flex-wrap: wrap;
       justify-content: flex-end;
+    }
+
+    .time-pill {
+      border: 1px solid rgba(198, 255, 61, 0.28);
+      background: rgba(198, 255, 61, 0.08);
+      color: var(--lime);
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 900;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
     }
 
     .nav-links a,
@@ -854,6 +867,101 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.38);
     }
 
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      background: rgba(0, 5, 16, 0.54);
+      backdrop-filter: blur(4px);
+    }
+
+    .score-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 31;
+      width: min(420px, 92vw);
+      height: 100dvh;
+      border-left: 1px solid var(--line);
+      background: rgba(4, 14, 30, 0.96);
+      box-shadow: -24px 0 60px rgba(0, 0, 0, 0.34);
+      padding: 14px;
+      display: grid;
+      grid-template-rows: auto auto minmax(0, 1fr);
+      gap: 10px;
+      transform: translateX(100%);
+      transition: transform 180ms ease;
+    }
+
+    .score-drawer.is-open {
+      transform: translateX(0);
+    }
+
+    .drawer-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 10px;
+    }
+
+    .drawer-head span,
+    .drawer-score span,
+    .drawer-score small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .drawer-head strong {
+      display: block;
+      margin-top: 3px;
+      font-size: 20px;
+    }
+
+    .drawer-close {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      border-radius: 999px;
+      padding: 7px 10px;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .drawer-empty {
+      border: 1px dashed rgba(255, 255, 255, 0.24);
+      border-radius: 8px;
+      padding: 14px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .drawer-list {
+      min-height: 0;
+      overflow: auto;
+      display: grid;
+      align-content: start;
+      gap: 8px;
+    }
+
+    .drawer-score {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .drawer-score strong {
+      display: block;
+      margin: 4px 0;
+      font-size: 18px;
+    }
+
     footer {
       max-width: 1180px;
       margin: 0 auto;
@@ -878,7 +986,7 @@
         height: 100dvh;
         min-height: 0;
         display: grid;
-        grid-template-rows: auto minmax(0, 1fr) auto;
+        grid-template-rows: auto minmax(0, 1fr);
         overflow: hidden;
       }
 
@@ -907,7 +1015,8 @@
       }
 
       .nav-links a,
-      .button {
+      .button,
+      .time-pill {
         padding: 6px 9px;
         font-size: 11px;
       }
@@ -921,11 +1030,10 @@
         padding: 6px 12px;
         display: grid;
         grid-template-columns: 0.9fr 2fr 1fr;
-        grid-template-rows: auto 0.86fr 0.44fr 1.7fr;
+        grid-template-rows: auto minmax(0, 1.28fr) minmax(0, 1fr);
         grid-template-areas:
           "ticker ticker ticker"
-          "hero hero news"
-          "data groups news"
+          "hero hero hero"
           "brief groups news";
         gap: 6px;
         overflow: hidden;
@@ -959,6 +1067,22 @@
         grid-template-rows: auto minmax(0, 1fr) auto;
       }
 
+      .section.dashboard-panel {
+        border: 1px solid var(--line);
+        background: rgba(2, 12, 30, 0.52);
+        border-radius: 8px;
+        padding: 8px;
+      }
+
+      .dashboard-panel .section-title {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 6px;
+      }
+
+      .panel-title-bar {
+        min-width: 0;
+      }
+
       .ticker,
       .hero,
       .section {
@@ -987,7 +1111,7 @@
       .hero {
         min-height: 0;
         display: grid;
-        grid-template-columns: 0.75fr 1.25fr;
+        grid-template-columns: 0.88fr 1.42fr;
         align-items: stretch;
         gap: 6px;
         overflow: hidden;
@@ -1014,12 +1138,12 @@
         border: 1px solid var(--line);
         background: rgba(2, 12, 30, 0.62);
         border-radius: 8px;
-        padding: 9px;
+        padding: clamp(10px, 0.9vw, 16px);
       }
 
       .eyebrow {
-        padding: 5px 8px;
-        font-size: 11px;
+        padding: 0.42rem 0.62rem;
+        font-size: clamp(11px, 0.78vw, 14px);
       }
 
       .pulse {
@@ -1029,69 +1153,78 @@
       }
 
       h1 {
-        margin: 7px 0 5px;
-        font-size: clamp(23px, 2.2vw, 32px);
+        margin: clamp(8px, 1vh, 14px) 0 6px;
+        font-size: clamp(32px, 3.1vw, 52px);
         line-height: 1;
       }
 
       .hero-copy {
-        margin-bottom: 7px;
-        font-size: 12px;
-        line-height: 1.24;
+        margin-bottom: clamp(8px, 1vh, 14px);
+        font-size: clamp(13px, 0.9vw, 18px);
+        line-height: 1.3;
       }
 
       .hero-actions {
-        gap: 6px;
+        gap: 8px;
       }
 
       .hero-metrics {
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 5px;
-        margin-top: 8px;
+        gap: 8px;
+        margin-top: clamp(10px, 1.2vh, 18px);
       }
 
       .metric-chip {
-        padding: 7px;
+        padding: clamp(8px, 0.8vw, 14px);
       }
 
       .metric-chip span,
       .metric-chip small {
-        font-size: 10px;
+        font-size: clamp(10px, 0.68vw, 12px);
       }
 
       .metric-chip strong {
-        font-size: 22px;
+        font-size: clamp(28px, 2.5vw, 44px);
       }
 
       .hero-side {
-        grid-template-columns: 0.24fr 0.76fr;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(180px, 0.34fr);
+        gap: 6px;
         align-items: stretch;
       }
 
       .refresh-card {
-        padding: 8px;
+        margin-top: clamp(10px, 1.2vh, 18px);
+        padding: clamp(8px, 0.75vw, 12px);
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) minmax(120px, 0.28fr);
+        align-items: center;
+        gap: 10px;
       }
 
       .refresh-top {
-        display: grid;
-        gap: 6px;
-        margin-bottom: 7px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 0;
       }
 
       .refresh-top strong {
-        font-size: 14px;
+        font-size: clamp(14px, 1vw, 20px);
+        margin-top: 2px;
       }
 
       .refresh-button {
-        width: 100%;
         padding: 6px 8px;
         font-size: 11px;
+        white-space: nowrap;
       }
 
       .refresh-meta {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 5px;
-        margin-bottom: 7px;
+        margin-bottom: 0;
       }
 
       .refresh-meta div {
@@ -1113,28 +1246,28 @@
       }
 
       .score-compact .scoreboard-head {
-        padding: 7px 8px;
+        padding: clamp(8px, 0.75vw, 14px);
       }
 
       .scoreboard-head strong {
-        font-size: 12px;
+        font-size: clamp(13px, 1vw, 20px);
       }
 
       .scoreboard-head span,
       .score-meta {
-        font-size: 10px;
+        font-size: clamp(10px, 0.72vw, 13px);
       }
 
       .score-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: repeat(2, minmax(0, 1fr));
-        gap: 4px;
-        padding: 5px;
+        gap: 6px;
+        padding: 6px;
       }
 
       .score-card {
-        gap: 5px;
-        padding: 5px 6px;
+        gap: 8px;
+        padding: clamp(8px, 0.8vw, 14px);
         min-height: 0;
         overflow: hidden;
       }
@@ -1144,12 +1277,12 @@
       }
 
       .score-team strong {
-        font-size: 12px;
+        font-size: clamp(13px, 1vw, 20px);
       }
 
       .score-team small,
       .score-status {
-        font-size: 9px;
+        font-size: clamp(9px, 0.68vw, 12px);
       }
 
       .score-team small {
@@ -1159,17 +1292,91 @@
       }
 
       .score-mid {
-        min-width: 42px;
+        min-width: clamp(46px, 4vw, 70px);
       }
 
       .scoreline {
-        font-size: 18px;
+        font-size: clamp(24px, 2.2vw, 40px);
       }
 
       .score-note {
-        padding: 0 7px 5px;
-        font-size: 10px;
+        padding: 0 clamp(8px, 0.8vw, 14px) clamp(7px, 0.7vw, 12px);
+        font-size: clamp(10px, 0.7vw, 13px);
         line-height: 1.2;
+      }
+
+      .history-compact {
+        border: 1px solid var(--line);
+        background: rgba(2, 12, 30, 0.78);
+        border-radius: 8px;
+        overflow: hidden;
+        min-width: 0;
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr);
+      }
+
+      .history-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding: clamp(8px, 0.75vw, 12px);
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .history-head span {
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 900;
+      }
+
+      .history-open {
+        appearance: none;
+        border: 1px solid rgba(198, 255, 61, 0.28);
+        background: rgba(198, 255, 61, 0.08);
+        color: var(--lime);
+        border-radius: 999px;
+        padding: 4px 8px;
+        font: inherit;
+        font-size: 10px;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      .history-list {
+        display: grid;
+        align-content: start;
+        gap: 5px;
+        padding: 6px;
+        min-height: 0;
+        overflow: hidden;
+      }
+
+      .history-list a {
+        border: 1px solid rgba(255, 255, 255, 0.11);
+        background: rgba(255, 255, 255, 0.07);
+        border-radius: 8px;
+        padding: 7px;
+        min-width: 0;
+      }
+
+      .history-list span,
+      .history-list small {
+        display: block;
+        color: var(--muted);
+        font-size: 9px;
+      }
+
+      .history-list strong {
+        display: block;
+        margin: 3px 0;
+        color: #fff;
+        font-size: 11px;
+        line-height: 1.18;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       .score-note span {
@@ -1184,14 +1391,32 @@
         margin-bottom: 6px;
       }
 
+      .dashboard-news .section-title {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        align-items: center;
+        gap: 8px;
+      }
+
       h2 {
         font-size: 16px;
+      }
+
+      .dashboard-news h2 {
+        white-space: nowrap;
       }
 
       .section-title p {
         max-width: none;
         font-size: 10px;
         line-height: 1.25;
+      }
+
+      .dashboard-news .section-title p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 9px;
       }
 
       .metrics {
@@ -1235,6 +1460,7 @@
 
       .panel {
         min-height: 0;
+        height: 100%;
         padding: 7px;
         overflow: hidden;
       }
@@ -1248,13 +1474,17 @@
       }
 
       .timeline {
+        height: calc(100% - 18px);
         gap: 4px;
+        align-content: stretch;
+        grid-template-rows: repeat(3, minmax(0, 1fr));
       }
 
       .timeline-item {
         grid-template-columns: 54px 1fr;
         gap: 6px;
         padding-bottom: 4px;
+        align-items: center;
       }
 
       .date,
@@ -1282,6 +1512,7 @@
       .group-card {
         padding: 7px;
         min-height: 0;
+        overflow: hidden;
       }
 
       .group-card h3 span,
@@ -1290,13 +1521,19 @@
       }
 
       .group-card ol {
-        gap: 3px;
+        gap: 2px;
       }
 
       .group-card li {
         gap: 5px;
-        padding-top: 3px;
-        font-size: 9.5px;
+        padding-top: 2px;
+        font-size: clamp(8.5px, 0.58vw, 10px);
+      }
+
+      .team-result {
+        color: var(--lime);
+        font-weight: 950;
+        white-space: nowrap;
       }
 
       .flag {
@@ -1304,7 +1541,7 @@
       }
 
       .score-team .flag {
-        width: 18px;
+        width: clamp(18px, 1.35vw, 26px);
       }
 
       .country {
@@ -1321,6 +1558,7 @@
       .news-card {
         min-height: 0;
         padding: 7px;
+        overflow: hidden;
       }
 
       .news-card p {
@@ -1470,14 +1708,16 @@
         <a class="brand" href="#">
           <span class="brand-mark">26</span>
           <span>
-            <strong>世界杯本地看板</strong>
+            <strong>世界杯赛事看板</strong>
             <span>FIFA 官方页面整理版</span>
           </span>
         </a>
         <div class="nav-links">
-          <a href="#data">数据</a>
+          <span class="time-pill" id="beijingTime" aria-label="北京时间">北京时间 --:--:--</span>
+          <a href="#main-dashboard">概览</a>
           <a href="#groups">分组</a>
           <a href="#news">新闻</a>
+          <a href="https://github.com/frontierlabai/ai-cup-26" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026" target="_blank" rel="noreferrer">FIFA 官方页</a>
         </div>
       </div>
@@ -1497,7 +1737,7 @@
       <section class="hero dashboard-hero" id="main-dashboard">
         <div>
           <span class="eyebrow"><span class="pulse"></span> 快照时间：2026-06-12 亚洲/上海</span>
-          <h1>2026 世界杯实时入口与本地看板</h1>
+          <h1>2026 世界杯赛事看板</h1>
           <p class="hero-copy">
             首屏集中显示比分、赛程入口和核心赛事数据 可变赛果以 FIFA 官方链接为准
           </p>
@@ -1528,9 +1768,6 @@
               <small>06-11 到 07-19</small>
             </div>
           </div>
-        </div>
-
-        <div class="hero-side">
           <aside class="refresh-card" aria-label="自动刷新状态">
             <div class="refresh-top">
               <div>
@@ -1553,7 +1790,9 @@
               <div class="refresh-fill" id="refreshProgress"></div>
             </div>
           </aside>
+        </div>
 
+        <div class="hero-side">
           <aside class="score-compact" id="live-scores" data-source="FIFA scores-fixtures" aria-label="实时比分展板">
             <div class="scoreboard-head">
               <div>
@@ -1621,39 +1860,28 @@
               </a>
             </div>
             <div class="score-note">
-              <span>本地快照不自动抓取实时接口；点击比赛可核验最新状态</span>
+              <span>页面快照不自动抓取实时接口；点击比赛可核验最新状态</span>
               <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">官方比分</a>
             </div>
           </aside>
-        </div>
-      </section>
-
-      <section class="section dashboard-data" id="data">
-        <div class="section-title">
-          <h2>赛事数据</h2>
-          <p>基于 FIFA 官方赛事页面、赛程页、积分榜入口与抽签结果页整理 赛果和积分属于高频变化数据，请点击官方实时入口确认</p>
-        </div>
-        <div class="metrics">
-          <div class="metric">
-            <span>参赛队</span>
-            <strong>48</strong>
-            <small>首次扩军至 48 队</small>
-          </div>
-          <div class="metric">
-            <span>总比赛数</span>
-            <strong>104</strong>
-            <small>覆盖小组赛至决赛</small>
-          </div>
-          <div class="metric">
-            <span>主办城市</span>
-            <strong>16</strong>
-            <small>加拿大、墨西哥、美国三国联合举办</small>
-          </div>
-          <div class="metric">
-            <span>赛事周期</span>
-            <strong>39天</strong>
-            <small>2026-06-11 至 2026-07-19</small>
-          </div>
+          <aside class="history-compact" aria-label="历史比分展板">
+            <div class="history-head">
+              <span>历史比分</span>
+              <button class="history-open" id="openScoreDrawerSide" type="button">全部</button>
+            </div>
+            <div class="history-list">
+              <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021439" target="_blank" rel="noreferrer">
+                <span>A 组</span>
+                <strong>墨西哥 2-0 南非</strong>
+                <small>完赛</small>
+              </a>
+              <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021441" target="_blank" rel="noreferrer">
+                <span>A 组</span>
+                <strong>韩国 2-1 捷克</strong>
+                <small>完赛</small>
+              </a>
+            </div>
+          </aside>
         </div>
       </section>
 
@@ -1715,8 +1943,8 @@
         </div>
       </section>
 
-      <section class="section dashboard-groups" id="groups">
-        <div class="section-title">
+      <section class="section dashboard-groups dashboard-panel" id="groups">
+        <div class="section-title panel-title-bar">
           <h2>小组快览</h2>
           <p>以下为当前整理版分组快照 比赛开始后，请通过 FIFA 积分榜查看实时排名、净胜球和晋级形势</p>
         </div>
@@ -1724,10 +1952,10 @@
           <article class="group-card">
             <h3>A 组 <span>东道主</span></h3>
             <ol>
-              <li><span class="country"><img class="flag" src="assets/flags/MEX.png" alt="墨西哥国旗" loading="lazy"><span>墨西哥</span></span><small>A1</small></li>
-              <li><span class="country"><img class="flag" src="assets/flags/RSA.png" alt="南非国旗" loading="lazy"><span>南非</span></span><small>A2</small></li>
-              <li><span class="country"><img class="flag" src="assets/flags/KOR.png" alt="韩国国旗" loading="lazy"><span>韩国</span></span><small>A3</small></li>
-              <li><span class="country"><img class="flag" src="assets/flags/CZE.png" alt="捷克国旗" loading="lazy"><span>捷克</span></span><small>A4</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/MEX.png" alt="墨西哥国旗" loading="lazy"><span>墨西哥</span></span><small class="team-result">2-0</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/RSA.png" alt="南非国旗" loading="lazy"><span>南非</span></span><small class="team-result">0-2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/KOR.png" alt="韩国国旗" loading="lazy"><span>韩国</span></span><small class="team-result">2-1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/CZE.png" alt="捷克国旗" loading="lazy"><span>捷克</span></span><small class="team-result">1-2</small></li>
             </ol>
           </article>
           <article class="group-card">
@@ -1832,10 +2060,10 @@
         </div>
       </section>
 
-      <section class="section dashboard-news" id="news">
-        <div class="section-title">
+      <section class="section dashboard-news dashboard-panel" id="news">
+        <div class="section-title panel-title-bar">
           <h2>新闻与官方入口</h2>
-          <p>本地页只展示摘要和跳转，点击后到 FIFA 官方页面查看最新正文、视频、比分与更新</p>
+          <p>本页只展示摘要和跳转，点击后到 FIFA 官方页面查看最新正文、视频、比分与更新</p>
         </div>
         <div class="news-grid">
           <article class="news-card">
@@ -1848,7 +2076,7 @@
           <article class="news-card">
             <div>
               <h3>今日比赛实时更新</h3>
-              <p>比赛日跟踪每一场实时动态，适合作为本地看板的“直播源入口”</p>
+              <p>比赛日跟踪每一场实时动态，适合作为看板的“直播源入口”</p>
             </div>
             <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/todays-matches-live-updates" target="_blank" rel="noreferrer">打开实时更新</a>
           </article>
@@ -1892,9 +2120,30 @@
       </section>
     </main>
 
-    <footer>
-      本页面为本地展示原型，不属于 FIFA 官方产品 赛果、积分、开球时间和新闻更新以 FIFA 官方页面为准
-    </footer>
+    <div class="drawer-backdrop" id="scoreDrawerBackdrop" hidden></div>
+    <aside class="score-drawer" id="scoreDrawer" aria-label="历史比分" aria-hidden="true">
+      <div class="drawer-head">
+        <div>
+          <span>历史比分</span>
+          <strong>已完赛记录</strong>
+        </div>
+        <button class="drawer-close" id="closeScoreDrawer" type="button" aria-label="关闭历史比分">关闭</button>
+      </div>
+      <div class="drawer-empty" id="scoreDrawerEmpty" hidden>暂无完赛比分</div>
+      <div class="drawer-list" id="scoreDrawerList">
+        <a class="drawer-score" href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021439" target="_blank" rel="noreferrer">
+          <span>A 组 · 06-12</span>
+          <strong>墨西哥 2-0 南非</strong>
+          <small>墨西哥城 · 完赛</small>
+        </a>
+        <a class="drawer-score" href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021441" target="_blank" rel="noreferrer">
+          <span>A 组 · 06-12</span>
+          <strong>韩国 2-1 捷克</strong>
+          <small>瓜达拉哈拉 · 完赛</small>
+        </a>
+      </div>
+    </aside>
+
   </div>
   <script>
     const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
@@ -1904,7 +2153,23 @@
     const nextRefreshEl = document.getElementById("nextRefresh");
     const progressEl = document.getElementById("refreshProgress");
     const manualRefreshEl = document.getElementById("manualRefresh");
+    const beijingTimeEl = document.getElementById("beijingTime");
+    const openScoreDrawerSideEl = document.getElementById("openScoreDrawerSide");
+    const closeScoreDrawerEl = document.getElementById("closeScoreDrawer");
+    const scoreDrawerEl = document.getElementById("scoreDrawer");
+    const scoreDrawerBackdropEl = document.getElementById("scoreDrawerBackdrop");
+    const scoreDrawerListEl = document.getElementById("scoreDrawerList");
+    const scoreDrawerEmptyEl = document.getElementById("scoreDrawerEmpty");
     const timeFormatter = new Intl.DateTimeFormat("zh-CN", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false
+    });
+    const beijingTimeFormatter = new Intl.DateTimeFormat("zh-CN", {
+      timeZone: "Asia/Shanghai",
+      month: "2-digit",
+      day: "2-digit",
       hour: "2-digit",
       minute: "2-digit",
       second: "2-digit",
@@ -1925,12 +2190,39 @@
       if (lastUpdatedEl) lastUpdatedEl.textContent = timeFormatter.format(loadedAt);
       if (nextRefreshEl) nextRefreshEl.textContent = `${formatRemaining(remaining)} 后`;
       if (progressEl) progressEl.style.width = `${(elapsed / REFRESH_INTERVAL_MS) * 100}%`;
+      if (beijingTimeEl) beijingTimeEl.textContent = `北京时间 ${beijingTimeFormatter.format(now)}`;
       if (remaining <= 0) window.location.reload();
     }
 
     if (manualRefreshEl) {
       manualRefreshEl.addEventListener("click", () => window.location.reload());
     }
+
+    function setScoreDrawerOpen(isOpen) {
+      if (!scoreDrawerEl || !scoreDrawerBackdropEl) return;
+      scoreDrawerEl.classList.toggle("is-open", isOpen);
+      scoreDrawerEl.setAttribute("aria-hidden", String(!isOpen));
+      scoreDrawerBackdropEl.hidden = !isOpen;
+      if (scoreDrawerEmptyEl && scoreDrawerListEl) {
+        scoreDrawerEmptyEl.hidden = scoreDrawerListEl.children.length > 0;
+      }
+    }
+
+    if (openScoreDrawerSideEl) {
+      openScoreDrawerSideEl.addEventListener("click", () => setScoreDrawerOpen(true));
+    }
+
+    if (closeScoreDrawerEl) {
+      closeScoreDrawerEl.addEventListener("click", () => setScoreDrawerOpen(false));
+    }
+
+    if (scoreDrawerBackdropEl) {
+      scoreDrawerBackdropEl.addEventListener("click", () => setScoreDrawerOpen(false));
+    }
+
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") setScoreDrawerOpen(false);
+    });
 
     updateRefreshStatus();
     window.setInterval(updateRefreshStatus, 1000);

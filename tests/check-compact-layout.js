@@ -7,20 +7,39 @@ const failures = [];
 const requiredSnippets = [
   ['<main class="dashboard-shell">', "main should use the compact dashboard shell"],
   ['class="hero dashboard-hero"', "hero should be assigned to the compact dashboard grid"],
-  ['class="section dashboard-data"', "data section should be assigned to the compact dashboard grid"],
   ['class="section dashboard-brief"', "brief section should be assigned to the compact dashboard grid"],
-  ['class="section dashboard-groups"', "groups section should be assigned to the compact dashboard grid"],
-  ['class="section dashboard-news"', "news section should be assigned to the compact dashboard grid"],
+  ["dashboard-groups", "groups section should be assigned to the compact dashboard grid"],
+  ["dashboard-news", "news section should be assigned to the compact dashboard grid"],
+  ["dashboard-panel", "major lower dashboard areas should use clear panel framing"],
+  ["panel-title-bar", "major lower dashboard areas should use title bars"],
+  [".section.dashboard-panel", "panel padding should not be overwritten by generic section rules"],
+  ['id="beijingTime"', "top bar should include a Beijing time display"],
+  ["timeZone: \"Asia/Shanghai\"", "Beijing time should be formatted with Asia/Shanghai time zone"],
   ["@media (min-width: 1100px)", "desktop compact media query is missing"],
-  ["height: 100dvh;", "desktop layout should lock to the viewport height"],
+  ["height: 100dvh;", "desktop layout should fit within one viewport"],
   ["overflow: hidden;", "desktop layout should prevent page-level scrolling"],
   ["grid-template-areas:", "desktop layout should use explicit dashboard grid areas"],
   ["grid-template-columns: 0.9fr 2fr 1fr;", "desktop columns should use proportional sizing"],
-  ["grid-template-rows: auto 0.86fr 0.44fr 1.7fr;", "desktop rows should use proportional sizing"],
+  ['"hero hero hero"', "desktop hero should span all columns as the primary stage"],
+  ['"brief groups news"', "desktop lower row should contain the non-primary information"],
+  ["grid-template-rows: auto minmax(0, 1.28fr) minmax(0, 1fr);", "desktop rows should prioritize the primary stage and fit the viewport"],
+  ["grid-template-rows: auto minmax(0, 1fr);", "page grid should not reserve a footer row"],
   ["grid-template-columns: repeat(2, minmax(0, 1fr));\n        grid-template-rows: repeat(2, minmax(0, 1fr));", "desktop score list should use a balanced two-by-two layout"],
-  ["grid-template-columns: repeat(4, minmax(0, 1fr));\n        grid-template-rows: repeat(3, minmax(0, 1fr));", "desktop groups should use a balanced four-by-three layout"],
-  ["grid-template-columns: repeat(2, minmax(0, 1fr));\n        grid-template-rows: repeat(3, minmax(0, 1fr));", "desktop news should use a balanced two-by-three layout"],
-  ["grid-template-rows: repeat(2, minmax(0, 1fr));", "desktop brief panels should split available height proportionally"]
+  ["grid-template-columns: repeat(4, minmax(0, 1fr));", "desktop groups should use four compact columns"],
+  ["grid-template-columns: repeat(2, minmax(0, 1fr));", "desktop news should use two compact columns"],
+  ["grid-template-rows: repeat(2, minmax(0, 1fr));", "desktop brief panels should fill the available column evenly"],
+  [".panel {\n        min-height: 0;\n        height: 100%;", "brief panels should fill their grid rows"],
+  [".timeline {\n        height: calc(100% - 18px);", "timeline contents should fill each panel"],
+  ["team-result", "completed group results should be merged into team rows"],
+  ["墨西哥 2-0 南非", "A group should record Mexico 2-0 South Africa"],
+  ["韩国 2-1 捷克", "A group should record Korea 2-1 Czechia"],
+  ["历史比分", "primary hero feed should show compact history context"],
+  ["scoreDrawer", "page should include a score history drawer"],
+  ["openScoreDrawerSide", "score history drawer should be openable from the side panel"],
+  ["history-compact", "top score area should include a compact history panel"],
+  ["grid-template-columns: minmax(0, 1fr) minmax(180px, 0.34fr);", "top score area should place history beside live scores in a narrower column"],
+  ["暂无完赛比分", "score history should support an empty state"],
+  ["<h1>2026 世界杯赛事看板</h1>", "hero title should be a single concise line"]
 ];
 
 for (const [snippet, message] of requiredSnippets) {
@@ -28,8 +47,38 @@ for (const [snippet, message] of requiredSnippets) {
 }
 
 const visibleSections = (html.match(/<section /g) || []).length;
-if (visibleSections !== 6) {
-  failures.push(`expected 6 visible sections in the one-screen dashboard, found ${visibleSections}`);
+if (visibleSections !== 5) {
+  failures.push(`expected 5 visible sections after removing duplicate data, found ${visibleSections}`);
+}
+
+if (html.includes('class="section dashboard-data"')) {
+  failures.push("duplicate dashboard data section should be removed");
+}
+
+if (html.includes("group-results")) {
+  failures.push("group results should not be placed in a separate bottom block");
+}
+
+if (!html.includes('class="section dashboard-groups dashboard-panel"')) {
+  failures.push("groups area should be framed as a dashboard panel");
+}
+
+if (!html.includes('class="section dashboard-news dashboard-panel"')) {
+  failures.push("news area should be framed as a dashboard panel");
+}
+
+if (html.includes("<footer>")) {
+  failures.push("footer disclaimer should be removed");
+}
+
+const refreshIndex = html.indexOf('class="refresh-card"');
+const heroSideIndex = html.indexOf('class="hero-side"');
+if (refreshIndex === -1 || heroSideIndex === -1 || refreshIndex > heroSideIndex) {
+  failures.push("refresh card should be placed in the primary hero summary area, before the score side");
+}
+
+if (html.includes("hero-feed")) {
+  failures.push("old hero history feed should be removed now that history has its own side panel");
 }
 
 if (failures.length > 0) {
