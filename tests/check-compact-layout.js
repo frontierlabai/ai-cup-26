@@ -30,6 +30,12 @@ const requiredSnippets = [
   ['"brief groups news"', "desktop lower row should contain the non-primary information"],
   ["grid-template-rows: auto minmax(0, 1.28fr) minmax(0, 1fr);", "desktop rows should prioritize the primary stage and fit the viewport"],
   ["grid-template-rows: auto minmax(0, 1fr);", "page grid should not reserve a footer row"],
+  ["@media (max-width: 900px)", "mobile layout media query is missing"],
+  [".dashboard-shell {\n        display: block;", "mobile dashboard should return to natural document flow"],
+  [".score-card {\n        grid-template-columns: 1fr;", "mobile score cards should stack instead of squeezing three columns"],
+  [".nav-links {\n        display: grid;", "small-screen navigation should use a stable single-column grid"],
+  [".visit-stats {\n        display: grid;", "visitor counter pills should stack without squeezing on phones"],
+  ["font-size: clamp(28px, 9vw, 32px);", "mobile title should scale down on narrow screens"],
   ["grid-template-columns: repeat(2, minmax(0, 1fr));\n        grid-template-rows: repeat(2, minmax(0, 1fr));", "desktop score list should use a balanced two-by-two layout"],
   ["grid-template-columns: repeat(4, minmax(0, 1fr));", "desktop groups should use four compact columns"],
   ["grid-template-columns: repeat(2, minmax(0, 1fr));", "desktop news should use two compact columns"],
@@ -45,7 +51,7 @@ const requiredSnippets = [
   ["history-compact", "top score area should include a compact history panel"],
   ["grid-template-columns: minmax(0, 1fr) minmax(180px, 0.34fr);", "top score area should place history beside live scores in a narrower column"],
   ["暂无完赛比分", "score history should support an empty state"],
-  ["<h1>2026 世界杯赛事看板</h1>", "hero title should be a single concise line"]
+  ['<span class="hero-title-part">2026 世界杯</span><span class="hero-title-part">赛事看板</span>', "hero title should split cleanly on narrow screens"]
 ];
 
 for (const [snippet, message] of requiredSnippets) {

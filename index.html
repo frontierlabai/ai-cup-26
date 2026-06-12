@@ -267,6 +267,10 @@
       overflow-wrap: anywhere;
     }
 
+    .hero-title-part {
+      display: inline;
+    }
+
     .hero-copy {
       color: rgba(255, 255, 255, 0.78);
       font-size: 14px;
@@ -1619,20 +1623,51 @@
     }
 
     @media (max-width: 900px) {
+      html,
+      body,
+      .page {
+        height: auto;
+        min-height: 100%;
+        overflow: visible;
+      }
+
       .hero,
-      .two-col {
+      .two-col,
+      .hero-side,
+      .refresh-card {
         grid-template-columns: 1fr;
+      }
+
+      .dashboard-shell {
+        display: block;
+        height: auto;
+        min-height: 0;
+        overflow: visible;
+        padding: 14px 16px 28px;
+      }
+
+      .ticker,
+      .hero,
+      .section {
+        margin-bottom: 14px;
       }
 
       .hero {
         min-height: auto;
-        padding-top: 24px;
+        padding-top: 14px;
+        overflow: visible;
       }
 
       .hero > div,
+      .hero-side,
+      .section,
+      .score-compact,
+      .history-compact,
       .section-title p {
-        max-width: 680px;
+        max-width: none;
         width: 100%;
+        min-height: 0;
+        overflow: visible;
       }
 
       .metrics,
@@ -1648,18 +1683,75 @@
         flex-direction: column;
       }
 
+      .nav-inner {
+        padding: 10px 16px;
+      }
+
       .nav-links {
+        width: 100%;
         justify-content: flex-start;
+        gap: 6px;
       }
 
       .visit-stats {
         flex-wrap: wrap;
+      }
+
+      .score-list {
+        grid-template-columns: 1fr;
+      }
+
+      .score-card {
+        grid-template-columns: 1fr;
+        align-items: stretch;
+        gap: 8px;
+      }
+
+      .score-mid {
+        justify-self: stretch;
+        min-width: 0;
+        text-align: left;
+      }
+
+      .score-team.right {
+        text-align: left;
+      }
+
+      .score-team.right .team-name {
+        justify-content: flex-start;
+      }
+
+      .history-list,
+      .drawer-list {
+        max-height: none;
       }
     }
 
     @media (max-width: 560px) {
       body {
         background-attachment: scroll;
+      }
+
+      .nav {
+        position: sticky;
+      }
+
+      .page,
+      .nav,
+      .nav-inner,
+      .dashboard-shell,
+      .hero,
+      .hero > *,
+      .hero-side,
+      .section,
+      .score-card,
+      .refresh-card {
+        max-width: 100%;
+      }
+
+      .nav-inner {
+        gap: 8px;
+        padding: 9px 10px;
       }
 
       .metrics,
@@ -1673,12 +1765,36 @@
         display: none;
       }
 
-      .nav-links a {
-        padding: 8px 10px;
+      .nav-links {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        overflow: visible;
+        min-width: 0;
+      }
+
+      .time-pill,
+      .visit-stats {
+        width: 100%;
+        min-width: 0;
       }
 
       .visit-stats {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .time-pill,
+      .visit-stat {
+        min-width: 0;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .nav-links a {
         width: 100%;
+        padding: 8px 10px;
+        text-align: center;
       }
 
       .hero {
@@ -1686,14 +1802,21 @@
       }
 
       h1 {
-        font-size: 38px;
+        max-width: 100%;
+        font-size: clamp(28px, 9vw, 32px);
         line-height: 1.08;
         word-break: break-all;
+        overflow-wrap: anywhere;
+        white-space: normal;
+      }
+
+      .hero-title-part {
+        display: block;
       }
 
       .hero > div,
       .section-title p {
-        max-width: 350px;
+        max-width: none;
       }
 
       .hero-copy,
@@ -1701,6 +1824,49 @@
       .timeline-item span,
       .news-card p {
         word-break: break-word;
+        overflow-wrap: anywhere;
+      }
+
+      .hero-actions,
+      .source-strip {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .refresh-meta,
+      .refresh-card {
+        grid-template-columns: 1fr;
+        min-width: 0;
+      }
+
+      .refresh-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: stretch;
+        min-width: 0;
+      }
+
+      .hero-actions .button,
+      .refresh-button {
+        min-width: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .scoreboard-head,
+      .history-head,
+      .panel-title-bar,
+      .section-title {
+        gap: 8px;
+      }
+
+      .score-meta {
+        text-align: left;
+      }
+
+      .score-team strong,
+      .country span {
+        white-space: normal;
         overflow-wrap: anywhere;
       }
 
@@ -1775,7 +1941,7 @@
       <section class="hero dashboard-hero" id="main-dashboard">
         <div>
           <span class="eyebrow"><span class="pulse"></span> 快照时间：2026-06-12 亚洲/上海</span>
-          <h1>2026 世界杯赛事看板</h1>
+          <h1><span class="hero-title-part">2026 世界杯</span><span class="hero-title-part">赛事看板</span></h1>
           <p class="hero-copy">
             首屏集中显示比分、赛程入口和核心赛事数据 可变赛果以 FIFA 官方链接为准
           </p>
