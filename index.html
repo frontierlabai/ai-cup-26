@@ -487,6 +487,28 @@
       text-align: right;
     }
 
+    .team-name,
+    .country {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .score-team.right .team-name {
+      justify-content: flex-end;
+    }
+
+    .flag {
+      width: 26px;
+      aspect-ratio: 3 / 2;
+      flex: 0 0 auto;
+      border-radius: 3px;
+      object-fit: cover;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22), 0 4px 12px rgba(0, 0, 0, 0.18);
+    }
+
     .score-team strong {
       font-size: 13px;
       overflow: hidden;
@@ -774,9 +796,16 @@
       padding-top: 8px;
     }
 
+    .country span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
     .group-card small {
       color: rgba(255, 255, 255, 0.48);
       font-weight: 800;
+      flex: 0 0 auto;
     }
 
     .news-grid {
@@ -1045,7 +1074,7 @@
             <div class="score-list">
               <a class="score-card is-final" href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021439" target="_blank" rel="noreferrer">
                 <div class="score-team">
-                  <strong>墨西哥</strong>
+                  <span class="team-name"><img class="flag" src="assets/flags/MEX.png" alt="墨西哥国旗" loading="lazy"><strong>墨西哥</strong></span>
                   <small>A 组 · 墨西哥城</small>
                 </div>
                 <div class="score-mid">
@@ -1053,13 +1082,13 @@
                   <div class="score-status">完赛</div>
                 </div>
                 <div class="score-team right">
-                  <strong>南非</strong>
+                  <span class="team-name"><img class="flag" src="assets/flags/RSA.png" alt="南非国旗" loading="lazy"><strong>南非</strong></span>
                   <small>06-12 03:00 北京</small>
                 </div>
               </a>
               <a class="score-card is-final" href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021441" target="_blank" rel="noreferrer">
                 <div class="score-team">
-                  <strong>韩国</strong>
+                  <span class="team-name"><img class="flag" src="assets/flags/KOR.png" alt="韩国国旗" loading="lazy"><strong>韩国</strong></span>
                   <small>A 组 · 瓜达拉哈拉</small>
                 </div>
                 <div class="score-mid">
@@ -1067,13 +1096,13 @@
                   <div class="score-status">完赛</div>
                 </div>
                 <div class="score-team right">
-                  <strong>捷克</strong>
+                  <span class="team-name"><img class="flag" src="assets/flags/CZE.png" alt="捷克国旗" loading="lazy"><strong>捷克</strong></span>
                   <small>06-12 10:00 北京</small>
                 </div>
               </a>
               <a class="score-card is-upcoming" href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021449" target="_blank" rel="noreferrer">
                 <div class="score-team">
-                  <strong>加拿大</strong>
+                  <span class="team-name"><img class="flag" src="assets/flags/CAN.png" alt="加拿大国旗" loading="lazy"><strong>加拿大</strong></span>
                   <small>B 组 · 多伦多</small>
                 </div>
                 <div class="score-mid">
@@ -1081,13 +1110,13 @@
                   <div class="score-status">待开赛</div>
                 </div>
                 <div class="score-team right">
-                  <strong>波黑</strong>
+                  <span class="team-name"><img class="flag" src="assets/flags/BIH.png" alt="波黑国旗" loading="lazy"><strong>波黑</strong></span>
                   <small>06-13 03:00 北京</small>
                 </div>
               </a>
               <a class="score-card is-upcoming" href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">
                 <div class="score-team">
-                  <strong>美国</strong>
+                  <span class="team-name"><img class="flag" src="assets/flags/USA.png" alt="美国国旗" loading="lazy"><strong>美国</strong></span>
                   <small>D 组 · 洛杉矶</small>
                 </div>
                 <div class="score-mid">
@@ -1095,7 +1124,7 @@
                   <div class="score-status">待开赛</div>
                 </div>
                 <div class="score-team right">
-                  <strong>巴拉圭</strong>
+                  <span class="team-name"><img class="flag" src="assets/flags/PAR.png" alt="巴拉圭国旗" loading="lazy"><strong>巴拉圭</strong></span>
                   <small>06-13 09:00 北京</small>
                 </div>
               </a>
@@ -1201,18 +1230,114 @@
           <p>以下为当前整理版分组快照 比赛开始后，请通过 FIFA 积分榜查看实时排名、净胜球和晋级形势</p>
         </div>
         <div class="groups">
-          <article class="group-card"><h3>A 组 <span>东道主</span></h3><ol><li>墨西哥 <small>A1</small></li><li>南非 <small>A2</small></li><li>韩国 <small>A3</small></li><li>捷克 <small>A4</small></li></ol></article>
-          <article class="group-card"><h3>B 组 <span>东道主</span></h3><ol><li>加拿大 <small>B1</small></li><li>波黑 <small>B2</small></li><li>卡塔尔 <small>B3</small></li><li>瑞士 <small>B4</small></li></ol></article>
-          <article class="group-card"><h3>C 组 <span></span></h3><ol><li>巴西 <small>C1</small></li><li>摩洛哥 <small>C2</small></li><li>海地 <small>C3</small></li><li>苏格兰 <small>C4</small></li></ol></article>
-          <article class="group-card"><h3>D 组 <span>东道主</span></h3><ol><li>美国 <small>D1</small></li><li>巴拉圭 <small>D2</small></li><li>澳大利亚 <small>D3</small></li><li>土耳其 <small>D4</small></li></ol></article>
-          <article class="group-card"><h3>E 组 <span></span></h3><ol><li>德国 <small>E1</small></li><li>库拉索 <small>E2</small></li><li>科特迪瓦 <small>E3</small></li><li>厄瓜多尔 <small>E4</small></li></ol></article>
-          <article class="group-card"><h3>F 组 <span></span></h3><ol><li>荷兰 <small>F1</small></li><li>日本 <small>F2</small></li><li>瑞典 <small>F3</small></li><li>突尼斯 <small>F4</small></li></ol></article>
-          <article class="group-card"><h3>G 组 <span></span></h3><ol><li>比利时 <small>G1</small></li><li>埃及 <small>G2</small></li><li>伊朗 <small>G3</small></li><li>新西兰 <small>G4</small></li></ol></article>
-          <article class="group-card"><h3>H 组 <span></span></h3><ol><li>西班牙 <small>H1</small></li><li>佛得角 <small>H2</small></li><li>沙特阿拉伯 <small>H3</small></li><li>乌拉圭 <small>H4</small></li></ol></article>
-          <article class="group-card"><h3>I 组 <span></span></h3><ol><li>法国 <small>I1</small></li><li>塞内加尔 <small>I2</small></li><li>伊拉克 <small>I3</small></li><li>挪威 <small>I4</small></li></ol></article>
-          <article class="group-card"><h3>J 组 <span></span></h3><ol><li>阿根廷 <small>J1</small></li><li>阿尔及利亚 <small>J2</small></li><li>奥地利 <small>J3</small></li><li>约旦 <small>J4</small></li></ol></article>
-          <article class="group-card"><h3>K 组 <span></span></h3><ol><li>葡萄牙 <small>K1</small></li><li>刚果民主共和国 <small>K2</small></li><li>乌兹别克斯坦 <small>K3</small></li><li>哥伦比亚 <small>K4</small></li></ol></article>
-          <article class="group-card"><h3>L 组 <span></span></h3><ol><li>英格兰 <small>L1</small></li><li>克罗地亚 <small>L2</small></li><li>加纳 <small>L3</small></li><li>巴拿马 <small>L4</small></li></ol></article>
+          <article class="group-card">
+            <h3>A 组 <span>东道主</span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/MEX.png" alt="墨西哥国旗" loading="lazy"><span>墨西哥</span></span><small>A1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/RSA.png" alt="南非国旗" loading="lazy"><span>南非</span></span><small>A2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/KOR.png" alt="韩国国旗" loading="lazy"><span>韩国</span></span><small>A3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/CZE.png" alt="捷克国旗" loading="lazy"><span>捷克</span></span><small>A4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>B 组 <span>东道主</span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/CAN.png" alt="加拿大国旗" loading="lazy"><span>加拿大</span></span><small>B1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/BIH.png" alt="波黑国旗" loading="lazy"><span>波黑</span></span><small>B2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/QAT.png" alt="卡塔尔国旗" loading="lazy"><span>卡塔尔</span></span><small>B3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/SUI.png" alt="瑞士国旗" loading="lazy"><span>瑞士</span></span><small>B4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>C 组 <span></span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/BRA.png" alt="巴西国旗" loading="lazy"><span>巴西</span></span><small>C1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/MAR.png" alt="摩洛哥国旗" loading="lazy"><span>摩洛哥</span></span><small>C2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/HAI.png" alt="海地国旗" loading="lazy"><span>海地</span></span><small>C3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/SCO.png" alt="苏格兰国旗" loading="lazy"><span>苏格兰</span></span><small>C4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>D 组 <span>东道主</span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/USA.png" alt="美国国旗" loading="lazy"><span>美国</span></span><small>D1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/PAR.png" alt="巴拉圭国旗" loading="lazy"><span>巴拉圭</span></span><small>D2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/AUS.png" alt="澳大利亚国旗" loading="lazy"><span>澳大利亚</span></span><small>D3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/TUR.png" alt="土耳其国旗" loading="lazy"><span>土耳其</span></span><small>D4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>E 组 <span></span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/GER.png" alt="德国国旗" loading="lazy"><span>德国</span></span><small>E1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/CUW.png" alt="库拉索国旗" loading="lazy"><span>库拉索</span></span><small>E2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/CIV.png" alt="科特迪瓦国旗" loading="lazy"><span>科特迪瓦</span></span><small>E3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/ECU.png" alt="厄瓜多尔国旗" loading="lazy"><span>厄瓜多尔</span></span><small>E4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>F 组 <span></span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/NED.png" alt="荷兰国旗" loading="lazy"><span>荷兰</span></span><small>F1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/JPN.png" alt="日本国旗" loading="lazy"><span>日本</span></span><small>F2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/SWE.png" alt="瑞典国旗" loading="lazy"><span>瑞典</span></span><small>F3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/TUN.png" alt="突尼斯国旗" loading="lazy"><span>突尼斯</span></span><small>F4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>G 组 <span></span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/BEL.png" alt="比利时国旗" loading="lazy"><span>比利时</span></span><small>G1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/EGY.png" alt="埃及国旗" loading="lazy"><span>埃及</span></span><small>G2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/IRN.png" alt="伊朗国旗" loading="lazy"><span>伊朗</span></span><small>G3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/NZL.png" alt="新西兰国旗" loading="lazy"><span>新西兰</span></span><small>G4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>H 组 <span></span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/ESP.png" alt="西班牙国旗" loading="lazy"><span>西班牙</span></span><small>H1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/CPV.png" alt="佛得角国旗" loading="lazy"><span>佛得角</span></span><small>H2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/KSA.png" alt="沙特阿拉伯国旗" loading="lazy"><span>沙特阿拉伯</span></span><small>H3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/URU.png" alt="乌拉圭国旗" loading="lazy"><span>乌拉圭</span></span><small>H4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>I 组 <span></span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/FRA.png" alt="法国国旗" loading="lazy"><span>法国</span></span><small>I1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/SEN.png" alt="塞内加尔国旗" loading="lazy"><span>塞内加尔</span></span><small>I2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/IRQ.png" alt="伊拉克国旗" loading="lazy"><span>伊拉克</span></span><small>I3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/NOR.png" alt="挪威国旗" loading="lazy"><span>挪威</span></span><small>I4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>J 组 <span></span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/ARG.png" alt="阿根廷国旗" loading="lazy"><span>阿根廷</span></span><small>J1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/ALG.png" alt="阿尔及利亚国旗" loading="lazy"><span>阿尔及利亚</span></span><small>J2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/AUT.png" alt="奥地利国旗" loading="lazy"><span>奥地利</span></span><small>J3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/JOR.png" alt="约旦国旗" loading="lazy"><span>约旦</span></span><small>J4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>K 组 <span></span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/POR.png" alt="葡萄牙国旗" loading="lazy"><span>葡萄牙</span></span><small>K1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/COD.png" alt="刚果民主共和国国旗" loading="lazy"><span>刚果民主共和国</span></span><small>K2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/UZB.png" alt="乌兹别克斯坦国旗" loading="lazy"><span>乌兹别克斯坦</span></span><small>K3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/COL.png" alt="哥伦比亚国旗" loading="lazy"><span>哥伦比亚</span></span><small>K4</small></li>
+            </ol>
+          </article>
+          <article class="group-card">
+            <h3>L 组 <span></span></h3>
+            <ol>
+              <li><span class="country"><img class="flag" src="assets/flags/ENG.png" alt="英格兰旗帜" loading="lazy"><span>英格兰</span></span><small>L1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/CRO.png" alt="克罗地亚国旗" loading="lazy"><span>克罗地亚</span></span><small>L2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/GHA.png" alt="加纳国旗" loading="lazy"><span>加纳</span></span><small>L3</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/PAN.png" alt="巴拿马国旗" loading="lazy"><span>巴拿马</span></span><small>L4</small></li>
+            </ol>
+          </article>
         </div>
       </section>
 
