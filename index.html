@@ -132,6 +132,31 @@
       font-variant-numeric: tabular-nums;
     }
 
+    .visit-stats {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .visit-stat {
+      border: 1px solid rgba(56, 232, 255, 0.24);
+      background: rgba(56, 232, 255, 0.08);
+      color: rgba(255, 255, 255, 0.86);
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 900;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .visit-stat strong {
+      color: var(--cyan);
+      font-weight: 900;
+    }
+
     .nav-links a,
     .button {
       border: 1px solid var(--line);
@@ -1016,7 +1041,8 @@
 
       .nav-links a,
       .button,
-      .time-pill {
+      .time-pill,
+      .visit-stat {
         padding: 6px 9px;
         font-size: 11px;
       }
@@ -1625,6 +1651,10 @@
       .nav-links {
         justify-content: flex-start;
       }
+
+      .visit-stats {
+        flex-wrap: wrap;
+      }
     }
 
     @media (max-width: 560px) {
@@ -1645,6 +1675,10 @@
 
       .nav-links a {
         padding: 8px 10px;
+      }
+
+      .visit-stats {
+        width: 100%;
       }
 
       .hero {
@@ -1714,6 +1748,10 @@
         </a>
         <div class="nav-links">
           <span class="time-pill" id="beijingTime" aria-label="北京时间">北京时间 --:--:--</span>
+          <span class="visit-stats" aria-label="访问统计">
+            <span class="visit-stat" id="busuanzi_container_site_pv">访问量 <strong id="busuanzi_value_site_pv">--</strong></span>
+            <span class="visit-stat" id="busuanzi_container_site_uv">访客 <strong id="busuanzi_value_site_uv">--</strong></span>
+          </span>
           <a href="#main-dashboard">概览</a>
           <a href="#groups">分组</a>
           <a href="#news">新闻</a>
@@ -2227,5 +2265,6 @@
     updateRefreshStatus();
     window.setInterval(updateRefreshStatus, 1000);
   </script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>
