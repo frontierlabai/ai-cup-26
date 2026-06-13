@@ -1760,8 +1760,11 @@
       }
 
       .nav-inner {
+        flex-direction: row;
+        align-items: center;
         gap: 8px;
-        padding: 9px 10px;
+        padding: 7px 8px;
+        overflow: hidden;
       }
 
       .metrics,
@@ -1775,36 +1778,49 @@
         display: none;
       }
 
+      .brand {
+        flex: 0 0 auto;
+      }
+
       .nav-links {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-        overflow: visible;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: auto;
+        flex: 1 1 auto;
         min-width: 0;
+        gap: 6px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
       }
 
-      .time-pill,
+      .nav-links::-webkit-scrollbar {
+        display: none;
+      }
+
       .visit-stats {
-        width: 100%;
-        min-width: 0;
+        display: none;
       }
 
-      .visit-stats {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .time-pill,
-      .visit-stat {
+      .time-pill {
+        flex: 0 0 auto;
+        width: auto;
         min-width: 0;
+        max-width: 138px;
         text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
       }
 
       .nav-links a {
-        width: 100%;
-        padding: 8px 10px;
+        flex: 0 0 auto;
+        width: auto;
+        padding: 7px 9px;
         text-align: center;
+        white-space: nowrap;
       }
 
       .hero {
