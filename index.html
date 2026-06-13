@@ -519,6 +519,11 @@
       border-color: rgba(255, 176, 32, 0.24);
     }
 
+    .score-card.is-live {
+      border-color: rgba(57, 179, 255, 0.28);
+      background: linear-gradient(90deg, rgba(57, 179, 255, 0.12), rgba(255, 255, 255, 0.06));
+    }
+
     .score-team {
       display: grid;
       gap: 4px;
@@ -598,6 +603,11 @@
     .is-upcoming .score-status {
       color: var(--warn);
       background: rgba(255, 176, 32, 0.12);
+    }
+
+    .is-live .score-status {
+      color: #65d8ff;
+      background: rgba(57, 179, 255, 0.14);
     }
 
     .score-note {
@@ -1932,15 +1942,15 @@
         <div class="ticker-inner">
           <div class="ticker-label">情报快讯</div>
           <div class="ticker-track">
-            <span><time datetime="2026-06-12T03:00:00+08:00">06-12 03:00</time> 墨西哥 2-0 南非 完赛 · <time datetime="2026-06-12T10:00:00+08:00">06-12 10:00</time> 韩国 2-1 捷克 完赛 · <time datetime="2026-06-13T03:00:00+08:00">06-13 03:00</time> 加拿大 vs 波黑 · <time datetime="2026-06-13T09:00:00+08:00">06-13 09:00</time> 美国 vs 巴拉圭 · 查询时间 2026-06-12 15:49 CST</span>
-            <span><time datetime="2026-06-12T03:00:00+08:00">06-12 03:00</time> 墨西哥 2-0 南非 完赛 · <time datetime="2026-06-12T10:00:00+08:00">06-12 10:00</time> 韩国 2-1 捷克 完赛 · <time datetime="2026-06-13T03:00:00+08:00">06-13 03:00</time> 加拿大 vs 波黑 · <time datetime="2026-06-13T09:00:00+08:00">06-13 09:00</time> 美国 vs 巴拉圭 · 查询时间 2026-06-12 15:49 CST</span>
+            <span><time datetime="2026-06-12T03:00:00+08:00">06-12 03:00</time> 墨西哥 2-0 南非 完赛 · <time datetime="2026-06-12T10:00:00+08:00">06-12 10:00</time> 韩国 2-1 捷克 完赛 · <time datetime="2026-06-13T03:00:00+08:00">06-13 03:00</time> 加拿大 1-1 波黑 完赛 · <time datetime="2026-06-13T09:00:00+08:00">06-13 09:00</time> 美国 3-0 巴拉圭 进行中 · 查询时间 2026-06-13 10:30 CST</span>
+            <span><time datetime="2026-06-12T03:00:00+08:00">06-12 03:00</time> 墨西哥 2-0 南非 完赛 · <time datetime="2026-06-12T10:00:00+08:00">06-12 10:00</time> 韩国 2-1 捷克 完赛 · <time datetime="2026-06-13T03:00:00+08:00">06-13 03:00</time> 加拿大 1-1 波黑 完赛 · <time datetime="2026-06-13T09:00:00+08:00">06-13 09:00</time> 美国 3-0 巴拉圭 进行中 · 查询时间 2026-06-13 10:30 CST</span>
           </div>
         </div>
       </section>
 
       <section class="hero dashboard-hero" id="main-dashboard">
         <div>
-          <span class="eyebrow"><span class="pulse"></span> 快照时间：2026-06-12 亚洲/上海</span>
+          <span class="eyebrow"><span class="pulse"></span> 快照时间：2026-06-13 亚洲/上海</span>
           <h1><span class="hero-title-part">2026 世界杯</span><span class="hero-title-part">赛事看板</span></h1>
           <p class="hero-copy">
             首屏集中显示比分、赛程入口和核心赛事数据 可变赛果以 FIFA 官方链接为准
@@ -1972,10 +1982,10 @@
               <small>06-11 到 07-19</small>
             </div>
           </div>
-          <aside class="refresh-card" aria-label="自动刷新状态">
+          <aside class="refresh-card" aria-label="页面重载状态">
             <div class="refresh-top">
               <div>
-                <span>自动刷新</span>
+                <span>页面重载</span>
                 <strong>每 10 分钟</strong>
               </div>
               <button class="refresh-button" id="manualRefresh" type="button">立即刷新</button>
@@ -1997,11 +2007,11 @@
         </div>
 
         <div class="hero-side">
-          <aside class="score-compact" id="live-scores" data-source="FIFA scores-fixtures" aria-label="实时比分展板">
+          <aside class="score-compact" id="live-scores" data-source="FIFA scores-fixtures" aria-label="快照比分展板">
             <div class="scoreboard-head">
               <div>
-                <span>实时比分展板</span>
-                <strong>2026-06-12 15:49 CST</strong>
+                <span>快照比分展板</span>
+                <strong>2026-06-13 10:30 CST</strong>
               </div>
               <div class="score-meta">比分以 FIFA 官方页<br>和赛后报道校验</div>
             </div>
@@ -2034,28 +2044,28 @@
                   <small>06-12 10:00 北京</small>
                 </div>
               </a>
-              <a class="score-card is-upcoming" href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021449" target="_blank" rel="noreferrer">
+              <a class="score-card is-final" href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021449" target="_blank" rel="noreferrer">
                 <div class="score-team">
                   <span class="team-name"><img class="flag" src="assets/flags/CAN.png" alt="加拿大国旗" loading="lazy"><strong>加拿大</strong></span>
                   <small>B 组 · 多伦多</small>
                 </div>
                 <div class="score-mid">
-                  <div class="scoreline">vs</div>
-                  <div class="score-status">待开赛</div>
+                  <div class="scoreline">1-1</div>
+                  <div class="score-status">完赛</div>
                 </div>
                 <div class="score-team right">
                   <span class="team-name"><img class="flag" src="assets/flags/BIH.png" alt="波黑国旗" loading="lazy"><strong>波黑</strong></span>
                   <small>06-13 03:00 北京</small>
                 </div>
               </a>
-              <a class="score-card is-upcoming" href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">
+              <a class="score-card is-live" href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">
                 <div class="score-team">
                   <span class="team-name"><img class="flag" src="assets/flags/USA.png" alt="美国国旗" loading="lazy"><strong>美国</strong></span>
                   <small>D 组 · 洛杉矶</small>
                 </div>
                 <div class="score-mid">
-                  <div class="scoreline">vs</div>
-                  <div class="score-status">待开赛</div>
+                  <div class="scoreline">3-0</div>
+                  <div class="score-status">进行中</div>
                 </div>
                 <div class="score-team right">
                   <span class="team-name"><img class="flag" src="assets/flags/PAR.png" alt="巴拉圭国旗" loading="lazy"><strong>巴拉圭</strong></span>
@@ -2064,7 +2074,7 @@
               </a>
             </div>
             <div class="score-note">
-              <span>页面快照不自动抓取实时接口；点击比赛可核验最新状态</span>
+              <span>页面重载不自动抓取实时接口；点击比赛可核验最新状态</span>
               <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">官方比分</a>
             </div>
           </aside>
@@ -2082,6 +2092,11 @@
               <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021441" target="_blank" rel="noreferrer">
                 <span>A 组</span>
                 <strong>韩国 2-1 捷克</strong>
+                <small>完赛</small>
+              </a>
+              <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021449" target="_blank" rel="noreferrer">
+                <span>B 组</span>
+                <strong>加拿大 1-1 波黑</strong>
                 <small>完赛</small>
               </a>
             </div>
@@ -2165,8 +2180,8 @@
           <article class="group-card">
             <h3>B 组 <span>东道主</span></h3>
             <ol>
-              <li><span class="country"><img class="flag" src="assets/flags/CAN.png" alt="加拿大国旗" loading="lazy"><span>加拿大</span></span><small>B1</small></li>
-              <li><span class="country"><img class="flag" src="assets/flags/BIH.png" alt="波黑国旗" loading="lazy"><span>波黑</span></span><small>B2</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/CAN.png" alt="加拿大国旗" loading="lazy"><span>加拿大</span></span><small class="team-result">1-1</small></li>
+              <li><span class="country"><img class="flag" src="assets/flags/BIH.png" alt="波黑国旗" loading="lazy"><span>波黑</span></span><small class="team-result">1-1</small></li>
               <li><span class="country"><img class="flag" src="assets/flags/QAT.png" alt="卡塔尔国旗" loading="lazy"><span>卡塔尔</span></span><small>B3</small></li>
               <li><span class="country"><img class="flag" src="assets/flags/SUI.png" alt="瑞士国旗" loading="lazy"><span>瑞士</span></span><small>B4</small></li>
             </ol>
@@ -2344,6 +2359,11 @@
           <span>A 组 · 06-12</span>
           <strong>韩国 2-1 捷克</strong>
           <small>瓜达拉哈拉 · 完赛</small>
+        </a>
+        <a class="drawer-score" href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021449" target="_blank" rel="noreferrer">
+          <span>B 组 · 06-13</span>
+          <strong>加拿大 1-1 波黑</strong>
+          <small>多伦多 · 完赛</small>
         </a>
       </div>
     </aside>
