@@ -51,7 +51,7 @@ const requiredSnippets = [
   ["D 组积分", "standings snapshot should show Group D after USA Paraguay"],
   ["赛事周期(天)", "duration metric should put the day unit in the label"],
   ["<strong>39</strong>", "duration metric value should be numeric only"],
-  ["快照比分展板", "score panel should not imply live data is fetched"],
+  ["已完赛比分", "score panel should label the four completed matches as final results"],
   ["hero-insights", "hero should use the open space for schedule and standings insight panels"],
   ["今日赛程", "hero insight panel should include upcoming fixtures"],
   ["积分速览", "hero insight panel should include group standings"],
