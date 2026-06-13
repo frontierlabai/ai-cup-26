@@ -49,7 +49,8 @@ const requiredSnippets = [
   ["加拿大 1-1 波黑", "B group should record Canada 1-1 Bosnia and Herzegovina"],
   ["赛事周期(天)", "duration metric should put the day unit in the label"],
   ["<strong>39</strong>", "duration metric value should be numeric only"],
-  ["页面重载", "refresh controls should describe reloading the static snapshot"],
+  ["snapshot-note", "hero should show a compact snapshot note instead of a large refresh card"],
+  ["静态快照", "snapshot note should explain that scores are a static snapshot"],
   ["快照比分展板", "score panel should not imply live data is fetched"],
   ["hero-insights", "hero should use the open space for schedule and standings insight panels"],
   ["今日赛程", "hero insight panel should include upcoming fixtures"],
@@ -97,14 +98,26 @@ if (html.includes("<footer>")) {
   failures.push("footer disclaimer should be removed");
 }
 
-const refreshIndex = html.indexOf('class="refresh-card"');
+const refreshIndex = html.indexOf('class="snapshot-note"');
 const heroSideIndex = html.indexOf('class="hero-side"');
 if (refreshIndex === -1 || heroSideIndex === -1 || refreshIndex > heroSideIndex) {
-  failures.push("refresh card should be placed in the primary hero summary area, before the score side");
+  failures.push("snapshot note should be placed in the primary hero summary area, before the score side");
 }
 
 if (html.includes("hero-feed")) {
   failures.push("old hero history feed should be removed now that history has its own side panel");
+}
+
+const removedReloadSnippets = [
+  ["window.location.reload()", "snapshot note should not trigger automatic page reloads"],
+  ["manualRefresh", "manual refresh button should be removed from the compact snapshot note"],
+  ["refreshProgress", "refresh progress bar should be removed from the compact snapshot note"],
+  ["REFRESH_INTERVAL_MS", "refresh interval logic should be removed when reload UI is removed"],
+  ['class="refresh-card"', "large refresh card should be removed from the hero"]
+];
+
+for (const [snippet, message] of removedReloadSnippets) {
+  if (html.includes(snippet)) failures.push(message);
 }
 
 if (failures.length > 0) {

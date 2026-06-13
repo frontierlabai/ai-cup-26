@@ -339,93 +339,26 @@
       min-width: 0;
     }
 
-    .refresh-card {
+    .snapshot-note {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       border: 1px solid rgba(198, 255, 61, 0.2);
       background:
         linear-gradient(135deg, rgba(198, 255, 61, 0.11), rgba(255, 255, 255, 0.06)),
         rgba(2, 12, 30, 0.74);
       border-radius: 8px;
       box-shadow: var(--shadow);
-      padding: 10px;
-    }
-
-    .refresh-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      margin-bottom: 8px;
-    }
-
-    .refresh-top span {
-      color: var(--lime);
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 0.06em;
-    }
-
-    .refresh-top strong {
-      display: block;
-      margin-top: 4px;
-      font-size: 16px;
-      line-height: 1;
-    }
-
-    .refresh-button {
-      appearance: none;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      background: rgba(255, 255, 255, 0.1);
-      color: #fff;
-      border-radius: 999px;
-      padding: 8px 10px;
-      font: inherit;
-      font-weight: 800;
-      font-size: 12px;
-      cursor: pointer;
-    }
-
-    .refresh-meta {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-bottom: 8px;
-    }
-
-    .refresh-meta div {
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(0, 0, 0, 0.14);
-      border-radius: 8px;
-      padding: 7px;
-      min-width: 0;
-    }
-
-    .refresh-meta span {
-      display: block;
+      padding: 7px 9px;
       color: var(--muted);
-      font-size: 12px;
-      margin-bottom: 6px;
+      font-size: 11px;
+      line-height: 1.35;
     }
 
-    .refresh-meta strong {
-      display: block;
-      color: #fff;
-      font-size: 13px;
-      overflow-wrap: anywhere;
-    }
-
-    .refresh-bar {
-      height: 8px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.12);
-      overflow: hidden;
-    }
-
-    .refresh-fill {
-      width: 0%;
-      height: 100%;
-      background: linear-gradient(90deg, var(--lime), var(--cyan));
-      border-radius: inherit;
-      transition: width 300ms ease;
+    .snapshot-note strong {
+      color: var(--lime);
+      font-size: 11px;
+      white-space: nowrap;
     }
 
     .hero-insights {
@@ -1325,7 +1258,7 @@
       }
 
       .hero > div:first-child,
-      .refresh-card,
+      .snapshot-note,
       .score-compact,
       .metric,
       .panel,
@@ -1394,50 +1327,9 @@
         align-items: stretch;
       }
 
-      .refresh-card {
+      .snapshot-note {
         margin-top: clamp(10px, 1.2vh, 18px);
-        padding: clamp(8px, 0.75vw, 12px);
-        display: grid;
-        grid-template-columns: auto minmax(0, 1fr) minmax(120px, 0.28fr);
-        align-items: center;
-        gap: 10px;
-      }
-
-      .refresh-top {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 0;
-      }
-
-      .refresh-top strong {
-        font-size: clamp(14px, 1vw, 20px);
-        margin-top: 2px;
-      }
-
-      .refresh-button {
         padding: 6px 8px;
-        font-size: 11px;
-        white-space: nowrap;
-      }
-
-      .refresh-meta {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 5px;
-        margin-bottom: 0;
-      }
-
-      .refresh-meta div {
-        padding: 5px;
-      }
-
-      .refresh-meta span,
-      .refresh-meta strong {
-        font-size: 11px;
-      }
-
-      .refresh-bar {
-        height: 6px;
       }
 
       .score-compact {
@@ -1804,7 +1696,7 @@
       .hero,
       .two-col,
       .hero-side,
-      .refresh-card {
+      .snapshot-note {
         grid-template-columns: 1fr;
       }
 
@@ -1915,7 +1807,7 @@
       .hero-side,
       .section,
       .score-card,
-      .refresh-card {
+      .snapshot-note {
         max-width: 100%;
       }
 
@@ -2019,21 +1911,11 @@
         align-items: stretch;
       }
 
-      .refresh-meta,
-      .refresh-card {
-        grid-template-columns: 1fr;
+      .snapshot-note {
         min-width: 0;
       }
 
-      .refresh-top {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: stretch;
-        min-width: 0;
-      }
-
-      .hero-actions .button,
-      .refresh-button {
+      .hero-actions .button {
         min-width: 0;
         width: 100%;
         text-align: center;
@@ -2158,28 +2040,7 @@
               <small>06-11 到 07-19</small>
             </div>
           </div>
-          <aside class="refresh-card" aria-label="页面重载状态">
-            <div class="refresh-top">
-              <div>
-                <span>页面重载</span>
-                <strong>每 10 分钟</strong>
-              </div>
-              <button class="refresh-button" id="manualRefresh" type="button">立即刷新</button>
-            </div>
-            <div class="refresh-meta">
-              <div>
-                <span>上次刷新</span>
-                <strong id="lastUpdated">--</strong>
-              </div>
-              <div>
-                <span>下次刷新</span>
-                <strong id="nextRefresh">--</strong>
-              </div>
-            </div>
-            <div class="refresh-bar" aria-hidden="true">
-              <div class="refresh-fill" id="refreshProgress"></div>
-            </div>
-          </aside>
+          <p class="snapshot-note"><strong>静态快照</strong><span>赛果以 FIFA 官方链接为准，刷新页面只会读取已发布内容。</span></p>
           <div class="hero-insights" aria-label="赛程与积分速览">
             <div class="insight-panel" role="region" aria-label="今日赛程">
               <div class="insight-head">
@@ -2308,7 +2169,7 @@
               </a>
             </div>
             <div class="score-note">
-              <span>页面重载不自动抓取实时接口；点击比赛可核验最新状态</span>
+              <span>静态快照不自动抓取实时接口；点击比赛可核验最新状态</span>
               <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">官方比分</a>
             </div>
           </aside>
@@ -2604,13 +2465,6 @@
 
   </div>
   <script>
-    const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
-    const loadedAt = Date.now();
-    const nextRefreshAt = loadedAt + REFRESH_INTERVAL_MS;
-    const lastUpdatedEl = document.getElementById("lastUpdated");
-    const nextRefreshEl = document.getElementById("nextRefresh");
-    const progressEl = document.getElementById("refreshProgress");
-    const manualRefreshEl = document.getElementById("manualRefresh");
     const beijingTimeEl = document.getElementById("beijingTime");
     const openScoreDrawerSideEl = document.getElementById("openScoreDrawerSide");
     const closeScoreDrawerEl = document.getElementById("closeScoreDrawer");
@@ -2618,12 +2472,6 @@
     const scoreDrawerBackdropEl = document.getElementById("scoreDrawerBackdrop");
     const scoreDrawerListEl = document.getElementById("scoreDrawerList");
     const scoreDrawerEmptyEl = document.getElementById("scoreDrawerEmpty");
-    const timeFormatter = new Intl.DateTimeFormat("zh-CN", {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: false
-    });
     const beijingTimeFormatter = new Intl.DateTimeFormat("zh-CN", {
       timeZone: "Asia/Shanghai",
       month: "2-digit",
@@ -2634,26 +2482,9 @@
       hour12: false
     });
 
-    function formatRemaining(ms) {
-      const totalSeconds = Math.max(0, Math.ceil(ms / 1000));
-      const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, "0");
-      const seconds = String(totalSeconds % 60).padStart(2, "0");
-      return `${minutes}:${seconds}`;
-    }
-
-    function updateRefreshStatus() {
+    function updateClock() {
       const now = Date.now();
-      const remaining = nextRefreshAt - now;
-      const elapsed = Math.min(REFRESH_INTERVAL_MS, Math.max(0, now - loadedAt));
-      if (lastUpdatedEl) lastUpdatedEl.textContent = timeFormatter.format(loadedAt);
-      if (nextRefreshEl) nextRefreshEl.textContent = `${formatRemaining(remaining)} 后`;
-      if (progressEl) progressEl.style.width = `${(elapsed / REFRESH_INTERVAL_MS) * 100}%`;
       if (beijingTimeEl) beijingTimeEl.textContent = `北京时间 ${beijingTimeFormatter.format(now)}`;
-      if (remaining <= 0) window.location.reload();
-    }
-
-    if (manualRefreshEl) {
-      manualRefreshEl.addEventListener("click", () => window.location.reload());
     }
 
     function setScoreDrawerOpen(isOpen) {
@@ -2682,8 +2513,8 @@
       if (event.key === "Escape") setScoreDrawerOpen(false);
     });
 
-    updateRefreshStatus();
-    window.setInterval(updateRefreshStatus, 1000);
+    updateClock();
+    window.setInterval(updateClock, 1000);
   </script>
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
