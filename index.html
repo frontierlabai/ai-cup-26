@@ -1299,6 +1299,32 @@
       }
 
       .hero > div:first-child,
+      .hero-side {
+        overflow-x: hidden;
+        overflow-y: auto;
+        scrollbar-gutter: stable;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(198, 255, 61, 0.42) rgba(255, 255, 255, 0.08);
+      }
+
+      .hero > div:first-child::-webkit-scrollbar,
+      .hero-side::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .hero > div:first-child::-webkit-scrollbar-track,
+      .hero-side::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 999px;
+      }
+
+      .hero > div:first-child::-webkit-scrollbar-thumb,
+      .hero-side::-webkit-scrollbar-thumb {
+        background: rgba(198, 255, 61, 0.42);
+        border-radius: 999px;
+      }
+
+      .hero > div:first-child,
       .refresh-card,
       .score-compact,
       .metric,

@@ -57,6 +57,8 @@ const requiredSnippets = [
   ["卡塔尔 vs 瑞士", "upcoming fixtures should show Qatar vs Switzerland"],
   ["A 组积分", "standings snapshot should show Group A table"],
   ["B 组积分", "standings snapshot should show Group B table"],
+  ["overflow-y: auto;", "squeezed desktop hero panels should scroll vertically instead of clipping content"],
+  ["scrollbar-gutter: stable;", "scrollable hero panels should reserve stable scrollbar space"],
   ["历史比分", "primary hero feed should show compact history context"],
   ["scoreDrawer", "page should include a score history drawer"],
   ["openScoreDrawerSide", "score history drawer should be openable from the side panel"],
