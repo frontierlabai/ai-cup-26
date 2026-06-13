@@ -259,12 +259,6 @@
       overflow-wrap: anywhere;
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
     .hero-metrics {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1242,10 +1236,6 @@
         line-height: 1.3;
       }
 
-      .hero-actions {
-        gap: 8px;
-      }
-
       .hero-metrics {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 8px;
@@ -1843,16 +1833,9 @@
         overflow-wrap: anywhere;
       }
 
-      .hero-actions,
       .source-strip {
         flex-direction: column;
         align-items: stretch;
-      }
-
-      .hero-actions .button {
-        min-width: 0;
-        width: 100%;
-        text-align: center;
       }
 
       .scoreboard-head,
@@ -1943,11 +1926,6 @@
       <section class="hero dashboard-hero" id="main-dashboard">
         <div>
           <h1><span class="hero-title-part">2026 世界杯</span><span class="hero-title-part">赛事看板</span></h1>
-          <div class="hero-actions">
-            <a class="button primary" href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">打开实时赛程</a>
-            <a class="button" href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings" target="_blank" rel="noreferrer">打开实时积分榜</a>
-            <a class="button" href="#news">看新闻入口</a>
-          </div>
           <div class="hero-metrics" aria-label="首屏赛事核心数据">
             <div class="metric-chip">
               <span>参赛队</span>

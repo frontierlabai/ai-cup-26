@@ -115,7 +115,11 @@ const removedReloadSnippets = [
   ["snapshot-note", "snapshot note should be removed from the hero"],
   ["快照时间：2026-06-13 亚洲/上海", "snapshot time pill should be removed from the hero"],
   ["首屏集中显示比分、赛程入口和核心赛事数据 可变赛果以 FIFA 官方链接为准", "hero explanatory copy should be removed"],
-  ["赛果以 FIFA 官方链接为准，刷新页面只会读取已发布内容。", "snapshot explanatory copy should be removed"]
+  ["赛果以 FIFA 官方链接为准，刷新页面只会读取已发布内容。", "snapshot explanatory copy should be removed"],
+  ["打开实时赛程", "hero CTA buttons should be removed"],
+  ["打开实时积分榜", "hero standings CTA should be removed"],
+  ["看新闻入口", "hero news CTA should be removed"],
+  ["hero-actions", "hero CTA container should be removed"]
 ];
 
 for (const [snippet, message] of removedReloadSnippets) {
