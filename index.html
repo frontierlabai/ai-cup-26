@@ -428,6 +428,140 @@
       transition: width 300ms ease;
     }
 
+    .hero-insights {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      gap: 8px;
+      margin-top: 8px;
+      min-width: 0;
+    }
+
+    .insight-panel {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+      padding: 9px;
+      min-width: 0;
+    }
+
+    .insight-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+      min-width: 0;
+    }
+
+    .insight-head span {
+      color: var(--lime);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+    }
+
+    .insight-head strong {
+      display: block;
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1;
+    }
+
+    .insight-head small {
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.2;
+      text-align: right;
+    }
+
+    .fixture-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .fixture-card {
+      border: 1px solid rgba(255, 176, 32, 0.22);
+      background: rgba(255, 176, 32, 0.07);
+      border-radius: 8px;
+      padding: 7px;
+      min-width: 0;
+    }
+
+    .fixture-card span,
+    .fixture-card small {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.2;
+    }
+
+    .fixture-card strong {
+      display: block;
+      margin: 5px 0 4px;
+      color: #fff;
+      font-size: 12px;
+      line-height: 1.18;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .standings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .standings-card {
+      border: 1px solid rgba(56, 232, 255, 0.18);
+      background: rgba(56, 232, 255, 0.06);
+      border-radius: 8px;
+      padding: 7px;
+      min-width: 0;
+    }
+
+    .standings-card h3 {
+      margin: 0 0 6px;
+      color: var(--cyan);
+      font-size: 11px;
+      line-height: 1;
+    }
+
+    .standing-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      gap: 7px;
+      align-items: center;
+      padding: 4px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 10px;
+      line-height: 1.1;
+    }
+
+    .standing-row:first-of-type {
+      border-top: 0;
+    }
+
+    .standing-row span {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .standing-row strong {
+      color: #fff;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .standing-row small {
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
     .scoreboard {
       border: 1px solid var(--line);
       background: rgba(2, 12, 30, 0.72);
@@ -1993,8 +2127,8 @@
               <small>三国联合</small>
             </div>
             <div class="metric-chip">
-              <span>赛事周期</span>
-              <strong>39天</strong>
+              <span>赛事周期(天)</span>
+              <strong>39</strong>
               <small>06-11 到 07-19</small>
             </div>
           </div>
@@ -2020,6 +2154,64 @@
               <div class="refresh-fill" id="refreshProgress"></div>
             </div>
           </aside>
+          <div class="hero-insights" aria-label="赛程与积分速览">
+            <div class="insight-panel" role="region" aria-label="今日赛程">
+              <div class="insight-head">
+                <div>
+                  <span>今日赛程</span>
+                  <strong>下一批开球</strong>
+                </div>
+                <small>北京时间 06-14</small>
+              </div>
+              <div class="fixture-grid">
+                <a class="fixture-card" href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">
+                  <span>B 组 · 03:00</span>
+                  <strong>卡塔尔 vs 瑞士</strong>
+                  <small>圣克拉拉</small>
+                </a>
+                <a class="fixture-card" href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">
+                  <span>C 组 · 06:00</span>
+                  <strong>巴西 vs 摩洛哥</strong>
+                  <small>纽约新泽西</small>
+                </a>
+                <a class="fixture-card" href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">
+                  <span>C 组 · 09:00</span>
+                  <strong>海地 vs 苏格兰</strong>
+                  <small>波士顿</small>
+                </a>
+                <a class="fixture-card" href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" target="_blank" rel="noreferrer">
+                  <span>D 组 · 12:00</span>
+                  <strong>澳大利亚 vs 土耳其</strong>
+                  <small>温哥华</small>
+                </a>
+              </div>
+            </div>
+            <div class="insight-panel" role="region" aria-label="积分速览">
+              <div class="insight-head">
+                <div>
+                  <span>积分速览</span>
+                  <strong>已完赛小组</strong>
+                </div>
+                <small>进行中比赛不计入</small>
+              </div>
+              <div class="standings-grid">
+                <div class="standings-card">
+                  <h3>A 组积分</h3>
+                  <div class="standing-row"><span>墨西哥</span><strong>3</strong><small>+2</small></div>
+                  <div class="standing-row"><span>韩国</span><strong>3</strong><small>+1</small></div>
+                  <div class="standing-row"><span>捷克</span><strong>0</strong><small>-1</small></div>
+                  <div class="standing-row"><span>南非</span><strong>0</strong><small>-2</small></div>
+                </div>
+                <div class="standings-card">
+                  <h3>B 组积分</h3>
+                  <div class="standing-row"><span>加拿大</span><strong>1</strong><small>0</small></div>
+                  <div class="standing-row"><span>波黑</span><strong>1</strong><small>0</small></div>
+                  <div class="standing-row"><span>卡塔尔</span><strong>0</strong><small>0</small></div>
+                  <div class="standing-row"><span>瑞士</span><strong>0</strong><small>0</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="hero-side">
