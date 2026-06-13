@@ -47,6 +47,8 @@ const requiredSnippets = [
   ["墨西哥 2-0 南非", "A group should record Mexico 2-0 South Africa"],
   ["韩国 2-1 捷克", "A group should record Korea 2-1 Czechia"],
   ["加拿大 1-1 波黑", "B group should record Canada 1-1 Bosnia and Herzegovina"],
+  ["美国 4-1 巴拉圭", "D group should record USA 4-1 Paraguay"],
+  ["D 组积分", "standings snapshot should show Group D after USA Paraguay"],
   ["赛事周期(天)", "duration metric should put the day unit in the label"],
   ["<strong>39</strong>", "duration metric value should be numeric only"],
   ["快照比分展板", "score panel should not imply live data is fetched"],
