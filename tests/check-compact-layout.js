@@ -49,8 +49,6 @@ const requiredSnippets = [
   ["加拿大 1-1 波黑", "B group should record Canada 1-1 Bosnia and Herzegovina"],
   ["赛事周期(天)", "duration metric should put the day unit in the label"],
   ["<strong>39</strong>", "duration metric value should be numeric only"],
-  ["snapshot-note", "hero should show a compact snapshot note instead of a large refresh card"],
-  ["静态快照", "snapshot note should explain that scores are a static snapshot"],
   ["快照比分展板", "score panel should not imply live data is fetched"],
   ["hero-insights", "hero should use the open space for schedule and standings insight panels"],
   ["今日赛程", "hero insight panel should include upcoming fixtures"],
@@ -98,10 +96,10 @@ if (html.includes("<footer>")) {
   failures.push("footer disclaimer should be removed");
 }
 
-const refreshIndex = html.indexOf('class="snapshot-note"');
+const refreshIndex = html.indexOf('class="hero-insights"');
 const heroSideIndex = html.indexOf('class="hero-side"');
 if (refreshIndex === -1 || heroSideIndex === -1 || refreshIndex > heroSideIndex) {
-  failures.push("snapshot note should be placed in the primary hero summary area, before the score side");
+  failures.push("hero insight panels should be placed in the primary hero summary area, before the score side");
 }
 
 if (html.includes("hero-feed")) {
@@ -113,7 +111,11 @@ const removedReloadSnippets = [
   ["manualRefresh", "manual refresh button should be removed from the compact snapshot note"],
   ["refreshProgress", "refresh progress bar should be removed from the compact snapshot note"],
   ["REFRESH_INTERVAL_MS", "refresh interval logic should be removed when reload UI is removed"],
-  ['class="refresh-card"', "large refresh card should be removed from the hero"]
+  ['class="refresh-card"', "large refresh card should be removed from the hero"],
+  ["snapshot-note", "snapshot note should be removed from the hero"],
+  ["快照时间：2026-06-13 亚洲/上海", "snapshot time pill should be removed from the hero"],
+  ["首屏集中显示比分、赛程入口和核心赛事数据 可变赛果以 FIFA 官方链接为准", "hero explanatory copy should be removed"],
+  ["赛果以 FIFA 官方链接为准，刷新页面只会读取已发布内容。", "snapshot explanatory copy should be removed"]
 ];
 
 for (const [snippet, message] of removedReloadSnippets) {
