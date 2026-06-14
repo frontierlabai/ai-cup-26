@@ -54,6 +54,8 @@ const requiredSnippets = [
   ["比分与赛程", "score panel should mix recent results with upcoming matches"],
   ["待开赛", "score panel should include upcoming matches instead of staying all-final"],
   ["巴西 vs 摩洛哥", "score panel should include the next Brazil Morocco fixture"],
+  ["北京时间 06-14 01:21", "score panel timestamp should use explicit Beijing time instead of CST"],
+  ["开球 06-14 03:00 北京", "upcoming fixture cards should label kickoff time explicitly"],
   ["hero-insights", "hero should use the open space for schedule and standings insight panels"],
   ["今日赛程", "hero insight panel should include upcoming fixtures"],
   ["积分速览", "hero insight panel should include group standings"],
@@ -123,7 +125,8 @@ const removedReloadSnippets = [
   ["打开实时赛程", "hero CTA buttons should be removed"],
   ["打开实时积分榜", "hero standings CTA should be removed"],
   ["看新闻入口", "hero news CTA should be removed"],
-  ["hero-actions", "hero CTA container should be removed"]
+  ["hero-actions", "hero CTA container should be removed"],
+  ["2026-06-14 01:21 CST", "score panel timestamp should avoid ambiguous CST label"]
 ];
 
 for (const [snippet, message] of removedReloadSnippets) {
