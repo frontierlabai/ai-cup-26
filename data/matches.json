@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260614-20260617",
-  "generatedAt": "2026-06-15T02:54:48.933Z",
-  "generatedAtBeijing": "北京时间 06-15 10:54",
+  "generatedAt": "2026-06-15T02:57:36.428Z",
+  "generatedAtBeijing": "北京时间 06-15 10:57",
   "matches": [
     {
       "id": "760421",
@@ -350,7 +350,7 @@
       "statusKind": "upcoming",
       "statusLabel": "待开赛",
       "scoreline": "VS",
-      "title": "英格兰 vs Croatia",
+      "title": "英格兰 vs 克罗地亚",
       "href": "https://www.espn.com/soccer/match/_/gameId/760437/croatia-england",
       "home": {
         "code": "ENG",
@@ -360,7 +360,7 @@
       },
       "away": {
         "code": "CRO",
-        "name": "Croatia",
+        "name": "克罗地亚",
         "score": "0",
         "flag": "assets/flags/CRO.png"
       }
