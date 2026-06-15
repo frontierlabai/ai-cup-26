@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260614-20260617",
-  "generatedAt": "2026-06-15T02:57:36.428Z",
-  "generatedAtBeijing": "北京时间 06-15 10:57",
+  "generatedAt": "2026-06-15T16:12:02.653Z",
+  "generatedAtBeijing": "北京时间 06-16 00:12",
   "matches": [
     {
       "id": "760421",
@@ -107,15 +107,15 @@
       "kickoffBeijing": "06-15 10:00 北京",
       "group": "F 组",
       "venue": "Guadalupe",
-      "statusKind": "live",
-      "statusLabel": "中场",
-      "scoreline": "2-1",
-      "title": "瑞典 2-1 突尼斯",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760424",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "5-1",
+      "title": "瑞典 5-1 突尼斯",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760424/tunisia-sweden",
       "home": {
         "code": "SWE",
         "name": "瑞典",
-        "score": "2",
+        "score": "5",
         "flag": "assets/flags/SWE.png"
       },
       "away": {
@@ -131,11 +131,11 @@
       "kickoffBeijing": "06-16 00:00 北京",
       "group": "H 组",
       "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "西班牙 vs 佛得角",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760428/cape-verde-spain",
+      "statusKind": "live",
+      "statusLabel": "10'",
+      "scoreline": "0-0",
+      "title": "西班牙 0-0 佛得角",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760428",
       "home": {
         "code": "ESP",
         "name": "西班牙",
@@ -416,20 +416,46 @@
   ],
   "live": [
     {
+      "id": "760428",
+      "date": "2026-06-15T16:00Z",
+      "kickoffBeijing": "06-16 00:00 北京",
+      "group": "H 组",
+      "venue": "亚特兰大",
+      "statusKind": "live",
+      "statusLabel": "10'",
+      "scoreline": "0-0",
+      "title": "西班牙 0-0 佛得角",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760428",
+      "home": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "0",
+        "flag": "assets/flags/ESP.png"
+      },
+      "away": {
+        "code": "CPV",
+        "name": "佛得角",
+        "score": "0",
+        "flag": "assets/flags/CPV.png"
+      }
+    }
+  ],
+  "recentCompleted": [
+    {
       "id": "760424",
       "date": "2026-06-15T02:00Z",
       "kickoffBeijing": "06-15 10:00 北京",
       "group": "F 组",
       "venue": "Guadalupe",
-      "statusKind": "live",
-      "statusLabel": "中场",
-      "scoreline": "2-1",
-      "title": "瑞典 2-1 突尼斯",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760424",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "5-1",
+      "title": "瑞典 5-1 突尼斯",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760424/tunisia-sweden",
       "home": {
         "code": "SWE",
         "name": "瑞典",
-        "score": "2",
+        "score": "5",
         "flag": "assets/flags/SWE.png"
       },
       "away": {
@@ -438,9 +464,7 @@
         "score": "1",
         "flag": "assets/flags/TUN.png"
       }
-    }
-  ],
-  "recentCompleted": [
+    },
     {
       "id": "760423",
       "date": "2026-06-14T23:00Z",
@@ -539,30 +563,6 @@
     }
   ],
   "upcoming": [
-    {
-      "id": "760428",
-      "date": "2026-06-15T16:00Z",
-      "kickoffBeijing": "06-16 00:00 北京",
-      "group": "H 组",
-      "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "西班牙 vs 佛得角",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760428/cape-verde-spain",
-      "home": {
-        "code": "ESP",
-        "name": "西班牙",
-        "score": "0",
-        "flag": "assets/flags/ESP.png"
-      },
-      "away": {
-        "code": "CPV",
-        "name": "佛得角",
-        "score": "0",
-        "flag": "assets/flags/CPV.png"
-      }
-    },
     {
       "id": "760426",
       "date": "2026-06-15T19:00Z",
@@ -730,24 +730,72 @@
         "score": "0",
         "flag": "assets/flags/JOR.png"
       }
+    },
+    {
+      "id": "760435",
+      "date": "2026-06-17T17:00Z",
+      "kickoffBeijing": "06-18 01:00 北京",
+      "group": "小组赛",
+      "venue": "休斯顿",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "葡萄牙 vs 民主刚果",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760435/congo-dr-portugal",
+      "home": {
+        "code": "POR",
+        "name": "葡萄牙",
+        "score": "0",
+        "flag": "assets/flags/POR.png"
+      },
+      "away": {
+        "code": "COD",
+        "name": "民主刚果",
+        "score": "0",
+        "flag": "assets/flags/COD.png"
+      }
     }
   ],
   "scoreboard": [
+    {
+      "id": "760428",
+      "date": "2026-06-15T16:00Z",
+      "kickoffBeijing": "06-16 00:00 北京",
+      "group": "H 组",
+      "venue": "亚特兰大",
+      "statusKind": "live",
+      "statusLabel": "10'",
+      "scoreline": "0-0",
+      "title": "西班牙 0-0 佛得角",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760428",
+      "home": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "0",
+        "flag": "assets/flags/ESP.png"
+      },
+      "away": {
+        "code": "CPV",
+        "name": "佛得角",
+        "score": "0",
+        "flag": "assets/flags/CPV.png"
+      }
+    },
     {
       "id": "760424",
       "date": "2026-06-15T02:00Z",
       "kickoffBeijing": "06-15 10:00 北京",
       "group": "F 组",
       "venue": "Guadalupe",
-      "statusKind": "live",
-      "statusLabel": "中场",
-      "scoreline": "2-1",
-      "title": "瑞典 2-1 突尼斯",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760424",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "5-1",
+      "title": "瑞典 5-1 突尼斯",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760424/tunisia-sweden",
       "home": {
         "code": "SWE",
         "name": "瑞典",
-        "score": "2",
+        "score": "5",
         "flag": "assets/flags/SWE.png"
       },
       "away": {
@@ -803,30 +851,6 @@
         "name": "日本",
         "score": "2",
         "flag": "assets/flags/JPN.png"
-      }
-    },
-    {
-      "id": "760422",
-      "date": "2026-06-14T17:00Z",
-      "kickoffBeijing": "06-15 01:00 北京",
-      "group": "E 组",
-      "venue": "休斯顿",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "7-1",
-      "title": "德国 7-1 库拉索",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760422/curacao-germany",
-      "home": {
-        "code": "GER",
-        "name": "德国",
-        "score": "7",
-        "flag": "assets/flags/GER.png"
-      },
-      "away": {
-        "code": "CUW",
-        "name": "库拉索",
-        "score": "1",
-        "flag": "assets/flags/CUW.png"
       }
     }
   ]
