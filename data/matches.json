@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260614-20260617",
-  "generatedAt": "2026-06-15T16:32:36.230Z",
-  "generatedAtBeijing": "北京时间 06-16 00:32",
+  "generatedAt": "2026-06-15T18:57:56.743Z",
+  "generatedAtBeijing": "北京时间 06-16 02:57",
   "matches": [
     {
       "id": "760421",
@@ -131,11 +131,11 @@
       "kickoffBeijing": "06-16 00:00 北京",
       "group": "H 组",
       "venue": "亚特兰大",
-      "statusKind": "live",
-      "statusLabel": "31'",
+      "statusKind": "final",
+      "statusLabel": "完赛",
       "scoreline": "0-0",
       "title": "西班牙 0-0 佛得角",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760428",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760428/cape-verde-spain",
       "home": {
         "code": "ESP",
         "name": "西班牙",
@@ -414,18 +414,19 @@
       }
     }
   ],
-  "live": [
+  "live": [],
+  "recentCompleted": [
     {
       "id": "760428",
       "date": "2026-06-15T16:00Z",
       "kickoffBeijing": "06-16 00:00 北京",
       "group": "H 组",
       "venue": "亚特兰大",
-      "statusKind": "live",
-      "statusLabel": "31'",
+      "statusKind": "final",
+      "statusLabel": "完赛",
       "scoreline": "0-0",
       "title": "西班牙 0-0 佛得角",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760428",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760428/cape-verde-spain",
       "home": {
         "code": "ESP",
         "name": "西班牙",
@@ -438,9 +439,7 @@
         "score": "0",
         "flag": "assets/flags/CPV.png"
       }
-    }
-  ],
-  "recentCompleted": [
+    },
     {
       "id": "760424",
       "date": "2026-06-15T02:00Z",
@@ -931,11 +930,11 @@
       "kickoffBeijing": "06-16 00:00 北京",
       "group": "H 组",
       "venue": "亚特兰大",
-      "statusKind": "live",
-      "statusLabel": "31'",
+      "statusKind": "final",
+      "statusLabel": "完赛",
       "scoreline": "0-0",
       "title": "西班牙 0-0 佛得角",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760428",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760428/cape-verde-spain",
       "home": {
         "code": "ESP",
         "name": "西班牙",
