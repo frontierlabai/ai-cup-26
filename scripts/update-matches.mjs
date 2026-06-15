@@ -122,6 +122,112 @@ function teamName(code, fallback) {
   return TEAM_NAMES[code] || fallback || code;
 }
 
+function createFinalMatch({ id, date, group, venue, homeCode, awayCode, homeScore, awayScore, href }) {
+  const homeName = teamName(homeCode);
+  const awayName = teamName(awayCode);
+  const scoreline = `${homeScore}-${awayScore}`;
+  return {
+    id,
+    date,
+    kickoffBeijing: `${formatBeijing(new Date(date))} 北京`,
+    group,
+    venue,
+    statusKind: "final",
+    statusLabel: "完赛",
+    scoreline,
+    title: `${homeName} ${scoreline} ${awayName}`,
+    href: href || "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+    home: {
+      code: homeCode,
+      name: homeName,
+      score: homeScore,
+      flag: `assets/flags/${homeCode}.png`
+    },
+    away: {
+      code: awayCode,
+      name: awayName,
+      score: awayScore,
+      flag: `assets/flags/${awayCode}.png`
+    }
+  };
+}
+
+const BASELINE_FINALS = [
+  createFinalMatch({
+    id: "400021439",
+    date: "2026-06-11T19:00Z",
+    group: "A 组",
+    venue: "墨西哥城",
+    homeCode: "MEX",
+    awayCode: "RSA",
+    homeScore: "2",
+    awayScore: "0",
+    href: "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021439"
+  }),
+  createFinalMatch({
+    id: "400021441",
+    date: "2026-06-12T02:00Z",
+    group: "A 组",
+    venue: "瓜达拉哈拉",
+    homeCode: "KOR",
+    awayCode: "CZE",
+    homeScore: "2",
+    awayScore: "1",
+    href: "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021441"
+  }),
+  createFinalMatch({
+    id: "400021449",
+    date: "2026-06-12T19:00Z",
+    group: "B 组",
+    venue: "多伦多",
+    homeCode: "CAN",
+    awayCode: "BIH",
+    homeScore: "1",
+    awayScore: "1",
+    href: "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021449"
+  }),
+  createFinalMatch({
+    id: "baseline-usa-par",
+    date: "2026-06-13T01:00Z",
+    group: "D 组",
+    venue: "洛杉矶",
+    homeCode: "USA",
+    awayCode: "PAR",
+    homeScore: "4",
+    awayScore: "1"
+  }),
+  createFinalMatch({
+    id: "baseline-qat-sui",
+    date: "2026-06-13T19:00Z",
+    group: "B 组",
+    venue: "圣克拉拉",
+    homeCode: "QAT",
+    awayCode: "SUI",
+    homeScore: "1",
+    awayScore: "1"
+  }),
+  createFinalMatch({
+    id: "baseline-bra-mar",
+    date: "2026-06-13T22:00Z",
+    group: "C 组",
+    venue: "纽约新泽西",
+    homeCode: "BRA",
+    awayCode: "MAR",
+    homeScore: "1",
+    awayScore: "1"
+  }),
+  createFinalMatch({
+    id: "baseline-hai-sco",
+    date: "2026-06-14T01:00Z",
+    group: "C 组",
+    venue: "波士顿",
+    homeCode: "HAI",
+    awayCode: "SCO",
+    homeScore: "0",
+    awayScore: "1"
+  })
+];
+
 function cityName(venue = {}) {
   const raw = venue.address?.city || venue.fullName || "";
   return CITY_NAMES[raw] || raw.replace(/, USA$/, "") || "待定";
@@ -192,13 +298,24 @@ function sortByDate(matches) {
   return [...matches].sort((left, right) => new Date(left.date) - new Date(right.date));
 }
 
-export function buildSnapshot({ now = new Date(), sourceUrl, events }) {
+export function mergeHistoricalMatches(previousMatches = [], currentMatches = []) {
+  const finalsById = new Map();
+  for (const match of previousMatches) {
+    if (match?.id && match.statusKind === "final") finalsById.set(String(match.id), match);
+  }
+  for (const match of currentMatches) {
+    if (match?.id && match.statusKind === "final") finalsById.set(String(match.id), match);
+  }
+  return [...finalsById.values()].sort((left, right) => new Date(right.date) - new Date(left.date));
+}
+
+export function buildSnapshot({ now = new Date(), sourceUrl, events, previousMatches = [] }) {
   const matches = sortByDate(events.map(normalizeEspnEvent));
   const live = matches.filter((match) => match.statusKind === "live");
-  const recentCompleted = matches
-    .filter((match) => match.statusKind === "final" && new Date(match.date) <= now)
-    .sort((left, right) => new Date(right.date) - new Date(left.date))
-    .slice(0, 12);
+  const recentCompleted = mergeHistoricalMatches(
+    [...BASELINE_FINALS, ...previousMatches],
+    matches.filter((match) => new Date(match.date) <= now)
+  );
   const upcoming = matches
     .filter((match) => match.statusKind === "upcoming" && new Date(match.date) >= now)
     .slice(0, 8);
@@ -235,7 +352,21 @@ async function fetchJson(url) {
   return response.json();
 }
 
+async function readPreviousSnapshot(outputPath) {
+  try {
+    const raw = await fs.readFile(outputPath, "utf8");
+    const snapshot = JSON.parse(raw);
+    return Array.isArray(snapshot.matches) ? snapshot.matches : [];
+  } catch (error) {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  }
+}
+
 export async function updateMatches({ now = new Date(), outputPath = OUTPUT_PATH } = {}) {
+  const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+  const absoluteOutputPath = path.resolve(repoRoot, outputPath);
+  const previousMatches = await readPreviousSnapshot(absoluteOutputPath);
   const dates = dateRangeFor(now);
   const sourceUrl = `${ESPN_SCOREBOARD_URL}?dates=${dates}`;
   const payload = await fetchJson(sourceUrl);
@@ -244,9 +375,7 @@ export async function updateMatches({ now = new Date(), outputPath = OUTPUT_PATH
     throw new Error(`ESPN returned no events for ${dates}`);
   }
 
-  const snapshot = buildSnapshot({ now, sourceUrl, events });
-  const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-  const absoluteOutputPath = path.resolve(repoRoot, outputPath);
+  const snapshot = buildSnapshot({ now, sourceUrl, events, previousMatches });
   await fs.mkdir(path.dirname(absoluteOutputPath), { recursive: true });
   await fs.writeFile(absoluteOutputPath, `${JSON.stringify(snapshot, null, 2)}\n`, "utf8");
   return snapshot;

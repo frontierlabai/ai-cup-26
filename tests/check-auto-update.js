@@ -21,6 +21,9 @@ const snapshot = JSON.parse(fs.readFileSync(dataPath, "utf8"));
 assert.equal(snapshot.schemaVersion, 1, "snapshot schema version should be explicit");
 assert.ok(Array.isArray(snapshot.scoreboard) && snapshot.scoreboard.length > 0, "snapshot should include scoreboard matches");
 assert.ok(Array.isArray(snapshot.upcoming) && snapshot.upcoming.length > 0, "snapshot should include upcoming matches");
+assert.ok(Array.isArray(snapshot.recentCompleted) && snapshot.recentCompleted.length >= 12, "snapshot should preserve accumulated completed history");
+assert.ok(snapshot.recentCompleted.some((match) => match.title === "墨西哥 2-0 南非"), "snapshot should keep the opener in historical results");
+assert.ok(snapshot.recentCompleted.some((match) => match.title === "韩国 2-1 捷克"), "snapshot should keep early Group A results");
 assert.ok(snapshot.generatedAtBeijing.startsWith("北京时间 "), "snapshot should include Beijing generated time");
 for (const match of snapshot.matches) {
   assert.ok(fs.existsSync(path.join(root, match.home.flag)), `home flag should exist for ${match.home.code}`);
@@ -30,3 +33,4 @@ for (const match of snapshot.matches) {
 const index = fs.readFileSync(indexPath, "utf8");
 assert.ok(index.includes("data/matches.json?ts="), "page should load the generated JSON snapshot");
 assert.ok(index.includes("loadMatchSnapshot"), "page should render dynamic match snapshots");
+assert.ok(index.includes("const drawerItems = snapshot.recentCompleted;"), "score drawer should render all completed history");

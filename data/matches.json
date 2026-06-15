@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260614-20260617",
-  "generatedAt": "2026-06-15T16:12:02.653Z",
-  "generatedAtBeijing": "北京时间 06-16 00:12",
+  "generatedAt": "2026-06-15T16:32:36.230Z",
+  "generatedAtBeijing": "北京时间 06-16 00:32",
   "matches": [
     {
       "id": "760421",
@@ -132,7 +132,7 @@
       "group": "H 组",
       "venue": "亚特兰大",
       "statusKind": "live",
-      "statusLabel": "10'",
+      "statusLabel": "31'",
       "scoreline": "0-0",
       "title": "西班牙 0-0 佛得角",
       "href": "https://www.espn.com/soccer/match/_/gameId/760428",
@@ -422,7 +422,7 @@
       "group": "H 组",
       "venue": "亚特兰大",
       "statusKind": "live",
-      "statusLabel": "10'",
+      "statusLabel": "31'",
       "scoreline": "0-0",
       "title": "西班牙 0-0 佛得角",
       "href": "https://www.espn.com/soccer/match/_/gameId/760428",
@@ -559,6 +559,174 @@
         "name": "土耳其",
         "score": "0",
         "flag": "assets/flags/TUR.png"
+      }
+    },
+    {
+      "id": "baseline-hai-sco",
+      "date": "2026-06-14T01:00Z",
+      "kickoffBeijing": "06-14 09:00 北京",
+      "group": "C 组",
+      "venue": "波士顿",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-1",
+      "title": "海地 0-1 苏格兰",
+      "href": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "home": {
+        "code": "HAI",
+        "name": "海地",
+        "score": "0",
+        "flag": "assets/flags/HAI.png"
+      },
+      "away": {
+        "code": "SCO",
+        "name": "苏格兰",
+        "score": "1",
+        "flag": "assets/flags/SCO.png"
+      }
+    },
+    {
+      "id": "baseline-bra-mar",
+      "date": "2026-06-13T22:00Z",
+      "kickoffBeijing": "06-14 06:00 北京",
+      "group": "C 组",
+      "venue": "纽约新泽西",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "1-1",
+      "title": "巴西 1-1 摩洛哥",
+      "href": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "home": {
+        "code": "BRA",
+        "name": "巴西",
+        "score": "1",
+        "flag": "assets/flags/BRA.png"
+      },
+      "away": {
+        "code": "MAR",
+        "name": "摩洛哥",
+        "score": "1",
+        "flag": "assets/flags/MAR.png"
+      }
+    },
+    {
+      "id": "baseline-qat-sui",
+      "date": "2026-06-13T19:00Z",
+      "kickoffBeijing": "06-14 03:00 北京",
+      "group": "B 组",
+      "venue": "圣克拉拉",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "1-1",
+      "title": "卡塔尔 1-1 瑞士",
+      "href": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "home": {
+        "code": "QAT",
+        "name": "卡塔尔",
+        "score": "1",
+        "flag": "assets/flags/QAT.png"
+      },
+      "away": {
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "1",
+        "flag": "assets/flags/SUI.png"
+      }
+    },
+    {
+      "id": "baseline-usa-par",
+      "date": "2026-06-13T01:00Z",
+      "kickoffBeijing": "06-13 09:00 北京",
+      "group": "D 组",
+      "venue": "洛杉矶",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "4-1",
+      "title": "美国 4-1 巴拉圭",
+      "href": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "home": {
+        "code": "USA",
+        "name": "美国",
+        "score": "4",
+        "flag": "assets/flags/USA.png"
+      },
+      "away": {
+        "code": "PAR",
+        "name": "巴拉圭",
+        "score": "1",
+        "flag": "assets/flags/PAR.png"
+      }
+    },
+    {
+      "id": "400021449",
+      "date": "2026-06-12T19:00Z",
+      "kickoffBeijing": "06-13 03:00 北京",
+      "group": "B 组",
+      "venue": "多伦多",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "1-1",
+      "title": "加拿大 1-1 波黑",
+      "href": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021449",
+      "home": {
+        "code": "CAN",
+        "name": "加拿大",
+        "score": "1",
+        "flag": "assets/flags/CAN.png"
+      },
+      "away": {
+        "code": "BIH",
+        "name": "波黑",
+        "score": "1",
+        "flag": "assets/flags/BIH.png"
+      }
+    },
+    {
+      "id": "400021441",
+      "date": "2026-06-12T02:00Z",
+      "kickoffBeijing": "06-12 10:00 北京",
+      "group": "A 组",
+      "venue": "瓜达拉哈拉",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "韩国 2-1 捷克",
+      "href": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021441",
+      "home": {
+        "code": "KOR",
+        "name": "韩国",
+        "score": "2",
+        "flag": "assets/flags/KOR.png"
+      },
+      "away": {
+        "code": "CZE",
+        "name": "捷克",
+        "score": "1",
+        "flag": "assets/flags/CZE.png"
+      }
+    },
+    {
+      "id": "400021439",
+      "date": "2026-06-11T19:00Z",
+      "kickoffBeijing": "06-12 03:00 北京",
+      "group": "A 组",
+      "venue": "墨西哥城",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "墨西哥 2-0 南非",
+      "href": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021439",
+      "home": {
+        "code": "MEX",
+        "name": "墨西哥",
+        "score": "2",
+        "flag": "assets/flags/MEX.png"
+      },
+      "away": {
+        "code": "RSA",
+        "name": "南非",
+        "score": "0",
+        "flag": "assets/flags/RSA.png"
       }
     }
   ],
@@ -764,7 +932,7 @@
       "group": "H 组",
       "venue": "亚特兰大",
       "statusKind": "live",
-      "statusLabel": "10'",
+      "statusLabel": "31'",
       "scoreline": "0-0",
       "title": "西班牙 0-0 佛得角",
       "href": "https://www.espn.com/soccer/match/_/gameId/760428",

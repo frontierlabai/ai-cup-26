@@ -2563,15 +2563,16 @@
 
     function renderHistory(snapshot) {
       const historyListEl = document.querySelector(".history-list");
-      const historyItems = snapshot.recentCompleted.slice(0, 12);
-      const historyHtml = historyItems.map((match) => `
+      const compactItems = snapshot.recentCompleted.slice(0, 12);
+      const drawerItems = snapshot.recentCompleted;
+      const historyHtml = compactItems.map((match) => `
         <a href="${matchHref(match)}" target="_blank" rel="noreferrer">
           <span>${escapeHtml(match.group)}</span>
           <strong>${escapeHtml(match.title)}</strong>
           <small>${escapeHtml(match.statusLabel)}</small>
         </a>
       `).join("");
-      const drawerHtml = historyItems.map((match) => `
+      const drawerHtml = drawerItems.map((match) => `
         <a class="drawer-score" href="${matchHref(match)}" target="_blank" rel="noreferrer">
           <span>${escapeHtml(match.group)} · ${escapeHtml(match.kickoffBeijing.replace(" 北京", ""))}</span>
           <strong>${escapeHtml(match.title)}</strong>

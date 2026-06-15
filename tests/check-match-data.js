@@ -1,7 +1,7 @@
 const assert = require("assert");
 
 async function main() {
-  const { buildSnapshot, normalizeEspnEvent } = await import("../scripts/update-matches.mjs");
+  const { buildSnapshot, mergeHistoricalMatches, normalizeEspnEvent } = await import("../scripts/update-matches.mjs");
   const now = new Date("2026-06-15T00:38:00.000Z");
   const sourceUrl = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260614-20260616";
 
@@ -74,6 +74,43 @@ async function main() {
   assert.equal(snapshot.scoreboard[1].title, "德国 7-1 库拉索");
   assert.equal(snapshot.upcoming[0].title, "西班牙 vs 佛得角");
   assert.equal(snapshot.upcoming[0].kickoffBeijing, "06-16 00:00 北京");
+
+  const mergedHistory = mergeHistoricalMatches(
+    [
+      {
+        id: "760422",
+        date: "2026-06-14T17:00Z",
+        statusKind: "final",
+        title: "德国 7-1 库拉索"
+      },
+      {
+        id: "old-opener",
+        date: "2026-06-11T19:00Z",
+        statusKind: "final",
+        title: "墨西哥 2-0 南非"
+      }
+    ],
+    [
+      {
+        id: "760422",
+        date: "2026-06-14T17:00Z",
+        statusKind: "final",
+        title: "德国 8-1 库拉索"
+      },
+      {
+        id: "future",
+        date: "2026-06-16T19:00Z",
+        statusKind: "upcoming",
+        title: "比利时 vs 埃及"
+      }
+    ]
+  );
+
+  assert.deepEqual(
+    mergedHistory.map((match) => match.title),
+    ["德国 8-1 库拉索", "墨西哥 2-0 南非"],
+    "historical final matches should keep old finals and replace same-id finals with fresh data"
+  );
 }
 
 main().catch((error) => {
