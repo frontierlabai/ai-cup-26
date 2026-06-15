@@ -69,7 +69,7 @@ const requiredSnippets = [
   ["下一轮赛程", "hero insight panel should summarize upcoming fixtures"],
   ["德国 7-1 库拉索", "score history should include Germany Curacao result"],
   ["荷兰 2-2 日本", "score history should include Netherlands Japan result"],
-  ["科特迪瓦 0-0 厄瓜多尔", "score history should include Ivory Coast Ecuador result"],
+  ["科特迪瓦 1-0 厄瓜多尔", "score history should include Ivory Coast Ecuador result"],
   ["积分速览", "hero insight panel should include group standings"],
   ["卡塔尔 1-1 瑞士", "today fixture panel should show Qatar Switzerland result"],
   ["A 组积分", "standings snapshot should show Group A table"],
