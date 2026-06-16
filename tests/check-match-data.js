@@ -71,9 +71,99 @@ async function main() {
   assert.equal(snapshot.generatedAtBeijing, "北京时间 06-15 08:38");
   assert.equal(snapshot.live[0].title, "瑞典 2-1 突尼斯");
   assert.equal(snapshot.scoreboard[0].title, "瑞典 2-1 突尼斯");
-  assert.equal(snapshot.scoreboard[1].title, "德国 7-1 库拉索");
+  assert.ok(snapshot.recentCompleted.some((match) => match.title === "德国 7-1 库拉索"));
   assert.equal(snapshot.upcoming[0].title, "西班牙 vs 佛得角");
   assert.equal(snapshot.upcoming[0].kickoffBeijing, "06-16 00:00 北京");
+
+  const noLiveSnapshot = buildSnapshot({
+    now: new Date("2026-06-16T03:10:00.000Z"),
+    sourceUrl,
+    previousMatches: [],
+    events: [
+      {
+        id: "final-1",
+        date: "2026-06-15T16:00Z",
+        status: { type: { state: "post", completed: true, description: "Full Time", shortDetail: "FT" } },
+        competitions: [{
+          venue: { address: { city: "Atlanta, Georgia" } },
+          competitors: [
+            { homeAway: "home", score: "0", team: { abbreviation: "ESP", displayName: "Spain" } },
+            { homeAway: "away", score: "0", team: { abbreviation: "CPV", displayName: "Cape Verde" } }
+          ]
+        }]
+      },
+      {
+        id: "final-2",
+        date: "2026-06-15T19:00Z",
+        status: { type: { state: "post", completed: true, description: "Full Time", shortDetail: "FT" } },
+        competitions: [{
+          venue: { address: { city: "Seattle, Washington" } },
+          competitors: [
+            { homeAway: "home", score: "1", team: { abbreviation: "BEL", displayName: "Belgium" } },
+            { homeAway: "away", score: "1", team: { abbreviation: "EGY", displayName: "Egypt" } }
+          ]
+        }]
+      },
+      {
+        id: "final-3",
+        date: "2026-06-15T22:00Z",
+        status: { type: { state: "post", completed: true, description: "Full Time", shortDetail: "FT" } },
+        competitions: [{
+          venue: { address: { city: "Miami Gardens, Florida" } },
+          competitors: [
+            { homeAway: "home", score: "1", team: { abbreviation: "KSA", displayName: "Saudi Arabia" } },
+            { homeAway: "away", score: "1", team: { abbreviation: "URU", displayName: "Uruguay" } }
+          ]
+        }]
+      },
+      {
+        id: "final-4",
+        date: "2026-06-16T01:00Z",
+        status: { type: { state: "post", completed: true, description: "Full Time", shortDetail: "FT" } },
+        competitions: [{
+          venue: { address: { city: "Inglewood, California" } },
+          competitors: [
+            { homeAway: "home", score: "2", team: { abbreviation: "IRN", displayName: "Iran" } },
+            { homeAway: "away", score: "2", team: { abbreviation: "NZL", displayName: "New Zealand" } }
+          ]
+        }]
+      },
+      {
+        id: "upcoming-1",
+        date: "2026-06-16T19:00Z",
+        status: { type: { state: "pre", completed: false, description: "Scheduled", shortDetail: "Scheduled" } },
+        competitions: [{
+          venue: { address: { city: "Philadelphia, Pennsylvania" } },
+          competitors: [
+            { homeAway: "home", score: "0", team: { abbreviation: "FRA", displayName: "France" } },
+            { homeAway: "away", score: "0", team: { abbreviation: "SEN", displayName: "Senegal" } }
+          ]
+        }]
+      },
+      {
+        id: "upcoming-2",
+        date: "2026-06-16T22:00Z",
+        status: { type: { state: "pre", completed: false, description: "Scheduled", shortDetail: "Scheduled" } },
+        competitions: [{
+          venue: { address: { city: "Seattle, Washington" } },
+          competitors: [
+            { homeAway: "home", score: "0", team: { abbreviation: "IRQ", displayName: "Iraq" } },
+            { homeAway: "away", score: "0", team: { abbreviation: "NOR", displayName: "Norway" } }
+          ]
+        }]
+      }
+    ]
+  });
+
+  assert.deepEqual(
+    noLiveSnapshot.scoreboard.map((match) => match.statusKind),
+    ["final", "final", "upcoming", "upcoming"],
+    "scoreboard should show latest completed matches plus upcoming matches when no match is live"
+  );
+  assert.ok(
+    noLiveSnapshot.scoreboard.some((match) => match.title === "法国 vs 塞内加尔"),
+    "scoreboard should not hide the next upcoming match behind four completed results"
+  );
 
   const mergedHistory = mergeHistoricalMatches(
     [

@@ -225,6 +225,56 @@ const BASELINE_FINALS = [
     awayCode: "SCO",
     homeScore: "0",
     awayScore: "1"
+  }),
+  createFinalMatch({
+    id: "baseline-aus-tur",
+    date: "2026-06-14T04:00Z",
+    group: "D 组",
+    venue: "温哥华",
+    homeCode: "AUS",
+    awayCode: "TUR",
+    homeScore: "2",
+    awayScore: "0"
+  }),
+  createFinalMatch({
+    id: "baseline-ger-cuw",
+    date: "2026-06-14T17:00Z",
+    group: "E 组",
+    venue: "休斯顿",
+    homeCode: "GER",
+    awayCode: "CUW",
+    homeScore: "7",
+    awayScore: "1"
+  }),
+  createFinalMatch({
+    id: "baseline-ned-jpn",
+    date: "2026-06-14T20:00Z",
+    group: "F 组",
+    venue: "达拉斯",
+    homeCode: "NED",
+    awayCode: "JPN",
+    homeScore: "2",
+    awayScore: "2"
+  }),
+  createFinalMatch({
+    id: "baseline-civ-ecu",
+    date: "2026-06-14T23:00Z",
+    group: "E 组",
+    venue: "费城",
+    homeCode: "CIV",
+    awayCode: "ECU",
+    homeScore: "1",
+    awayScore: "0"
+  }),
+  createFinalMatch({
+    id: "baseline-swe-tun",
+    date: "2026-06-15T02:00Z",
+    group: "F 组",
+    venue: "蒙特雷",
+    homeCode: "SWE",
+    awayCode: "TUN",
+    homeScore: "5",
+    awayScore: "1"
   })
 ];
 
@@ -298,15 +348,41 @@ function sortByDate(matches) {
   return [...matches].sort((left, right) => new Date(left.date) - new Date(right.date));
 }
 
+function matchHistoryKey(match) {
+  return [
+    match?.date || "",
+    match?.home?.code || "",
+    match?.away?.code || ""
+  ].join("|");
+}
+
 export function mergeHistoricalMatches(previousMatches = [], currentMatches = []) {
-  const finalsById = new Map();
+  const finalsByKey = new Map();
   for (const match of previousMatches) {
-    if (match?.id && match.statusKind === "final") finalsById.set(String(match.id), match);
+    if (match?.id && match.statusKind === "final") finalsByKey.set(matchHistoryKey(match), match);
   }
   for (const match of currentMatches) {
-    if (match?.id && match.statusKind === "final") finalsById.set(String(match.id), match);
+    if (match?.id && match.statusKind === "final") finalsByKey.set(matchHistoryKey(match), match);
   }
-  return [...finalsById.values()].sort((left, right) => new Date(right.date) - new Date(left.date));
+  return [...finalsByKey.values()].sort((left, right) => new Date(right.date) - new Date(left.date));
+}
+
+function selectScoreboardMatches({ live, recentCompleted, upcoming }) {
+  if (live.length > 0) {
+    return [
+      ...live,
+      ...recentCompleted,
+      ...upcoming
+    ].slice(0, 4);
+  }
+
+  const completedSlots = upcoming.length > 0 ? 2 : 4;
+  const selectedCompleted = recentCompleted.slice(0, completedSlots);
+  const selectedUpcoming = upcoming.slice(0, 4 - selectedCompleted.length);
+  return [
+    ...selectedCompleted,
+    ...selectedUpcoming
+  ];
 }
 
 export function buildSnapshot({ now = new Date(), sourceUrl, events, previousMatches = [] }) {
@@ -319,11 +395,7 @@ export function buildSnapshot({ now = new Date(), sourceUrl, events, previousMat
   const upcoming = matches
     .filter((match) => match.statusKind === "upcoming" && new Date(match.date) >= now)
     .slice(0, 8);
-  const scoreboard = [
-    ...live,
-    ...recentCompleted,
-    ...upcoming
-  ].slice(0, 4);
+  const scoreboard = selectScoreboardMatches({ live, recentCompleted, upcoming });
 
   return {
     schemaVersion: 1,
@@ -356,7 +428,10 @@ async function readPreviousSnapshot(outputPath) {
   try {
     const raw = await fs.readFile(outputPath, "utf8");
     const snapshot = JSON.parse(raw);
-    return Array.isArray(snapshot.matches) ? snapshot.matches : [];
+    return [
+      ...(Array.isArray(snapshot.matches) ? snapshot.matches : []),
+      ...(Array.isArray(snapshot.recentCompleted) ? snapshot.recentCompleted : [])
+    ];
   } catch (error) {
     if (error.code === "ENOENT") return [];
     throw error;
