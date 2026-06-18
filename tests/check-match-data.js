@@ -25,6 +25,21 @@ async function main() {
   assert.equal(germany.kickoffBeijing, "06-15 01:00 北京");
   assert.equal(germany.venue, "休斯顿");
 
+  const foxborough = normalizeEspnEvent({
+    id: "760430",
+    date: "2026-06-16T22:00Z",
+    status: { type: { state: "pre", completed: false, description: "Scheduled", shortDetail: "Scheduled" } },
+    competitions: [{
+      venue: { address: { city: "Foxborough, Massachusetts" } },
+      competitors: [
+        { homeAway: "home", score: "0", team: { abbreviation: "IRQ", displayName: "Iraq" } },
+        { homeAway: "away", score: "0", team: { abbreviation: "NOR", displayName: "Norway" } }
+      ]
+    }]
+  });
+
+  assert.equal(foxborough.venue, "波士顿");
+
   const snapshot = buildSnapshot({
     now,
     sourceUrl,

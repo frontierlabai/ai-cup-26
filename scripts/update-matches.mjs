@@ -76,6 +76,7 @@ const CITY_NAMES = {
   "Arlington, Texas": "达拉斯",
   "Boston, Massachusetts": "波士顿",
   "East Rutherford, New Jersey": "纽约新泽西",
+  "Foxborough, Massachusetts": "波士顿",
   "Guadalajara": "瓜达拉哈拉",
   "Houston, Texas": "休斯顿",
   "Inglewood, California": "洛杉矶",

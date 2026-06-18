@@ -58,13 +58,13 @@ const requiredSnippets = [
   ["<strong>39</strong>", "duration metric value should be numeric only"],
   ["比分与赛程", "score panel should mix recent results with upcoming matches"],
   ["完赛", "score panel should mark completed matches as final"],
-  ["西班牙 vs 佛得角", "upcoming schedule should include Spain Cape Verde"],
-  ["比利时 vs 埃及", "upcoming schedule should include Belgium Egypt"],
-  ["沙特阿拉伯 vs 乌拉圭", "upcoming schedule should include Saudi Arabia Uruguay"],
-  ["伊朗 vs 新西兰", "upcoming schedule should include Iran New Zealand"],
+  ["捷克 vs 南非", "upcoming schedule should include Czechia South Africa"],
+  ["瑞士 vs 波黑", "upcoming schedule should include Switzerland Bosnia and Herzegovina"],
+  ["加拿大 vs 卡塔尔", "upcoming schedule should include Canada Qatar"],
+  ["墨西哥 vs 韩国", "upcoming schedule should include Mexico Korea"],
   ["巴西 1-1 摩洛哥", "score panel should update Brazil Morocco from upcoming to final"],
-  ["北京时间 06-15 08:38", "score panel timestamp should use current Beijing snapshot time"],
-  ["06-16 00:00 北京", "upcoming fixture cards should use converted Beijing kickoff time"],
+  ["北京时间 06-18 11:13", "score panel timestamp should use current Beijing snapshot time"],
+  ["06-19 00:00 北京", "upcoming fixture cards should use converted Beijing kickoff time"],
   ["hero-insights", "hero should use the open space for schedule and standings insight panels"],
   ["下一轮赛程", "hero insight panel should summarize upcoming fixtures"],
   ["德国 7-1 库拉索", "score history should include Germany Curacao result"],
@@ -122,6 +122,17 @@ if (refreshIndex === -1 || heroSideIndex === -1 || refreshIndex > heroSideIndex)
 
 if (html.includes("hero-feed")) {
   failures.push("old hero history feed should be removed now that history has its own side panel");
+}
+
+const tickerMatch = html.match(/<div class="ticker-track">\s*<span>([\s\S]*?)<\/span>\s*<span>/);
+if (!tickerMatch) {
+  failures.push("ticker should render an initial fallback text");
+} else {
+  const firstTickerSpan = tickerMatch[1];
+  for (const title of ["捷克 vs 南非", "瑞士 vs 波黑"]) {
+    const count = (firstTickerSpan.match(new RegExp(title, "g")) || []).length;
+    if (count !== 1) failures.push(`ticker should list ${title} once in each scrolling copy, found ${count}`);
+  }
 }
 
 const removedReloadSnippets = [
