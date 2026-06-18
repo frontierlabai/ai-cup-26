@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260617-20260620",
-  "generatedAt": "2026-06-18T11:40:37.403Z",
-  "generatedAtBeijing": "北京时间 06-18 19:40",
+  "generatedAt": "2026-06-18T20:01:30.944Z",
+  "generatedAtBeijing": "北京时间 06-19 04:01",
   "matches": [
     {
       "id": "760431",
@@ -131,21 +131,21 @@
       "kickoffBeijing": "06-19 00:00 北京",
       "group": "A 组",
       "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "捷克 vs 南非",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "1-1",
+      "title": "捷克 1-1 南非",
       "href": "https://www.espn.com/soccer/match/_/gameId/760438/south-africa-czechia",
       "home": {
         "code": "CZE",
         "name": "捷克",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/CZE.png"
       },
       "away": {
         "code": "RSA",
         "name": "南非",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/RSA.png"
       }
     },
@@ -155,11 +155,11 @@
       "kickoffBeijing": "06-19 03:00 北京",
       "group": "B 组",
       "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "瑞士 vs 波黑",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760439/bosnia-herzegovina-switzerland",
+      "statusKind": "live",
+      "statusLabel": "中场",
+      "scoreline": "0-0",
+      "title": "瑞士 0-0 波黑",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760439",
       "home": {
         "code": "SUI",
         "name": "瑞士",
@@ -390,8 +390,57 @@
       }
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "760439",
+      "date": "2026-06-18T19:00Z",
+      "kickoffBeijing": "06-19 03:00 北京",
+      "group": "B 组",
+      "venue": "洛杉矶",
+      "statusKind": "live",
+      "statusLabel": "中场",
+      "scoreline": "0-0",
+      "title": "瑞士 0-0 波黑",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760439",
+      "home": {
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "0",
+        "flag": "assets/flags/SUI.png"
+      },
+      "away": {
+        "code": "BIH",
+        "name": "波黑",
+        "score": "0",
+        "flag": "assets/flags/BIH.png"
+      }
+    }
+  ],
   "recentCompleted": [
+    {
+      "id": "760438",
+      "date": "2026-06-18T16:00Z",
+      "kickoffBeijing": "06-19 00:00 北京",
+      "group": "A 组",
+      "venue": "亚特兰大",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "1-1",
+      "title": "捷克 1-1 南非",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760438/south-africa-czechia",
+      "home": {
+        "code": "CZE",
+        "name": "捷克",
+        "score": "1",
+        "flag": "assets/flags/CZE.png"
+      },
+      "away": {
+        "code": "RSA",
+        "name": "南非",
+        "score": "1",
+        "flag": "assets/flags/RSA.png"
+      }
+    },
     {
       "id": "760436",
       "date": "2026-06-18T02:00Z",
@@ -971,54 +1020,6 @@
   ],
   "upcoming": [
     {
-      "id": "760438",
-      "date": "2026-06-18T16:00Z",
-      "kickoffBeijing": "06-19 00:00 北京",
-      "group": "A 组",
-      "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "捷克 vs 南非",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760438/south-africa-czechia",
-      "home": {
-        "code": "CZE",
-        "name": "捷克",
-        "score": "0",
-        "flag": "assets/flags/CZE.png"
-      },
-      "away": {
-        "code": "RSA",
-        "name": "南非",
-        "score": "0",
-        "flag": "assets/flags/RSA.png"
-      }
-    },
-    {
-      "id": "760439",
-      "date": "2026-06-18T19:00Z",
-      "kickoffBeijing": "06-19 03:00 北京",
-      "group": "B 组",
-      "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "瑞士 vs 波黑",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760439/bosnia-herzegovina-switzerland",
-      "home": {
-        "code": "SUI",
-        "name": "瑞士",
-        "score": "0",
-        "flag": "assets/flags/SUI.png"
-      },
-      "away": {
-        "code": "BIH",
-        "name": "波黑",
-        "score": "0",
-        "flag": "assets/flags/BIH.png"
-      }
-    },
-    {
       "id": "760440",
       "date": "2026-06-18T22:00Z",
       "kickoffBeijing": "06-19 06:00 北京",
@@ -1161,9 +1162,105 @@
         "score": "0",
         "flag": "assets/flags/PAR.png"
       }
+    },
+    {
+      "id": "760447",
+      "date": "2026-06-20T17:00Z",
+      "kickoffBeijing": "06-21 01:00 北京",
+      "group": "F 组",
+      "venue": "休斯顿",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "荷兰 vs 瑞典",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760447/sweden-netherlands",
+      "home": {
+        "code": "NED",
+        "name": "荷兰",
+        "score": "0",
+        "flag": "assets/flags/NED.png"
+      },
+      "away": {
+        "code": "SWE",
+        "name": "瑞典",
+        "score": "0",
+        "flag": "assets/flags/SWE.png"
+      }
+    },
+    {
+      "id": "760448",
+      "date": "2026-06-20T20:00Z",
+      "kickoffBeijing": "06-21 04:00 北京",
+      "group": "E 组",
+      "venue": "多伦多",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "德国 vs 科特迪瓦",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760448/ivory-coast-germany",
+      "home": {
+        "code": "GER",
+        "name": "德国",
+        "score": "0",
+        "flag": "assets/flags/GER.png"
+      },
+      "away": {
+        "code": "CIV",
+        "name": "科特迪瓦",
+        "score": "0",
+        "flag": "assets/flags/CIV.png"
+      }
     }
   ],
   "scoreboard": [
+    {
+      "id": "760439",
+      "date": "2026-06-18T19:00Z",
+      "kickoffBeijing": "06-19 03:00 北京",
+      "group": "B 组",
+      "venue": "洛杉矶",
+      "statusKind": "live",
+      "statusLabel": "中场",
+      "scoreline": "0-0",
+      "title": "瑞士 0-0 波黑",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760439",
+      "home": {
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "0",
+        "flag": "assets/flags/SUI.png"
+      },
+      "away": {
+        "code": "BIH",
+        "name": "波黑",
+        "score": "0",
+        "flag": "assets/flags/BIH.png"
+      }
+    },
+    {
+      "id": "760438",
+      "date": "2026-06-18T16:00Z",
+      "kickoffBeijing": "06-19 00:00 北京",
+      "group": "A 组",
+      "venue": "亚特兰大",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "1-1",
+      "title": "捷克 1-1 南非",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760438/south-africa-czechia",
+      "home": {
+        "code": "CZE",
+        "name": "捷克",
+        "score": "1",
+        "flag": "assets/flags/CZE.png"
+      },
+      "away": {
+        "code": "RSA",
+        "name": "南非",
+        "score": "1",
+        "flag": "assets/flags/RSA.png"
+      }
+    },
     {
       "id": "760436",
       "date": "2026-06-18T02:00Z",
@@ -1210,54 +1307,6 @@
         "name": "巴拿马",
         "score": "0",
         "flag": "assets/flags/PAN.png"
-      }
-    },
-    {
-      "id": "760438",
-      "date": "2026-06-18T16:00Z",
-      "kickoffBeijing": "06-19 00:00 北京",
-      "group": "A 组",
-      "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "捷克 vs 南非",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760438/south-africa-czechia",
-      "home": {
-        "code": "CZE",
-        "name": "捷克",
-        "score": "0",
-        "flag": "assets/flags/CZE.png"
-      },
-      "away": {
-        "code": "RSA",
-        "name": "南非",
-        "score": "0",
-        "flag": "assets/flags/RSA.png"
-      }
-    },
-    {
-      "id": "760439",
-      "date": "2026-06-18T19:00Z",
-      "kickoffBeijing": "06-19 03:00 北京",
-      "group": "B 组",
-      "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "瑞士 vs 波黑",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760439/bosnia-herzegovina-switzerland",
-      "home": {
-        "code": "SUI",
-        "name": "瑞士",
-        "score": "0",
-        "flag": "assets/flags/SUI.png"
-      },
-      "away": {
-        "code": "BIH",
-        "name": "波黑",
-        "score": "0",
-        "flag": "assets/flags/BIH.png"
       }
     }
   ]
