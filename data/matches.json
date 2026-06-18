@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260617-20260620",
-  "generatedAt": "2026-06-18T03:13:14.761Z",
-  "generatedAtBeijing": "北京时间 06-18 11:13",
+  "generatedAt": "2026-06-18T11:40:37.403Z",
+  "generatedAtBeijing": "北京时间 06-18 19:40",
   "matches": [
     {
       "id": "760431",
@@ -107,21 +107,21 @@
       "kickoffBeijing": "06-18 10:00 北京",
       "group": "K 组",
       "venue": "墨西哥城",
-      "statusKind": "live",
-      "statusLabel": "52'",
-      "scoreline": "0-1",
-      "title": "乌兹别克斯坦 0-1 哥伦比亚",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760436",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "1-3",
+      "title": "乌兹别克斯坦 1-3 哥伦比亚",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760436/colombia-uzbekistan",
       "home": {
         "code": "UZB",
         "name": "乌兹别克斯坦",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/UZB.png"
       },
       "away": {
         "code": "COL",
         "name": "哥伦比亚",
-        "score": "1",
+        "score": "3",
         "flag": "assets/flags/COL.png"
       }
     },
@@ -390,33 +390,32 @@
       }
     }
   ],
-  "live": [
+  "live": [],
+  "recentCompleted": [
     {
       "id": "760436",
       "date": "2026-06-18T02:00Z",
       "kickoffBeijing": "06-18 10:00 北京",
       "group": "K 组",
       "venue": "墨西哥城",
-      "statusKind": "live",
-      "statusLabel": "52'",
-      "scoreline": "0-1",
-      "title": "乌兹别克斯坦 0-1 哥伦比亚",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760436",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "1-3",
+      "title": "乌兹别克斯坦 1-3 哥伦比亚",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760436/colombia-uzbekistan",
       "home": {
         "code": "UZB",
         "name": "乌兹别克斯坦",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/UZB.png"
       },
       "away": {
         "code": "COL",
         "name": "哥伦比亚",
-        "score": "1",
+        "score": "3",
         "flag": "assets/flags/COL.png"
       }
-    }
-  ],
-  "recentCompleted": [
+    },
     {
       "id": "760434",
       "date": "2026-06-17T23:00Z",
@@ -1171,21 +1170,21 @@
       "kickoffBeijing": "06-18 10:00 北京",
       "group": "K 组",
       "venue": "墨西哥城",
-      "statusKind": "live",
-      "statusLabel": "52'",
-      "scoreline": "0-1",
-      "title": "乌兹别克斯坦 0-1 哥伦比亚",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760436",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "1-3",
+      "title": "乌兹别克斯坦 1-3 哥伦比亚",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760436/colombia-uzbekistan",
       "home": {
         "code": "UZB",
         "name": "乌兹别克斯坦",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/UZB.png"
       },
       "away": {
         "code": "COL",
         "name": "哥伦比亚",
-        "score": "1",
+        "score": "3",
         "flag": "assets/flags/COL.png"
       }
     },
@@ -1214,51 +1213,51 @@
       }
     },
     {
-      "id": "760437",
-      "date": "2026-06-17T20:00Z",
-      "kickoffBeijing": "06-18 04:00 北京",
-      "group": "L 组",
-      "venue": "达拉斯",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "4-2",
-      "title": "英格兰 4-2 克罗地亚",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760437/croatia-england",
+      "id": "760438",
+      "date": "2026-06-18T16:00Z",
+      "kickoffBeijing": "06-19 00:00 北京",
+      "group": "A 组",
+      "venue": "亚特兰大",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "捷克 vs 南非",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760438/south-africa-czechia",
       "home": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "4",
-        "flag": "assets/flags/ENG.png"
+        "code": "CZE",
+        "name": "捷克",
+        "score": "0",
+        "flag": "assets/flags/CZE.png"
       },
       "away": {
-        "code": "CRO",
-        "name": "克罗地亚",
-        "score": "2",
-        "flag": "assets/flags/CRO.png"
+        "code": "RSA",
+        "name": "南非",
+        "score": "0",
+        "flag": "assets/flags/RSA.png"
       }
     },
     {
-      "id": "760435",
-      "date": "2026-06-17T17:00Z",
-      "kickoffBeijing": "06-18 01:00 北京",
-      "group": "小组赛",
-      "venue": "休斯顿",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "1-1",
-      "title": "葡萄牙 1-1 民主刚果",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760435/congo-dr-portugal",
+      "id": "760439",
+      "date": "2026-06-18T19:00Z",
+      "kickoffBeijing": "06-19 03:00 北京",
+      "group": "B 组",
+      "venue": "洛杉矶",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "瑞士 vs 波黑",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760439/bosnia-herzegovina-switzerland",
       "home": {
-        "code": "POR",
-        "name": "葡萄牙",
-        "score": "1",
-        "flag": "assets/flags/POR.png"
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "0",
+        "flag": "assets/flags/SUI.png"
       },
       "away": {
-        "code": "COD",
-        "name": "民主刚果",
-        "score": "1",
-        "flag": "assets/flags/COD.png"
+        "code": "BIH",
+        "name": "波黑",
+        "score": "0",
+        "flag": "assets/flags/BIH.png"
       }
     }
   ]
