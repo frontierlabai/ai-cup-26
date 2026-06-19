@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260618-20260621",
-  "generatedAt": "2026-06-19T18:25:40.626Z",
-  "generatedAtBeijing": "北京时间 06-20 02:25",
+  "generatedAt": "2026-06-19T22:13:20.980Z",
+  "generatedAtBeijing": "北京时间 06-20 06:13",
   "matches": [
     {
       "id": "760438",
@@ -107,15 +107,15 @@
       "kickoffBeijing": "06-20 03:00 北京",
       "group": "D 组",
       "venue": "西雅图",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "美国 vs 澳大利亚",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "美国 2-0 澳大利亚",
       "href": "https://www.espn.com/soccer/match/_/gameId/760442/australia-united-states",
       "home": {
         "code": "USA",
         "name": "美国",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/USA.png"
       },
       "away": {
@@ -131,11 +131,11 @@
       "kickoffBeijing": "06-20 06:00 北京",
       "group": "C 组",
       "venue": "波士顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "苏格兰 vs 摩洛哥",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760445/morocco-scotland",
+      "statusKind": "live",
+      "statusLabel": "12'",
+      "scoreline": "0-1",
+      "title": "苏格兰 0-1 摩洛哥",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760445",
       "home": {
         "code": "SCO",
         "name": "苏格兰",
@@ -145,7 +145,7 @@
       "away": {
         "code": "MAR",
         "name": "摩洛哥",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/MAR.png"
       }
     },
@@ -390,8 +390,57 @@
       }
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "760445",
+      "date": "2026-06-19T22:00Z",
+      "kickoffBeijing": "06-20 06:00 北京",
+      "group": "C 组",
+      "venue": "波士顿",
+      "statusKind": "live",
+      "statusLabel": "12'",
+      "scoreline": "0-1",
+      "title": "苏格兰 0-1 摩洛哥",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760445",
+      "home": {
+        "code": "SCO",
+        "name": "苏格兰",
+        "score": "0",
+        "flag": "assets/flags/SCO.png"
+      },
+      "away": {
+        "code": "MAR",
+        "name": "摩洛哥",
+        "score": "1",
+        "flag": "assets/flags/MAR.png"
+      }
+    }
+  ],
   "recentCompleted": [
+    {
+      "id": "760442",
+      "date": "2026-06-19T19:00Z",
+      "kickoffBeijing": "06-20 03:00 北京",
+      "group": "D 组",
+      "venue": "西雅图",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "美国 2-0 澳大利亚",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760442/australia-united-states",
+      "home": {
+        "code": "USA",
+        "name": "美国",
+        "score": "2",
+        "flag": "assets/flags/USA.png"
+      },
+      "away": {
+        "code": "AUS",
+        "name": "澳大利亚",
+        "score": "0",
+        "flag": "assets/flags/AUS.png"
+      }
+    },
     {
       "id": "760441",
       "date": "2026-06-19T01:00Z",
@@ -1067,54 +1116,6 @@
   ],
   "upcoming": [
     {
-      "id": "760442",
-      "date": "2026-06-19T19:00Z",
-      "kickoffBeijing": "06-20 03:00 北京",
-      "group": "D 组",
-      "venue": "西雅图",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "美国 vs 澳大利亚",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760442/australia-united-states",
-      "home": {
-        "code": "USA",
-        "name": "美国",
-        "score": "0",
-        "flag": "assets/flags/USA.png"
-      },
-      "away": {
-        "code": "AUS",
-        "name": "澳大利亚",
-        "score": "0",
-        "flag": "assets/flags/AUS.png"
-      }
-    },
-    {
-      "id": "760445",
-      "date": "2026-06-19T22:00Z",
-      "kickoffBeijing": "06-20 06:00 北京",
-      "group": "C 组",
-      "venue": "波士顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "苏格兰 vs 摩洛哥",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760445/morocco-scotland",
-      "home": {
-        "code": "SCO",
-        "name": "苏格兰",
-        "score": "0",
-        "flag": "assets/flags/SCO.png"
-      },
-      "away": {
-        "code": "MAR",
-        "name": "摩洛哥",
-        "score": "0",
-        "flag": "assets/flags/MAR.png"
-      }
-    },
-    {
       "id": "760444",
       "date": "2026-06-20T00:30Z",
       "kickoffBeijing": "06-20 08:30 北京",
@@ -1257,9 +1258,105 @@
         "score": "0",
         "flag": "assets/flags/JPN.png"
       }
+    },
+    {
+      "id": "760453",
+      "date": "2026-06-21T16:00Z",
+      "kickoffBeijing": "06-22 00:00 北京",
+      "group": "H 组",
+      "venue": "亚特兰大",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "西班牙 vs 沙特阿拉伯",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760453/saudi-arabia-spain",
+      "home": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "0",
+        "flag": "assets/flags/ESP.png"
+      },
+      "away": {
+        "code": "KSA",
+        "name": "沙特阿拉伯",
+        "score": "0",
+        "flag": "assets/flags/KSA.png"
+      }
+    },
+    {
+      "id": "760451",
+      "date": "2026-06-21T19:00Z",
+      "kickoffBeijing": "06-22 03:00 北京",
+      "group": "G 组",
+      "venue": "洛杉矶",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "比利时 vs 伊朗",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760451/iran-belgium",
+      "home": {
+        "code": "BEL",
+        "name": "比利时",
+        "score": "0",
+        "flag": "assets/flags/BEL.png"
+      },
+      "away": {
+        "code": "IRN",
+        "name": "伊朗",
+        "score": "0",
+        "flag": "assets/flags/IRN.png"
+      }
     }
   ],
   "scoreboard": [
+    {
+      "id": "760445",
+      "date": "2026-06-19T22:00Z",
+      "kickoffBeijing": "06-20 06:00 北京",
+      "group": "C 组",
+      "venue": "波士顿",
+      "statusKind": "live",
+      "statusLabel": "12'",
+      "scoreline": "0-1",
+      "title": "苏格兰 0-1 摩洛哥",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760445",
+      "home": {
+        "code": "SCO",
+        "name": "苏格兰",
+        "score": "0",
+        "flag": "assets/flags/SCO.png"
+      },
+      "away": {
+        "code": "MAR",
+        "name": "摩洛哥",
+        "score": "1",
+        "flag": "assets/flags/MAR.png"
+      }
+    },
+    {
+      "id": "760442",
+      "date": "2026-06-19T19:00Z",
+      "kickoffBeijing": "06-20 03:00 北京",
+      "group": "D 组",
+      "venue": "西雅图",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "美国 2-0 澳大利亚",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760442/australia-united-states",
+      "home": {
+        "code": "USA",
+        "name": "美国",
+        "score": "2",
+        "flag": "assets/flags/USA.png"
+      },
+      "away": {
+        "code": "AUS",
+        "name": "澳大利亚",
+        "score": "0",
+        "flag": "assets/flags/AUS.png"
+      }
+    },
     {
       "id": "760441",
       "date": "2026-06-19T01:00Z",
@@ -1306,54 +1403,6 @@
         "name": "卡塔尔",
         "score": "0",
         "flag": "assets/flags/QAT.png"
-      }
-    },
-    {
-      "id": "760442",
-      "date": "2026-06-19T19:00Z",
-      "kickoffBeijing": "06-20 03:00 北京",
-      "group": "D 组",
-      "venue": "西雅图",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "美国 vs 澳大利亚",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760442/australia-united-states",
-      "home": {
-        "code": "USA",
-        "name": "美国",
-        "score": "0",
-        "flag": "assets/flags/USA.png"
-      },
-      "away": {
-        "code": "AUS",
-        "name": "澳大利亚",
-        "score": "0",
-        "flag": "assets/flags/AUS.png"
-      }
-    },
-    {
-      "id": "760445",
-      "date": "2026-06-19T22:00Z",
-      "kickoffBeijing": "06-20 06:00 北京",
-      "group": "C 组",
-      "venue": "波士顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "苏格兰 vs 摩洛哥",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760445/morocco-scotland",
-      "home": {
-        "code": "SCO",
-        "name": "苏格兰",
-        "score": "0",
-        "flag": "assets/flags/SCO.png"
-      },
-      "away": {
-        "code": "MAR",
-        "name": "摩洛哥",
-        "score": "0",
-        "flag": "assets/flags/MAR.png"
       }
     }
   ]
