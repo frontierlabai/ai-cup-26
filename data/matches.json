@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260620-20260623",
-  "generatedAt": "2026-06-21T16:56:29.831Z",
-  "generatedAtBeijing": "北京时间 06-22 00:56",
+  "generatedAt": "2026-06-21T22:00:26.882Z",
+  "generatedAtBeijing": "北京时间 06-22 06:00",
   "matches": [
     {
       "id": "760447",
@@ -107,15 +107,15 @@
       "kickoffBeijing": "06-22 00:00 北京",
       "group": "H 组",
       "venue": "亚特兰大",
-      "statusKind": "live",
-      "statusLabel": "中场",
-      "scoreline": "3-0",
-      "title": "西班牙 3-0 沙特阿拉伯",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760453",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "4-0",
+      "title": "西班牙 4-0 沙特阿拉伯",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760453/saudi-arabia-spain",
       "home": {
         "code": "ESP",
         "name": "西班牙",
-        "score": "3",
+        "score": "4",
         "flag": "assets/flags/ESP.png"
       },
       "away": {
@@ -131,10 +131,10 @@
       "kickoffBeijing": "06-22 03:00 北京",
       "group": "G 组",
       "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "比利时 vs 伊朗",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-0",
+      "title": "比利时 0-0 伊朗",
       "href": "https://www.espn.com/soccer/match/_/gameId/760451/iran-belgium",
       "home": {
         "code": "BEL",
@@ -390,22 +390,47 @@
       }
     }
   ],
-  "live": [
+  "live": [],
+  "recentCompleted": [
+    {
+      "id": "760451",
+      "date": "2026-06-21T19:00Z",
+      "kickoffBeijing": "06-22 03:00 北京",
+      "group": "G 组",
+      "venue": "洛杉矶",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-0",
+      "title": "比利时 0-0 伊朗",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760451/iran-belgium",
+      "home": {
+        "code": "BEL",
+        "name": "比利时",
+        "score": "0",
+        "flag": "assets/flags/BEL.png"
+      },
+      "away": {
+        "code": "IRN",
+        "name": "伊朗",
+        "score": "0",
+        "flag": "assets/flags/IRN.png"
+      }
+    },
     {
       "id": "760453",
       "date": "2026-06-21T16:00Z",
       "kickoffBeijing": "06-22 00:00 北京",
       "group": "H 组",
       "venue": "亚特兰大",
-      "statusKind": "live",
-      "statusLabel": "中场",
-      "scoreline": "3-0",
-      "title": "西班牙 3-0 沙特阿拉伯",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760453",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "4-0",
+      "title": "西班牙 4-0 沙特阿拉伯",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760453/saudi-arabia-spain",
       "home": {
         "code": "ESP",
         "name": "西班牙",
-        "score": "3",
+        "score": "4",
         "flag": "assets/flags/ESP.png"
       },
       "away": {
@@ -414,9 +439,7 @@
         "score": "0",
         "flag": "assets/flags/KSA.png"
       }
-    }
-  ],
-  "recentCompleted": [
+    },
     {
       "id": "760449",
       "date": "2026-06-21T04:00Z",
@@ -1284,54 +1307,6 @@
   ],
   "upcoming": [
     {
-      "id": "760451",
-      "date": "2026-06-21T19:00Z",
-      "kickoffBeijing": "06-22 03:00 北京",
-      "group": "G 组",
-      "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "比利时 vs 伊朗",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760451/iran-belgium",
-      "home": {
-        "code": "BEL",
-        "name": "比利时",
-        "score": "0",
-        "flag": "assets/flags/BEL.png"
-      },
-      "away": {
-        "code": "IRN",
-        "name": "伊朗",
-        "score": "0",
-        "flag": "assets/flags/IRN.png"
-      }
-    },
-    {
-      "id": "760450",
-      "date": "2026-06-21T22:00Z",
-      "kickoffBeijing": "06-22 06:00 北京",
-      "group": "H 组",
-      "venue": "迈阿密",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "乌拉圭 vs 佛得角",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760450/cape-verde-uruguay",
-      "home": {
-        "code": "URU",
-        "name": "乌拉圭",
-        "score": "0",
-        "flag": "assets/flags/URU.png"
-      },
-      "away": {
-        "code": "CPV",
-        "name": "佛得角",
-        "score": "0",
-        "flag": "assets/flags/CPV.png"
-      }
-    },
-    {
       "id": "760452",
       "date": "2026-06-22T01:00Z",
       "kickoffBeijing": "06-22 09:00 北京",
@@ -1474,24 +1449,96 @@
         "score": "0",
         "flag": "assets/flags/UZB.png"
       }
+    },
+    {
+      "id": "760458",
+      "date": "2026-06-23T20:00Z",
+      "kickoffBeijing": "06-24 04:00 北京",
+      "group": "小组赛",
+      "venue": "波士顿",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "英格兰 vs 加纳",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760458/ghana-england",
+      "home": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "0",
+        "flag": "assets/flags/ENG.png"
+      },
+      "away": {
+        "code": "GHA",
+        "name": "加纳",
+        "score": "0",
+        "flag": "assets/flags/GHA.png"
+      }
+    },
+    {
+      "id": "760460",
+      "date": "2026-06-23T23:00Z",
+      "kickoffBeijing": "06-24 07:00 北京",
+      "group": "L 组",
+      "venue": "多伦多",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "巴拿马 vs 克罗地亚",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760460/croatia-panama",
+      "home": {
+        "code": "PAN",
+        "name": "巴拿马",
+        "score": "0",
+        "flag": "assets/flags/PAN.png"
+      },
+      "away": {
+        "code": "CRO",
+        "name": "克罗地亚",
+        "score": "0",
+        "flag": "assets/flags/CRO.png"
+      }
     }
   ],
   "scoreboard": [
+    {
+      "id": "760451",
+      "date": "2026-06-21T19:00Z",
+      "kickoffBeijing": "06-22 03:00 北京",
+      "group": "G 组",
+      "venue": "洛杉矶",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-0",
+      "title": "比利时 0-0 伊朗",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760451/iran-belgium",
+      "home": {
+        "code": "BEL",
+        "name": "比利时",
+        "score": "0",
+        "flag": "assets/flags/BEL.png"
+      },
+      "away": {
+        "code": "IRN",
+        "name": "伊朗",
+        "score": "0",
+        "flag": "assets/flags/IRN.png"
+      }
+    },
     {
       "id": "760453",
       "date": "2026-06-21T16:00Z",
       "kickoffBeijing": "06-22 00:00 北京",
       "group": "H 组",
       "venue": "亚特兰大",
-      "statusKind": "live",
-      "statusLabel": "中场",
-      "scoreline": "3-0",
-      "title": "西班牙 3-0 沙特阿拉伯",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760453",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "4-0",
+      "title": "西班牙 4-0 沙特阿拉伯",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760453/saudi-arabia-spain",
       "home": {
         "code": "ESP",
         "name": "西班牙",
-        "score": "3",
+        "score": "4",
         "flag": "assets/flags/ESP.png"
       },
       "away": {
@@ -1502,75 +1549,51 @@
       }
     },
     {
-      "id": "760449",
-      "date": "2026-06-21T04:00Z",
-      "kickoffBeijing": "06-21 12:00 北京",
-      "group": "F 组",
-      "venue": "Guadalupe",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "0-4",
-      "title": "突尼斯 0-4 日本",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760449/japan-tunisia",
+      "id": "760452",
+      "date": "2026-06-22T01:00Z",
+      "kickoffBeijing": "06-22 09:00 北京",
+      "group": "G 组",
+      "venue": "温哥华",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "新西兰 vs 埃及",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760452/egypt-new-zealand",
       "home": {
-        "code": "TUN",
-        "name": "突尼斯",
+        "code": "NZL",
+        "name": "新西兰",
         "score": "0",
-        "flag": "assets/flags/TUN.png"
+        "flag": "assets/flags/NZL.png"
       },
       "away": {
-        "code": "JPN",
-        "name": "日本",
-        "score": "4",
-        "flag": "assets/flags/JPN.png"
+        "code": "EGY",
+        "name": "埃及",
+        "score": "0",
+        "flag": "assets/flags/EGY.png"
       }
     },
     {
-      "id": "760446",
-      "date": "2026-06-21T00:00Z",
-      "kickoffBeijing": "06-21 08:00 北京",
-      "group": "E 组",
-      "venue": "堪萨斯城",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "0-0",
-      "title": "厄瓜多尔 0-0 库拉索",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760446/curacao-ecuador",
+      "id": "760456",
+      "date": "2026-06-22T17:00Z",
+      "kickoffBeijing": "06-23 01:00 北京",
+      "group": "J 组",
+      "venue": "达拉斯",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "阿根廷 vs 奥地利",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760456/austria-argentina",
       "home": {
-        "code": "ECU",
-        "name": "厄瓜多尔",
+        "code": "ARG",
+        "name": "阿根廷",
         "score": "0",
-        "flag": "assets/flags/ECU.png"
+        "flag": "assets/flags/ARG.png"
       },
       "away": {
-        "code": "CUW",
-        "name": "库拉索",
+        "code": "AUT",
+        "name": "奥地利",
         "score": "0",
-        "flag": "assets/flags/CUW.png"
-      }
-    },
-    {
-      "id": "760448",
-      "date": "2026-06-20T20:00Z",
-      "kickoffBeijing": "06-21 04:00 北京",
-      "group": "E 组",
-      "venue": "多伦多",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "2-1",
-      "title": "德国 2-1 科特迪瓦",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760448/ivory-coast-germany",
-      "home": {
-        "code": "GER",
-        "name": "德国",
-        "score": "2",
-        "flag": "assets/flags/GER.png"
-      },
-      "away": {
-        "code": "CIV",
-        "name": "科特迪瓦",
-        "score": "1",
-        "flag": "assets/flags/CIV.png"
+        "flag": "assets/flags/AUT.png"
       }
     }
   ]
