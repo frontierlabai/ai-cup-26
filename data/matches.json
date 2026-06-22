@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260621-20260624",
-  "generatedAt": "2026-06-22T16:16:07.434Z",
-  "generatedAtBeijing": "北京时间 06-23 00:16",
+  "generatedAt": "2026-06-22T22:27:53.000Z",
+  "generatedAtBeijing": "北京时间 06-23 06:27",
   "matches": [
     {
       "id": "760449",
@@ -131,15 +131,15 @@
       "kickoffBeijing": "06-23 01:00 北京",
       "group": "J 组",
       "venue": "达拉斯",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "阿根廷 vs 奥地利",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "阿根廷 2-0 奥地利",
       "href": "https://www.espn.com/soccer/match/_/gameId/760456/austria-argentina",
       "home": {
         "code": "ARG",
         "name": "阿根廷",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/ARG.png"
       },
       "away": {
@@ -155,15 +155,15 @@
       "kickoffBeijing": "06-23 05:00 北京",
       "group": "I 组",
       "venue": "费城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "法国 vs 伊拉克",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760457/iraq-france",
+      "statusKind": "live",
+      "statusLabel": "Delay",
+      "scoreline": "1-0",
+      "title": "法国 1-0 伊拉克",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760457",
       "home": {
         "code": "FRA",
         "name": "法国",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/FRA.png"
       },
       "away": {
@@ -462,8 +462,57 @@
       }
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "760457",
+      "date": "2026-06-22T21:00Z",
+      "kickoffBeijing": "06-23 05:00 北京",
+      "group": "I 组",
+      "venue": "费城",
+      "statusKind": "live",
+      "statusLabel": "Delay",
+      "scoreline": "1-0",
+      "title": "法国 1-0 伊拉克",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760457",
+      "home": {
+        "code": "FRA",
+        "name": "法国",
+        "score": "1",
+        "flag": "assets/flags/FRA.png"
+      },
+      "away": {
+        "code": "IRQ",
+        "name": "伊拉克",
+        "score": "0",
+        "flag": "assets/flags/IRQ.png"
+      }
+    }
+  ],
   "recentCompleted": [
+    {
+      "id": "760456",
+      "date": "2026-06-22T17:00Z",
+      "kickoffBeijing": "06-23 01:00 北京",
+      "group": "J 组",
+      "venue": "达拉斯",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "阿根廷 2-0 奥地利",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760456/austria-argentina",
+      "home": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "2",
+        "flag": "assets/flags/ARG.png"
+      },
+      "away": {
+        "code": "AUT",
+        "name": "奥地利",
+        "score": "0",
+        "flag": "assets/flags/AUT.png"
+      }
+    },
     {
       "id": "760452",
       "date": "2026-06-22T01:00Z",
@@ -1427,54 +1476,6 @@
   ],
   "upcoming": [
     {
-      "id": "760456",
-      "date": "2026-06-22T17:00Z",
-      "kickoffBeijing": "06-23 01:00 北京",
-      "group": "J 组",
-      "venue": "达拉斯",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "阿根廷 vs 奥地利",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760456/austria-argentina",
-      "home": {
-        "code": "ARG",
-        "name": "阿根廷",
-        "score": "0",
-        "flag": "assets/flags/ARG.png"
-      },
-      "away": {
-        "code": "AUT",
-        "name": "奥地利",
-        "score": "0",
-        "flag": "assets/flags/AUT.png"
-      }
-    },
-    {
-      "id": "760457",
-      "date": "2026-06-22T21:00Z",
-      "kickoffBeijing": "06-23 05:00 北京",
-      "group": "I 组",
-      "venue": "费城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "法国 vs 伊拉克",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760457/iraq-france",
-      "home": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "0",
-        "flag": "assets/flags/FRA.png"
-      },
-      "away": {
-        "code": "IRQ",
-        "name": "伊拉克",
-        "score": "0",
-        "flag": "assets/flags/IRQ.png"
-      }
-    },
-    {
       "id": "760454",
       "date": "2026-06-23T00:00Z",
       "kickoffBeijing": "06-23 08:00 北京",
@@ -1617,9 +1618,105 @@
         "score": "0",
         "flag": "assets/flags/COD.png"
       }
+    },
+    {
+      "id": "760462",
+      "date": "2026-06-24T19:00Z",
+      "kickoffBeijing": "06-25 03:00 北京",
+      "group": "B 组",
+      "venue": "西雅图",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "波黑 vs 卡塔尔",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760462/qatar-bosnia-herzegovina",
+      "home": {
+        "code": "BIH",
+        "name": "波黑",
+        "score": "0",
+        "flag": "assets/flags/BIH.png"
+      },
+      "away": {
+        "code": "QAT",
+        "name": "卡塔尔",
+        "score": "0",
+        "flag": "assets/flags/QAT.png"
+      }
+    },
+    {
+      "id": "760463",
+      "date": "2026-06-24T19:00Z",
+      "kickoffBeijing": "06-25 03:00 北京",
+      "group": "B 组",
+      "venue": "温哥华",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "瑞士 vs 加拿大",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760463/canada-switzerland",
+      "home": {
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "0",
+        "flag": "assets/flags/SUI.png"
+      },
+      "away": {
+        "code": "CAN",
+        "name": "加拿大",
+        "score": "0",
+        "flag": "assets/flags/CAN.png"
+      }
     }
   ],
   "scoreboard": [
+    {
+      "id": "760457",
+      "date": "2026-06-22T21:00Z",
+      "kickoffBeijing": "06-23 05:00 北京",
+      "group": "I 组",
+      "venue": "费城",
+      "statusKind": "live",
+      "statusLabel": "Delay",
+      "scoreline": "1-0",
+      "title": "法国 1-0 伊拉克",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760457",
+      "home": {
+        "code": "FRA",
+        "name": "法国",
+        "score": "1",
+        "flag": "assets/flags/FRA.png"
+      },
+      "away": {
+        "code": "IRQ",
+        "name": "伊拉克",
+        "score": "0",
+        "flag": "assets/flags/IRQ.png"
+      }
+    },
+    {
+      "id": "760456",
+      "date": "2026-06-22T17:00Z",
+      "kickoffBeijing": "06-23 01:00 北京",
+      "group": "J 组",
+      "venue": "达拉斯",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "阿根廷 2-0 奥地利",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760456/austria-argentina",
+      "home": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "2",
+        "flag": "assets/flags/ARG.png"
+      },
+      "away": {
+        "code": "AUT",
+        "name": "奥地利",
+        "score": "0",
+        "flag": "assets/flags/AUT.png"
+      }
+    },
     {
       "id": "760452",
       "date": "2026-06-22T01:00Z",
@@ -1666,54 +1763,6 @@
         "name": "佛得角",
         "score": "2",
         "flag": "assets/flags/CPV.png"
-      }
-    },
-    {
-      "id": "760456",
-      "date": "2026-06-22T17:00Z",
-      "kickoffBeijing": "06-23 01:00 北京",
-      "group": "J 组",
-      "venue": "达拉斯",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "阿根廷 vs 奥地利",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760456/austria-argentina",
-      "home": {
-        "code": "ARG",
-        "name": "阿根廷",
-        "score": "0",
-        "flag": "assets/flags/ARG.png"
-      },
-      "away": {
-        "code": "AUT",
-        "name": "奥地利",
-        "score": "0",
-        "flag": "assets/flags/AUT.png"
-      }
-    },
-    {
-      "id": "760457",
-      "date": "2026-06-22T21:00Z",
-      "kickoffBeijing": "06-23 05:00 北京",
-      "group": "I 组",
-      "venue": "费城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "法国 vs 伊拉克",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760457/iraq-france",
-      "home": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "0",
-        "flag": "assets/flags/FRA.png"
-      },
-      "away": {
-        "code": "IRQ",
-        "name": "伊拉克",
-        "score": "0",
-        "flag": "assets/flags/IRQ.png"
       }
     }
   ]
