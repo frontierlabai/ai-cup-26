@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260622-20260625",
-  "generatedAt": "2026-06-23T10:48:36.782Z",
-  "generatedAtBeijing": "北京时间 06-23 18:48",
+  "generatedAt": "2026-06-23T17:30:25.089Z",
+  "generatedAtBeijing": "北京时间 06-24 01:30",
   "matches": [
     {
       "id": "760456",
@@ -107,21 +107,21 @@
       "kickoffBeijing": "06-24 01:00 北京",
       "group": "K 组",
       "venue": "休斯顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "葡萄牙 vs 乌兹别克斯坦",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760461/uzbekistan-portugal",
+      "statusKind": "live",
+      "statusLabel": "30'",
+      "scoreline": "2-1",
+      "title": "葡萄牙 2-1 乌兹别克斯坦",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760461",
       "home": {
         "code": "POR",
         "name": "葡萄牙",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/POR.png"
       },
       "away": {
         "code": "UZB",
         "name": "乌兹别克斯坦",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/UZB.png"
       }
     },
@@ -486,7 +486,32 @@
       }
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "760461",
+      "date": "2026-06-23T17:00Z",
+      "kickoffBeijing": "06-24 01:00 北京",
+      "group": "K 组",
+      "venue": "休斯顿",
+      "statusKind": "live",
+      "statusLabel": "30'",
+      "scoreline": "2-1",
+      "title": "葡萄牙 2-1 乌兹别克斯坦",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760461",
+      "home": {
+        "code": "POR",
+        "name": "葡萄牙",
+        "score": "2",
+        "flag": "assets/flags/POR.png"
+      },
+      "away": {
+        "code": "UZB",
+        "name": "乌兹别克斯坦",
+        "score": "1",
+        "flag": "assets/flags/UZB.png"
+      }
+    }
+  ],
   "recentCompleted": [
     {
       "id": "760455",
@@ -1547,30 +1572,6 @@
   ],
   "upcoming": [
     {
-      "id": "760461",
-      "date": "2026-06-23T17:00Z",
-      "kickoffBeijing": "06-24 01:00 北京",
-      "group": "K 组",
-      "venue": "休斯顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "葡萄牙 vs 乌兹别克斯坦",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760461/uzbekistan-portugal",
-      "home": {
-        "code": "POR",
-        "name": "葡萄牙",
-        "score": "0",
-        "flag": "assets/flags/POR.png"
-      },
-      "away": {
-        "code": "UZB",
-        "name": "乌兹别克斯坦",
-        "score": "0",
-        "flag": "assets/flags/UZB.png"
-      }
-    },
-    {
       "id": "760458",
       "date": "2026-06-23T20:00Z",
       "kickoffBeijing": "06-24 04:00 北京",
@@ -1737,9 +1738,57 @@
         "score": "0",
         "flag": "assets/flags/BRA.png"
       }
+    },
+    {
+      "id": "760467",
+      "date": "2026-06-25T01:00Z",
+      "kickoffBeijing": "06-25 09:00 北京",
+      "group": "A 组",
+      "venue": "墨西哥城",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "捷克 vs 墨西哥",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760467/mexico-czechia",
+      "home": {
+        "code": "CZE",
+        "name": "捷克",
+        "score": "0",
+        "flag": "assets/flags/CZE.png"
+      },
+      "away": {
+        "code": "MEX",
+        "name": "墨西哥",
+        "score": "0",
+        "flag": "assets/flags/MEX.png"
+      }
     }
   ],
   "scoreboard": [
+    {
+      "id": "760461",
+      "date": "2026-06-23T17:00Z",
+      "kickoffBeijing": "06-24 01:00 北京",
+      "group": "K 组",
+      "venue": "休斯顿",
+      "statusKind": "live",
+      "statusLabel": "30'",
+      "scoreline": "2-1",
+      "title": "葡萄牙 2-1 乌兹别克斯坦",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760461",
+      "home": {
+        "code": "POR",
+        "name": "葡萄牙",
+        "score": "2",
+        "flag": "assets/flags/POR.png"
+      },
+      "away": {
+        "code": "UZB",
+        "name": "乌兹别克斯坦",
+        "score": "1",
+        "flag": "assets/flags/UZB.png"
+      }
+    },
     {
       "id": "760455",
       "date": "2026-06-23T03:00Z",
@@ -1789,51 +1838,27 @@
       }
     },
     {
-      "id": "760461",
-      "date": "2026-06-23T17:00Z",
-      "kickoffBeijing": "06-24 01:00 北京",
-      "group": "K 组",
-      "venue": "休斯顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "葡萄牙 vs 乌兹别克斯坦",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760461/uzbekistan-portugal",
+      "id": "760457",
+      "date": "2026-06-22T21:00Z",
+      "kickoffBeijing": "06-23 05:00 北京",
+      "group": "I 组",
+      "venue": "费城",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-0",
+      "title": "法国 3-0 伊拉克",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760457/iraq-france",
       "home": {
-        "code": "POR",
-        "name": "葡萄牙",
-        "score": "0",
-        "flag": "assets/flags/POR.png"
+        "code": "FRA",
+        "name": "法国",
+        "score": "3",
+        "flag": "assets/flags/FRA.png"
       },
       "away": {
-        "code": "UZB",
-        "name": "乌兹别克斯坦",
+        "code": "IRQ",
+        "name": "伊拉克",
         "score": "0",
-        "flag": "assets/flags/UZB.png"
-      }
-    },
-    {
-      "id": "760458",
-      "date": "2026-06-23T20:00Z",
-      "kickoffBeijing": "06-24 04:00 北京",
-      "group": "小组赛",
-      "venue": "波士顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "英格兰 vs 加纳",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760458/ghana-england",
-      "home": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "0",
-        "flag": "assets/flags/ENG.png"
-      },
-      "away": {
-        "code": "GHA",
-        "name": "加纳",
-        "score": "0",
-        "flag": "assets/flags/GHA.png"
+        "flag": "assets/flags/IRQ.png"
       }
     }
   ]
