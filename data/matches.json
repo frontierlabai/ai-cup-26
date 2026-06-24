@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260623-20260626",
-  "generatedAt": "2026-06-24T17:31:32.123Z",
-  "generatedAtBeijing": "北京时间 06-25 01:31",
+  "generatedAt": "2026-06-24T22:03:16.809Z",
+  "generatedAtBeijing": "北京时间 06-25 06:03",
   "matches": [
     {
       "id": "760461",
@@ -107,21 +107,21 @@
       "kickoffBeijing": "06-25 03:00 北京",
       "group": "B 组",
       "venue": "西雅图",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "波黑 vs 卡塔尔",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-1",
+      "title": "波黑 3-1 卡塔尔",
       "href": "https://www.espn.com/soccer/match/_/gameId/760462/qatar-bosnia-herzegovina",
       "home": {
         "code": "BIH",
         "name": "波黑",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/BIH.png"
       },
       "away": {
         "code": "QAT",
         "name": "卡塔尔",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/QAT.png"
       }
     },
@@ -131,21 +131,21 @@
       "kickoffBeijing": "06-25 03:00 北京",
       "group": "B 组",
       "venue": "温哥华",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "瑞士 vs 加拿大",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "瑞士 2-1 加拿大",
       "href": "https://www.espn.com/soccer/match/_/gameId/760463/canada-switzerland",
       "home": {
         "code": "SUI",
         "name": "瑞士",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/SUI.png"
       },
       "away": {
         "code": "CAN",
         "name": "加拿大",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/CAN.png"
       }
     },
@@ -155,11 +155,11 @@
       "kickoffBeijing": "06-25 06:00 北京",
       "group": "C 组",
       "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "摩洛哥 vs 海地",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760464/haiti-morocco",
+      "statusKind": "live",
+      "statusLabel": "2'",
+      "scoreline": "0-0",
+      "title": "摩洛哥 0-0 海地",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760464",
       "home": {
         "code": "MAR",
         "name": "摩洛哥",
@@ -179,11 +179,11 @@
       "kickoffBeijing": "06-25 06:00 北京",
       "group": "C 组",
       "venue": "迈阿密",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "苏格兰 vs 巴西",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760465/brazil-scotland",
+      "statusKind": "live",
+      "statusLabel": "2'",
+      "scoreline": "0-0",
+      "title": "苏格兰 0-0 巴西",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760465",
       "home": {
         "code": "SCO",
         "name": "苏格兰",
@@ -534,8 +534,105 @@
       }
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "760464",
+      "date": "2026-06-24T22:00Z",
+      "kickoffBeijing": "06-25 06:00 北京",
+      "group": "C 组",
+      "venue": "亚特兰大",
+      "statusKind": "live",
+      "statusLabel": "2'",
+      "scoreline": "0-0",
+      "title": "摩洛哥 0-0 海地",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760464",
+      "home": {
+        "code": "MAR",
+        "name": "摩洛哥",
+        "score": "0",
+        "flag": "assets/flags/MAR.png"
+      },
+      "away": {
+        "code": "HAI",
+        "name": "海地",
+        "score": "0",
+        "flag": "assets/flags/HAI.png"
+      }
+    },
+    {
+      "id": "760465",
+      "date": "2026-06-24T22:00Z",
+      "kickoffBeijing": "06-25 06:00 北京",
+      "group": "C 组",
+      "venue": "迈阿密",
+      "statusKind": "live",
+      "statusLabel": "2'",
+      "scoreline": "0-0",
+      "title": "苏格兰 0-0 巴西",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760465",
+      "home": {
+        "code": "SCO",
+        "name": "苏格兰",
+        "score": "0",
+        "flag": "assets/flags/SCO.png"
+      },
+      "away": {
+        "code": "BRA",
+        "name": "巴西",
+        "score": "0",
+        "flag": "assets/flags/BRA.png"
+      }
+    }
+  ],
   "recentCompleted": [
+    {
+      "id": "760462",
+      "date": "2026-06-24T19:00Z",
+      "kickoffBeijing": "06-25 03:00 北京",
+      "group": "B 组",
+      "venue": "西雅图",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-1",
+      "title": "波黑 3-1 卡塔尔",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760462/qatar-bosnia-herzegovina",
+      "home": {
+        "code": "BIH",
+        "name": "波黑",
+        "score": "3",
+        "flag": "assets/flags/BIH.png"
+      },
+      "away": {
+        "code": "QAT",
+        "name": "卡塔尔",
+        "score": "1",
+        "flag": "assets/flags/QAT.png"
+      }
+    },
+    {
+      "id": "760463",
+      "date": "2026-06-24T19:00Z",
+      "kickoffBeijing": "06-25 03:00 北京",
+      "group": "B 组",
+      "venue": "温哥华",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "瑞士 2-1 加拿大",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760463/canada-switzerland",
+      "home": {
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "2",
+        "flag": "assets/flags/SUI.png"
+      },
+      "away": {
+        "code": "CAN",
+        "name": "加拿大",
+        "score": "1",
+        "flag": "assets/flags/CAN.png"
+      }
+    },
     {
       "id": "760459",
       "date": "2026-06-24T02:00Z",
@@ -1691,102 +1788,6 @@
   ],
   "upcoming": [
     {
-      "id": "760462",
-      "date": "2026-06-24T19:00Z",
-      "kickoffBeijing": "06-25 03:00 北京",
-      "group": "B 组",
-      "venue": "西雅图",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "波黑 vs 卡塔尔",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760462/qatar-bosnia-herzegovina",
-      "home": {
-        "code": "BIH",
-        "name": "波黑",
-        "score": "0",
-        "flag": "assets/flags/BIH.png"
-      },
-      "away": {
-        "code": "QAT",
-        "name": "卡塔尔",
-        "score": "0",
-        "flag": "assets/flags/QAT.png"
-      }
-    },
-    {
-      "id": "760463",
-      "date": "2026-06-24T19:00Z",
-      "kickoffBeijing": "06-25 03:00 北京",
-      "group": "B 组",
-      "venue": "温哥华",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "瑞士 vs 加拿大",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760463/canada-switzerland",
-      "home": {
-        "code": "SUI",
-        "name": "瑞士",
-        "score": "0",
-        "flag": "assets/flags/SUI.png"
-      },
-      "away": {
-        "code": "CAN",
-        "name": "加拿大",
-        "score": "0",
-        "flag": "assets/flags/CAN.png"
-      }
-    },
-    {
-      "id": "760464",
-      "date": "2026-06-24T22:00Z",
-      "kickoffBeijing": "06-25 06:00 北京",
-      "group": "C 组",
-      "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "摩洛哥 vs 海地",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760464/haiti-morocco",
-      "home": {
-        "code": "MAR",
-        "name": "摩洛哥",
-        "score": "0",
-        "flag": "assets/flags/MAR.png"
-      },
-      "away": {
-        "code": "HAI",
-        "name": "海地",
-        "score": "0",
-        "flag": "assets/flags/HAI.png"
-      }
-    },
-    {
-      "id": "760465",
-      "date": "2026-06-24T22:00Z",
-      "kickoffBeijing": "06-25 06:00 北京",
-      "group": "C 组",
-      "venue": "迈阿密",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "苏格兰 vs 巴西",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760465/brazil-scotland",
-      "home": {
-        "code": "SCO",
-        "name": "苏格兰",
-        "score": "0",
-        "flag": "assets/flags/SCO.png"
-      },
-      "away": {
-        "code": "BRA",
-        "name": "巴西",
-        "score": "0",
-        "flag": "assets/flags/BRA.png"
-      }
-    },
-    {
       "id": "760467",
       "date": "2026-06-25T01:00Z",
       "kickoffBeijing": "06-25 09:00 北京",
@@ -1881,55 +1882,151 @@
         "score": "0",
         "flag": "assets/flags/GER.png"
       }
+    },
+    {
+      "id": "760471",
+      "date": "2026-06-25T23:00Z",
+      "kickoffBeijing": "06-26 07:00 北京",
+      "group": "F 组",
+      "venue": "达拉斯",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "日本 vs 瑞典",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760471/sweden-japan",
+      "home": {
+        "code": "JPN",
+        "name": "日本",
+        "score": "0",
+        "flag": "assets/flags/JPN.png"
+      },
+      "away": {
+        "code": "SWE",
+        "name": "瑞典",
+        "score": "0",
+        "flag": "assets/flags/SWE.png"
+      }
+    },
+    {
+      "id": "760472",
+      "date": "2026-06-25T23:00Z",
+      "kickoffBeijing": "06-26 07:00 北京",
+      "group": "F 组",
+      "venue": "堪萨斯城",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "突尼斯 vs 荷兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760472/netherlands-tunisia",
+      "home": {
+        "code": "TUN",
+        "name": "突尼斯",
+        "score": "0",
+        "flag": "assets/flags/TUN.png"
+      },
+      "away": {
+        "code": "NED",
+        "name": "荷兰",
+        "score": "0",
+        "flag": "assets/flags/NED.png"
+      }
+    },
+    {
+      "id": "760469",
+      "date": "2026-06-26T02:00Z",
+      "kickoffBeijing": "06-26 10:00 北京",
+      "group": "D 组",
+      "venue": "圣克拉拉",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "巴拉圭 vs 澳大利亚",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760469/australia-paraguay",
+      "home": {
+        "code": "PAR",
+        "name": "巴拉圭",
+        "score": "0",
+        "flag": "assets/flags/PAR.png"
+      },
+      "away": {
+        "code": "AUS",
+        "name": "澳大利亚",
+        "score": "0",
+        "flag": "assets/flags/AUS.png"
+      }
+    },
+    {
+      "id": "760470",
+      "date": "2026-06-26T02:00Z",
+      "kickoffBeijing": "06-26 10:00 北京",
+      "group": "D 组",
+      "venue": "洛杉矶",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "土耳其 vs 美国",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760470/united-states-turkiye",
+      "home": {
+        "code": "TUR",
+        "name": "土耳其",
+        "score": "0",
+        "flag": "assets/flags/TUR.png"
+      },
+      "away": {
+        "code": "USA",
+        "name": "美国",
+        "score": "0",
+        "flag": "assets/flags/USA.png"
+      }
     }
   ],
   "scoreboard": [
     {
-      "id": "760459",
-      "date": "2026-06-24T02:00Z",
-      "kickoffBeijing": "06-24 10:00 北京",
-      "group": "小组赛",
-      "venue": "瓜达拉哈拉",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "1-0",
-      "title": "哥伦比亚 1-0 民主刚果",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760459/congo-dr-colombia",
+      "id": "760464",
+      "date": "2026-06-24T22:00Z",
+      "kickoffBeijing": "06-25 06:00 北京",
+      "group": "C 组",
+      "venue": "亚特兰大",
+      "statusKind": "live",
+      "statusLabel": "2'",
+      "scoreline": "0-0",
+      "title": "摩洛哥 0-0 海地",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760464",
       "home": {
-        "code": "COL",
-        "name": "哥伦比亚",
-        "score": "1",
-        "flag": "assets/flags/COL.png"
+        "code": "MAR",
+        "name": "摩洛哥",
+        "score": "0",
+        "flag": "assets/flags/MAR.png"
       },
       "away": {
-        "code": "COD",
-        "name": "民主刚果",
+        "code": "HAI",
+        "name": "海地",
         "score": "0",
-        "flag": "assets/flags/COD.png"
+        "flag": "assets/flags/HAI.png"
       }
     },
     {
-      "id": "760460",
-      "date": "2026-06-23T23:00Z",
-      "kickoffBeijing": "06-24 07:00 北京",
-      "group": "L 组",
-      "venue": "多伦多",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "0-1",
-      "title": "巴拿马 0-1 克罗地亚",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760460/croatia-panama",
+      "id": "760465",
+      "date": "2026-06-24T22:00Z",
+      "kickoffBeijing": "06-25 06:00 北京",
+      "group": "C 组",
+      "venue": "迈阿密",
+      "statusKind": "live",
+      "statusLabel": "2'",
+      "scoreline": "0-0",
+      "title": "苏格兰 0-0 巴西",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760465",
       "home": {
-        "code": "PAN",
-        "name": "巴拿马",
+        "code": "SCO",
+        "name": "苏格兰",
         "score": "0",
-        "flag": "assets/flags/PAN.png"
+        "flag": "assets/flags/SCO.png"
       },
       "away": {
-        "code": "CRO",
-        "name": "克罗地亚",
-        "score": "1",
-        "flag": "assets/flags/CRO.png"
+        "code": "BRA",
+        "name": "巴西",
+        "score": "0",
+        "flag": "assets/flags/BRA.png"
       }
     },
     {
@@ -1938,21 +2035,21 @@
       "kickoffBeijing": "06-25 03:00 北京",
       "group": "B 组",
       "venue": "西雅图",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "波黑 vs 卡塔尔",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-1",
+      "title": "波黑 3-1 卡塔尔",
       "href": "https://www.espn.com/soccer/match/_/gameId/760462/qatar-bosnia-herzegovina",
       "home": {
         "code": "BIH",
         "name": "波黑",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/BIH.png"
       },
       "away": {
         "code": "QAT",
         "name": "卡塔尔",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/QAT.png"
       }
     },
@@ -1962,21 +2059,21 @@
       "kickoffBeijing": "06-25 03:00 北京",
       "group": "B 组",
       "venue": "温哥华",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "瑞士 vs 加拿大",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "瑞士 2-1 加拿大",
       "href": "https://www.espn.com/soccer/match/_/gameId/760463/canada-switzerland",
       "home": {
         "code": "SUI",
         "name": "瑞士",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/SUI.png"
       },
       "away": {
         "code": "CAN",
         "name": "加拿大",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/CAN.png"
       }
     }
