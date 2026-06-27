@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260626-20260629",
-  "generatedAt": "2026-06-27T12:18:50.662Z",
-  "generatedAtBeijing": "北京时间 06-27 20:18",
+  "generatedAt": "2026-06-27T16:40:33.328Z",
+  "generatedAtBeijing": "北京时间 06-28 00:40",
   "matches": [
     {
       "id": "760475",
