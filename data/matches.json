@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260627-20260630",
-  "generatedAt": "2026-06-28T16:50:44.960Z",
-  "generatedAtBeijing": "北京时间 06-29 00:50",
+  "generatedAt": "2026-06-28T20:44:56.738Z",
+  "generatedAtBeijing": "北京时间 06-29 04:44",
   "matches": [
     {
       "id": "760480",
@@ -155,11 +155,11 @@
       "kickoffBeijing": "06-29 03:00 北京",
       "group": "小组赛",
       "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "南非 vs 加拿大",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760486/canada-south-africa",
+      "statusKind": "live",
+      "statusLabel": "84'",
+      "scoreline": "0-0",
+      "title": "南非 0-0 加拿大",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760486",
       "home": {
         "code": "RSA",
         "name": "南非",
@@ -318,7 +318,32 @@
       }
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "760486",
+      "date": "2026-06-28T19:00Z",
+      "kickoffBeijing": "06-29 03:00 北京",
+      "group": "小组赛",
+      "venue": "洛杉矶",
+      "statusKind": "live",
+      "statusLabel": "84'",
+      "scoreline": "0-0",
+      "title": "南非 0-0 加拿大",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760486",
+      "home": {
+        "code": "RSA",
+        "name": "南非",
+        "score": "0",
+        "flag": "assets/flags/RSA.png"
+      },
+      "away": {
+        "code": "CAN",
+        "name": "加拿大",
+        "score": "0",
+        "flag": "assets/flags/CAN.png"
+      }
+    }
+  ],
   "recentCompleted": [
     {
       "id": "760484",
@@ -2051,30 +2076,6 @@
   ],
   "upcoming": [
     {
-      "id": "760486",
-      "date": "2026-06-28T19:00Z",
-      "kickoffBeijing": "06-29 03:00 北京",
-      "group": "小组赛",
-      "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "南非 vs 加拿大",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760486/canada-south-africa",
-      "home": {
-        "code": "RSA",
-        "name": "南非",
-        "score": "0",
-        "flag": "assets/flags/RSA.png"
-      },
-      "away": {
-        "code": "CAN",
-        "name": "加拿大",
-        "score": "0",
-        "flag": "assets/flags/CAN.png"
-      }
-    },
-    {
       "id": "760487",
       "date": "2026-06-29T17:00Z",
       "kickoffBeijing": "06-30 01:00 北京",
@@ -2221,6 +2222,30 @@
   ],
   "scoreboard": [
     {
+      "id": "760486",
+      "date": "2026-06-28T19:00Z",
+      "kickoffBeijing": "06-29 03:00 北京",
+      "group": "小组赛",
+      "venue": "洛杉矶",
+      "statusKind": "live",
+      "statusLabel": "84'",
+      "scoreline": "0-0",
+      "title": "南非 0-0 加拿大",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760486",
+      "home": {
+        "code": "RSA",
+        "name": "南非",
+        "score": "0",
+        "flag": "assets/flags/RSA.png"
+      },
+      "away": {
+        "code": "CAN",
+        "name": "加拿大",
+        "score": "0",
+        "flag": "assets/flags/CAN.png"
+      }
+    },
+    {
       "id": "760484",
       "date": "2026-06-28T02:00Z",
       "kickoffBeijing": "06-28 10:00 北京",
@@ -2269,51 +2294,27 @@
       }
     },
     {
-      "id": "760486",
-      "date": "2026-06-28T19:00Z",
-      "kickoffBeijing": "06-29 03:00 北京",
-      "group": "小组赛",
-      "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "南非 vs 加拿大",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760486/canada-south-africa",
+      "id": "760481",
+      "date": "2026-06-27T23:30Z",
+      "kickoffBeijing": "06-28 07:30 北京",
+      "group": "K 组",
+      "venue": "迈阿密",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-0",
+      "title": "哥伦比亚 0-0 葡萄牙",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760481/portugal-colombia",
       "home": {
-        "code": "RSA",
-        "name": "南非",
+        "code": "COL",
+        "name": "哥伦比亚",
         "score": "0",
-        "flag": "assets/flags/RSA.png"
+        "flag": "assets/flags/COL.png"
       },
       "away": {
-        "code": "CAN",
-        "name": "加拿大",
+        "code": "POR",
+        "name": "葡萄牙",
         "score": "0",
-        "flag": "assets/flags/CAN.png"
-      }
-    },
-    {
-      "id": "760487",
-      "date": "2026-06-29T17:00Z",
-      "kickoffBeijing": "06-30 01:00 北京",
-      "group": "小组赛",
-      "venue": "休斯顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "巴西 vs 日本",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil",
-      "home": {
-        "code": "BRA",
-        "name": "巴西",
-        "score": "0",
-        "flag": "assets/flags/BRA.png"
-      },
-      "away": {
-        "code": "JPN",
-        "name": "日本",
-        "score": "0",
-        "flag": "assets/flags/JPN.png"
+        "flag": "assets/flags/POR.png"
       }
     }
   ]
