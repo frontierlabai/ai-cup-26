@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260628-20260701",
-  "generatedAt": "2026-06-29T12:48:34.123Z",
-  "generatedAtBeijing": "北京时间 06-29 20:48",
+  "generatedAt": "2026-06-29T19:24:38.773Z",
+  "generatedAtBeijing": "北京时间 06-30 03:24",
   "matches": [
     {
       "id": "760486",
@@ -35,21 +35,21 @@
       "kickoffBeijing": "06-30 01:00 北京",
       "group": "小组赛",
       "venue": "休斯顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "巴西 vs 日本",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "巴西 2-1 日本",
       "href": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil",
       "home": {
         "code": "BRA",
         "name": "巴西",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/BRA.png"
       },
       "away": {
         "code": "JPN",
         "name": "日本",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/JPN.png"
       }
     },
@@ -248,6 +248,30 @@
   ],
   "live": [],
   "recentCompleted": [
+    {
+      "id": "760487",
+      "date": "2026-06-29T17:00Z",
+      "kickoffBeijing": "06-30 01:00 北京",
+      "group": "小组赛",
+      "venue": "休斯顿",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "巴西 2-1 日本",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil",
+      "home": {
+        "code": "BRA",
+        "name": "巴西",
+        "score": "2",
+        "flag": "assets/flags/BRA.png"
+      },
+      "away": {
+        "code": "JPN",
+        "name": "日本",
+        "score": "1",
+        "flag": "assets/flags/JPN.png"
+      }
+    },
     {
       "id": "760486",
       "date": "2026-06-28T19:00Z",
@@ -2003,30 +2027,6 @@
   ],
   "upcoming": [
     {
-      "id": "760487",
-      "date": "2026-06-29T17:00Z",
-      "kickoffBeijing": "06-30 01:00 北京",
-      "group": "小组赛",
-      "venue": "休斯顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "巴西 vs 日本",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil",
-      "home": {
-        "code": "BRA",
-        "name": "巴西",
-        "score": "0",
-        "flag": "assets/flags/BRA.png"
-      },
-      "away": {
-        "code": "JPN",
-        "name": "日本",
-        "score": "0",
-        "flag": "assets/flags/JPN.png"
-      }
-    },
-    {
       "id": "760489",
       "date": "2026-06-29T20:30Z",
       "kickoffBeijing": "06-30 04:30 北京",
@@ -2193,9 +2193,57 @@
         "score": "0",
         "flag": "assets/flags/SEN.png"
       }
+    },
+    {
+      "id": "760494",
+      "date": "2026-07-02T00:00Z",
+      "kickoffBeijing": "07-02 08:00 北京",
+      "group": "小组赛",
+      "venue": "圣克拉拉",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "美国 vs 波黑",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760494/bosnia-herzegovina-united-states",
+      "home": {
+        "code": "USA",
+        "name": "美国",
+        "score": "0",
+        "flag": "assets/flags/USA.png"
+      },
+      "away": {
+        "code": "BIH",
+        "name": "波黑",
+        "score": "0",
+        "flag": "assets/flags/BIH.png"
+      }
     }
   ],
   "scoreboard": [
+    {
+      "id": "760487",
+      "date": "2026-06-29T17:00Z",
+      "kickoffBeijing": "06-30 01:00 北京",
+      "group": "小组赛",
+      "venue": "休斯顿",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "巴西 2-1 日本",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil",
+      "home": {
+        "code": "BRA",
+        "name": "巴西",
+        "score": "2",
+        "flag": "assets/flags/BRA.png"
+      },
+      "away": {
+        "code": "JPN",
+        "name": "日本",
+        "score": "1",
+        "flag": "assets/flags/JPN.png"
+      }
+    },
     {
       "id": "760486",
       "date": "2026-06-28T19:00Z",
@@ -2221,54 +2269,6 @@
       }
     },
     {
-      "id": "760484",
-      "date": "2026-06-28T02:00Z",
-      "kickoffBeijing": "06-28 10:00 北京",
-      "group": "J 组",
-      "venue": "堪萨斯城",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "3-3",
-      "title": "阿尔及利亚 3-3 奥地利",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760484/austria-algeria",
-      "home": {
-        "code": "ALG",
-        "name": "阿尔及利亚",
-        "score": "3",
-        "flag": "assets/flags/ALG.png"
-      },
-      "away": {
-        "code": "AUT",
-        "name": "奥地利",
-        "score": "3",
-        "flag": "assets/flags/AUT.png"
-      }
-    },
-    {
-      "id": "760487",
-      "date": "2026-06-29T17:00Z",
-      "kickoffBeijing": "06-30 01:00 北京",
-      "group": "小组赛",
-      "venue": "休斯顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "巴西 vs 日本",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil",
-      "home": {
-        "code": "BRA",
-        "name": "巴西",
-        "score": "0",
-        "flag": "assets/flags/BRA.png"
-      },
-      "away": {
-        "code": "JPN",
-        "name": "日本",
-        "score": "0",
-        "flag": "assets/flags/JPN.png"
-      }
-    },
-    {
       "id": "760489",
       "date": "2026-06-29T20:30Z",
       "kickoffBeijing": "06-30 04:30 北京",
@@ -2290,6 +2290,30 @@
         "name": "巴拉圭",
         "score": "0",
         "flag": "assets/flags/PAR.png"
+      }
+    },
+    {
+      "id": "760488",
+      "date": "2026-06-30T01:00Z",
+      "kickoffBeijing": "06-30 09:00 北京",
+      "group": "小组赛",
+      "venue": "Guadalupe",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "荷兰 vs 摩洛哥",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760488/morocco-netherlands",
+      "home": {
+        "code": "NED",
+        "name": "荷兰",
+        "score": "0",
+        "flag": "assets/flags/NED.png"
+      },
+      "away": {
+        "code": "MAR",
+        "name": "摩洛哥",
+        "score": "0",
+        "flag": "assets/flags/MAR.png"
       }
     }
   ]
