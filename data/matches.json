@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260629-20260702",
-  "generatedAt": "2026-06-30T10:43:57.871Z",
-  "generatedAtBeijing": "北京时间 06-30 18:43",
+  "generatedAt": "2026-06-30T17:29:23.667Z",
+  "generatedAtBeijing": "北京时间 07-01 01:29",
   "matches": [
     {
       "id": "760487",
@@ -83,11 +83,11 @@
       "kickoffBeijing": "07-01 01:00 北京",
       "group": "小组赛",
       "venue": "达拉斯",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "科特迪瓦 vs 挪威",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760490/norway-ivory-coast",
+      "statusKind": "live",
+      "statusLabel": "29'",
+      "scoreline": "0-0",
+      "title": "科特迪瓦 0-0 挪威",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760490",
       "home": {
         "code": "CIV",
         "name": "科特迪瓦",
@@ -294,7 +294,32 @@
       }
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "760490",
+      "date": "2026-06-30T17:00Z",
+      "kickoffBeijing": "07-01 01:00 北京",
+      "group": "小组赛",
+      "venue": "达拉斯",
+      "statusKind": "live",
+      "statusLabel": "29'",
+      "scoreline": "0-0",
+      "title": "科特迪瓦 0-0 挪威",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760490",
+      "home": {
+        "code": "CIV",
+        "name": "科特迪瓦",
+        "score": "0",
+        "flag": "assets/flags/CIV.png"
+      },
+      "away": {
+        "code": "NOR",
+        "name": "挪威",
+        "score": "0",
+        "flag": "assets/flags/NOR.png"
+      }
+    }
+  ],
   "recentCompleted": [
     {
       "id": "760488",
@@ -2123,30 +2148,6 @@
   ],
   "upcoming": [
     {
-      "id": "760490",
-      "date": "2026-06-30T17:00Z",
-      "kickoffBeijing": "07-01 01:00 北京",
-      "group": "小组赛",
-      "venue": "达拉斯",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "科特迪瓦 vs 挪威",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760490/norway-ivory-coast",
-      "home": {
-        "code": "CIV",
-        "name": "科特迪瓦",
-        "score": "0",
-        "flag": "assets/flags/CIV.png"
-      },
-      "away": {
-        "code": "NOR",
-        "name": "挪威",
-        "score": "0",
-        "flag": "assets/flags/NOR.png"
-      }
-    },
-    {
       "id": "760492",
       "date": "2026-06-30T21:00Z",
       "kickoffBeijing": "07-01 05:00 北京",
@@ -2313,9 +2314,57 @@
         "score": "0",
         "flag": "assets/flags/CRO.png"
       }
+    },
+    {
+      "id": "760498",
+      "date": "2026-07-03T03:00Z",
+      "kickoffBeijing": "07-03 11:00 北京",
+      "group": "小组赛",
+      "venue": "温哥华",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "瑞士 vs 阿尔及利亚",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760498/algeria-switzerland",
+      "home": {
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "0",
+        "flag": "assets/flags/SUI.png"
+      },
+      "away": {
+        "code": "ALG",
+        "name": "阿尔及利亚",
+        "score": "0",
+        "flag": "assets/flags/ALG.png"
+      }
     }
   ],
   "scoreboard": [
+    {
+      "id": "760490",
+      "date": "2026-06-30T17:00Z",
+      "kickoffBeijing": "07-01 01:00 北京",
+      "group": "小组赛",
+      "venue": "达拉斯",
+      "statusKind": "live",
+      "statusLabel": "29'",
+      "scoreline": "0-0",
+      "title": "科特迪瓦 0-0 挪威",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760490",
+      "home": {
+        "code": "CIV",
+        "name": "科特迪瓦",
+        "score": "0",
+        "flag": "assets/flags/CIV.png"
+      },
+      "away": {
+        "code": "NOR",
+        "name": "挪威",
+        "score": "0",
+        "flag": "assets/flags/NOR.png"
+      }
+    },
     {
       "id": "760488",
       "date": "2026-06-30T01:00Z",
@@ -2365,51 +2414,27 @@
       }
     },
     {
-      "id": "760490",
-      "date": "2026-06-30T17:00Z",
-      "kickoffBeijing": "07-01 01:00 北京",
+      "id": "760487",
+      "date": "2026-06-29T17:00Z",
+      "kickoffBeijing": "06-30 01:00 北京",
       "group": "小组赛",
-      "venue": "达拉斯",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "科特迪瓦 vs 挪威",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760490/norway-ivory-coast",
+      "venue": "休斯顿",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "巴西 2-1 日本",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil",
       "home": {
-        "code": "CIV",
-        "name": "科特迪瓦",
-        "score": "0",
-        "flag": "assets/flags/CIV.png"
+        "code": "BRA",
+        "name": "巴西",
+        "score": "2",
+        "flag": "assets/flags/BRA.png"
       },
       "away": {
-        "code": "NOR",
-        "name": "挪威",
-        "score": "0",
-        "flag": "assets/flags/NOR.png"
-      }
-    },
-    {
-      "id": "760492",
-      "date": "2026-06-30T21:00Z",
-      "kickoffBeijing": "07-01 05:00 北京",
-      "group": "小组赛",
-      "venue": "纽约新泽西",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "法国 vs 瑞典",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760492/sweden-france",
-      "home": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "0",
-        "flag": "assets/flags/FRA.png"
-      },
-      "away": {
-        "code": "SWE",
-        "name": "瑞典",
-        "score": "0",
-        "flag": "assets/flags/SWE.png"
+        "code": "JPN",
+        "name": "日本",
+        "score": "1",
+        "flag": "assets/flags/JPN.png"
       }
     }
   ]
