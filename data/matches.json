@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260630-20260703",
-  "generatedAt": "2026-07-01T18:23:09.463Z",
-  "generatedAtBeijing": "北京时间 07-02 02:23",
+  "generatedAt": "2026-07-01T22:50:50.969Z",
+  "generatedAtBeijing": "北京时间 07-02 06:50",
   "matches": [
     {
       "id": "760490",
@@ -107,21 +107,21 @@
       "kickoffBeijing": "07-02 04:00 北京",
       "group": "小组赛",
       "venue": "西雅图",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "比利时 vs 塞内加尔",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-2",
+      "title": "比利时 3-2 塞内加尔",
       "href": "https://www.espn.com/soccer/match/_/gameId/760493/senegal-belgium",
       "home": {
         "code": "BEL",
         "name": "比利时",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/BEL.png"
       },
       "away": {
         "code": "SEN",
         "name": "塞内加尔",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/SEN.png"
       }
     },
@@ -296,6 +296,30 @@
   ],
   "live": [],
   "recentCompleted": [
+    {
+      "id": "760493",
+      "date": "2026-07-01T20:00Z",
+      "kickoffBeijing": "07-02 04:00 北京",
+      "group": "小组赛",
+      "venue": "西雅图",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-2",
+      "title": "比利时 3-2 塞内加尔",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760493/senegal-belgium",
+      "home": {
+        "code": "BEL",
+        "name": "比利时",
+        "score": "3",
+        "flag": "assets/flags/BEL.png"
+      },
+      "away": {
+        "code": "SEN",
+        "name": "塞内加尔",
+        "score": "2",
+        "flag": "assets/flags/SEN.png"
+      }
+    },
     {
       "id": "760495",
       "date": "2026-07-01T16:00Z",
@@ -2219,30 +2243,6 @@
   ],
   "upcoming": [
     {
-      "id": "760493",
-      "date": "2026-07-01T20:00Z",
-      "kickoffBeijing": "07-02 04:00 北京",
-      "group": "小组赛",
-      "venue": "西雅图",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "比利时 vs 塞内加尔",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760493/senegal-belgium",
-      "home": {
-        "code": "BEL",
-        "name": "比利时",
-        "score": "0",
-        "flag": "assets/flags/BEL.png"
-      },
-      "away": {
-        "code": "SEN",
-        "name": "塞内加尔",
-        "score": "0",
-        "flag": "assets/flags/SEN.png"
-      }
-    },
-    {
       "id": "760494",
       "date": "2026-07-02T00:00Z",
       "kickoffBeijing": "07-02 08:00 北京",
@@ -2413,6 +2413,30 @@
   ],
   "scoreboard": [
     {
+      "id": "760493",
+      "date": "2026-07-01T20:00Z",
+      "kickoffBeijing": "07-02 04:00 北京",
+      "group": "小组赛",
+      "venue": "西雅图",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-2",
+      "title": "比利时 3-2 塞内加尔",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760493/senegal-belgium",
+      "home": {
+        "code": "BEL",
+        "name": "比利时",
+        "score": "3",
+        "flag": "assets/flags/BEL.png"
+      },
+      "away": {
+        "code": "SEN",
+        "name": "塞内加尔",
+        "score": "2",
+        "flag": "assets/flags/SEN.png"
+      }
+    },
+    {
       "id": "760495",
       "date": "2026-07-01T16:00Z",
       "kickoffBeijing": "07-02 00:00 北京",
@@ -2437,54 +2461,6 @@
       }
     },
     {
-      "id": "760491",
-      "date": "2026-07-01T02:00Z",
-      "kickoffBeijing": "07-01 10:00 北京",
-      "group": "小组赛",
-      "venue": "墨西哥城",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "2-0",
-      "title": "墨西哥 2-0 厄瓜多尔",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760491/ecuador-mexico",
-      "home": {
-        "code": "MEX",
-        "name": "墨西哥",
-        "score": "2",
-        "flag": "assets/flags/MEX.png"
-      },
-      "away": {
-        "code": "ECU",
-        "name": "厄瓜多尔",
-        "score": "0",
-        "flag": "assets/flags/ECU.png"
-      }
-    },
-    {
-      "id": "760493",
-      "date": "2026-07-01T20:00Z",
-      "kickoffBeijing": "07-02 04:00 北京",
-      "group": "小组赛",
-      "venue": "西雅图",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "比利时 vs 塞内加尔",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760493/senegal-belgium",
-      "home": {
-        "code": "BEL",
-        "name": "比利时",
-        "score": "0",
-        "flag": "assets/flags/BEL.png"
-      },
-      "away": {
-        "code": "SEN",
-        "name": "塞内加尔",
-        "score": "0",
-        "flag": "assets/flags/SEN.png"
-      }
-    },
-    {
       "id": "760494",
       "date": "2026-07-02T00:00Z",
       "kickoffBeijing": "07-02 08:00 北京",
@@ -2506,6 +2482,30 @@
         "name": "波黑",
         "score": "0",
         "flag": "assets/flags/BIH.png"
+      }
+    },
+    {
+      "id": "760497",
+      "date": "2026-07-02T19:00Z",
+      "kickoffBeijing": "07-03 03:00 北京",
+      "group": "小组赛",
+      "venue": "洛杉矶",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "西班牙 vs 奥地利",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760497/austria-spain",
+      "home": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "0",
+        "flag": "assets/flags/ESP.png"
+      },
+      "away": {
+        "code": "AUT",
+        "name": "奥地利",
+        "score": "0",
+        "flag": "assets/flags/AUT.png"
       }
     }
   ]
