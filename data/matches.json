@@ -1,82 +1,10 @@
 {
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
-  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260629-20260702",
-  "generatedAt": "2026-06-30T22:05:09.674Z",
-  "generatedAtBeijing": "北京时间 07-01 06:05",
+  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260630-20260703",
+  "generatedAt": "2026-07-01T10:56:24.921Z",
+  "generatedAtBeijing": "北京时间 07-01 18:56",
   "matches": [
-    {
-      "id": "760487",
-      "date": "2026-06-29T17:00Z",
-      "kickoffBeijing": "06-30 01:00 北京",
-      "group": "小组赛",
-      "venue": "休斯顿",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "2-1",
-      "title": "巴西 2-1 日本",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil",
-      "home": {
-        "code": "BRA",
-        "name": "巴西",
-        "score": "2",
-        "flag": "assets/flags/BRA.png"
-      },
-      "away": {
-        "code": "JPN",
-        "name": "日本",
-        "score": "1",
-        "flag": "assets/flags/JPN.png"
-      }
-    },
-    {
-      "id": "760489",
-      "date": "2026-06-29T20:30Z",
-      "kickoffBeijing": "06-30 04:30 北京",
-      "group": "小组赛",
-      "venue": "波士顿",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "1-1",
-      "title": "德国 1-1 巴拉圭",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760489/paraguay-germany",
-      "home": {
-        "code": "GER",
-        "name": "德国",
-        "score": "1",
-        "flag": "assets/flags/GER.png"
-      },
-      "away": {
-        "code": "PAR",
-        "name": "巴拉圭",
-        "score": "1",
-        "flag": "assets/flags/PAR.png"
-      }
-    },
-    {
-      "id": "760488",
-      "date": "2026-06-30T01:00Z",
-      "kickoffBeijing": "06-30 09:00 北京",
-      "group": "小组赛",
-      "venue": "Guadalupe",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "1-1",
-      "title": "荷兰 1-1 摩洛哥",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760488/morocco-netherlands",
-      "home": {
-        "code": "NED",
-        "name": "荷兰",
-        "score": "1",
-        "flag": "assets/flags/NED.png"
-      },
-      "away": {
-        "code": "MAR",
-        "name": "摩洛哥",
-        "score": "1",
-        "flag": "assets/flags/MAR.png"
-      }
-    },
     {
       "id": "760490",
       "date": "2026-06-30T17:00Z",
@@ -107,15 +35,15 @@
       "kickoffBeijing": "07-01 05:00 北京",
       "group": "小组赛",
       "venue": "纽约新泽西",
-      "statusKind": "live",
-      "statusLabel": "46'",
-      "scoreline": "1-0",
-      "title": "法国 1-0 瑞典",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760492",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-0",
+      "title": "法国 3-0 瑞典",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760492/sweden-france",
       "home": {
         "code": "FRA",
         "name": "法国",
-        "score": "1",
+        "score": "3",
         "flag": "assets/flags/FRA.png"
       },
       "away": {
@@ -127,19 +55,19 @@
     },
     {
       "id": "760491",
-      "date": "2026-07-01T01:00Z",
-      "kickoffBeijing": "07-01 09:00 北京",
+      "date": "2026-07-01T02:00Z",
+      "kickoffBeijing": "07-01 10:00 北京",
       "group": "小组赛",
       "venue": "墨西哥城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "墨西哥 vs 厄瓜多尔",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "墨西哥 2-0 厄瓜多尔",
       "href": "https://www.espn.com/soccer/match/_/gameId/760491/ecuador-mexico",
       "home": {
         "code": "MEX",
         "name": "墨西哥",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/MEX.png"
       },
       "away": {
@@ -292,24 +220,121 @@
         "score": "0",
         "flag": "assets/flags/ALG.png"
       }
+    },
+    {
+      "id": "760499",
+      "date": "2026-07-03T18:00Z",
+      "kickoffBeijing": "07-04 02:00 北京",
+      "group": "小组赛",
+      "venue": "达拉斯",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "澳大利亚 vs 埃及",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760499/egypt-australia",
+      "home": {
+        "code": "AUS",
+        "name": "澳大利亚",
+        "score": "0",
+        "flag": "assets/flags/AUS.png"
+      },
+      "away": {
+        "code": "EGY",
+        "name": "埃及",
+        "score": "0",
+        "flag": "assets/flags/EGY.png"
+      }
+    },
+    {
+      "id": "760500",
+      "date": "2026-07-03T22:00Z",
+      "kickoffBeijing": "07-04 06:00 北京",
+      "group": "小组赛",
+      "venue": "迈阿密",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "阿根廷 vs 佛得角",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760500/cape-verde-argentina",
+      "home": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "0",
+        "flag": "assets/flags/ARG.png"
+      },
+      "away": {
+        "code": "CPV",
+        "name": "佛得角",
+        "score": "0",
+        "flag": "assets/flags/CPV.png"
+      }
+    },
+    {
+      "id": "760501",
+      "date": "2026-07-04T01:30Z",
+      "kickoffBeijing": "07-04 09:30 北京",
+      "group": "K 组",
+      "venue": "堪萨斯城",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "哥伦比亚 vs 加纳",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760501/ghana-colombia",
+      "home": {
+        "code": "COL",
+        "name": "哥伦比亚",
+        "score": "0",
+        "flag": "assets/flags/COL.png"
+      },
+      "away": {
+        "code": "GHA",
+        "name": "加纳",
+        "score": "0",
+        "flag": "assets/flags/GHA.png"
+      }
     }
   ],
-  "live": [
+  "live": [],
+  "recentCompleted": [
+    {
+      "id": "760491",
+      "date": "2026-07-01T02:00Z",
+      "kickoffBeijing": "07-01 10:00 北京",
+      "group": "小组赛",
+      "venue": "墨西哥城",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "墨西哥 2-0 厄瓜多尔",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760491/ecuador-mexico",
+      "home": {
+        "code": "MEX",
+        "name": "墨西哥",
+        "score": "2",
+        "flag": "assets/flags/MEX.png"
+      },
+      "away": {
+        "code": "ECU",
+        "name": "厄瓜多尔",
+        "score": "0",
+        "flag": "assets/flags/ECU.png"
+      }
+    },
     {
       "id": "760492",
       "date": "2026-06-30T21:00Z",
       "kickoffBeijing": "07-01 05:00 北京",
       "group": "小组赛",
       "venue": "纽约新泽西",
-      "statusKind": "live",
-      "statusLabel": "46'",
-      "scoreline": "1-0",
-      "title": "法国 1-0 瑞典",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760492",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-0",
+      "title": "法国 3-0 瑞典",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760492/sweden-france",
       "home": {
         "code": "FRA",
         "name": "法国",
-        "score": "1",
+        "score": "3",
         "flag": "assets/flags/FRA.png"
       },
       "away": {
@@ -318,9 +343,7 @@
         "score": "0",
         "flag": "assets/flags/SWE.png"
       }
-    }
-  ],
-  "recentCompleted": [
+    },
     {
       "id": "760490",
       "date": "2026-06-30T17:00Z",
@@ -2172,30 +2195,6 @@
   ],
   "upcoming": [
     {
-      "id": "760491",
-      "date": "2026-07-01T01:00Z",
-      "kickoffBeijing": "07-01 09:00 北京",
-      "group": "小组赛",
-      "venue": "墨西哥城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "墨西哥 vs 厄瓜多尔",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760491/ecuador-mexico",
-      "home": {
-        "code": "MEX",
-        "name": "墨西哥",
-        "score": "0",
-        "flag": "assets/flags/MEX.png"
-      },
-      "away": {
-        "code": "ECU",
-        "name": "厄瓜多尔",
-        "score": "0",
-        "flag": "assets/flags/ECU.png"
-      }
-    },
-    {
       "id": "760495",
       "date": "2026-07-01T16:00Z",
       "kickoffBeijing": "07-02 00:00 北京",
@@ -2338,24 +2337,96 @@
         "score": "0",
         "flag": "assets/flags/ALG.png"
       }
+    },
+    {
+      "id": "760499",
+      "date": "2026-07-03T18:00Z",
+      "kickoffBeijing": "07-04 02:00 北京",
+      "group": "小组赛",
+      "venue": "达拉斯",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "澳大利亚 vs 埃及",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760499/egypt-australia",
+      "home": {
+        "code": "AUS",
+        "name": "澳大利亚",
+        "score": "0",
+        "flag": "assets/flags/AUS.png"
+      },
+      "away": {
+        "code": "EGY",
+        "name": "埃及",
+        "score": "0",
+        "flag": "assets/flags/EGY.png"
+      }
+    },
+    {
+      "id": "760500",
+      "date": "2026-07-03T22:00Z",
+      "kickoffBeijing": "07-04 06:00 北京",
+      "group": "小组赛",
+      "venue": "迈阿密",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "阿根廷 vs 佛得角",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760500/cape-verde-argentina",
+      "home": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "0",
+        "flag": "assets/flags/ARG.png"
+      },
+      "away": {
+        "code": "CPV",
+        "name": "佛得角",
+        "score": "0",
+        "flag": "assets/flags/CPV.png"
+      }
     }
   ],
   "scoreboard": [
+    {
+      "id": "760491",
+      "date": "2026-07-01T02:00Z",
+      "kickoffBeijing": "07-01 10:00 北京",
+      "group": "小组赛",
+      "venue": "墨西哥城",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "墨西哥 2-0 厄瓜多尔",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760491/ecuador-mexico",
+      "home": {
+        "code": "MEX",
+        "name": "墨西哥",
+        "score": "2",
+        "flag": "assets/flags/MEX.png"
+      },
+      "away": {
+        "code": "ECU",
+        "name": "厄瓜多尔",
+        "score": "0",
+        "flag": "assets/flags/ECU.png"
+      }
+    },
     {
       "id": "760492",
       "date": "2026-06-30T21:00Z",
       "kickoffBeijing": "07-01 05:00 北京",
       "group": "小组赛",
       "venue": "纽约新泽西",
-      "statusKind": "live",
-      "statusLabel": "46'",
-      "scoreline": "1-0",
-      "title": "法国 1-0 瑞典",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760492",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-0",
+      "title": "法国 3-0 瑞典",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760492/sweden-france",
       "home": {
         "code": "FRA",
         "name": "法国",
-        "score": "1",
+        "score": "3",
         "flag": "assets/flags/FRA.png"
       },
       "away": {
@@ -2366,75 +2437,51 @@
       }
     },
     {
-      "id": "760490",
-      "date": "2026-06-30T17:00Z",
-      "kickoffBeijing": "07-01 01:00 北京",
-      "group": "小组赛",
-      "venue": "达拉斯",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "1-2",
-      "title": "科特迪瓦 1-2 挪威",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760490/norway-ivory-coast",
+      "id": "760495",
+      "date": "2026-07-01T16:00Z",
+      "kickoffBeijing": "07-02 00:00 北京",
+      "group": "L 组",
+      "venue": "亚特兰大",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "英格兰 vs 民主刚果",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760495/congo-dr-england",
       "home": {
-        "code": "CIV",
-        "name": "科特迪瓦",
-        "score": "1",
-        "flag": "assets/flags/CIV.png"
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "0",
+        "flag": "assets/flags/ENG.png"
       },
       "away": {
-        "code": "NOR",
-        "name": "挪威",
-        "score": "2",
-        "flag": "assets/flags/NOR.png"
+        "code": "COD",
+        "name": "民主刚果",
+        "score": "0",
+        "flag": "assets/flags/COD.png"
       }
     },
     {
-      "id": "760488",
-      "date": "2026-06-30T01:00Z",
-      "kickoffBeijing": "06-30 09:00 北京",
+      "id": "760493",
+      "date": "2026-07-01T20:00Z",
+      "kickoffBeijing": "07-02 04:00 北京",
       "group": "小组赛",
-      "venue": "Guadalupe",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "1-1",
-      "title": "荷兰 1-1 摩洛哥",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760488/morocco-netherlands",
+      "venue": "西雅图",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "比利时 vs 塞内加尔",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760493/senegal-belgium",
       "home": {
-        "code": "NED",
-        "name": "荷兰",
-        "score": "1",
-        "flag": "assets/flags/NED.png"
+        "code": "BEL",
+        "name": "比利时",
+        "score": "0",
+        "flag": "assets/flags/BEL.png"
       },
       "away": {
-        "code": "MAR",
-        "name": "摩洛哥",
-        "score": "1",
-        "flag": "assets/flags/MAR.png"
-      }
-    },
-    {
-      "id": "760489",
-      "date": "2026-06-29T20:30Z",
-      "kickoffBeijing": "06-30 04:30 北京",
-      "group": "小组赛",
-      "venue": "波士顿",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "1-1",
-      "title": "德国 1-1 巴拉圭",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760489/paraguay-germany",
-      "home": {
-        "code": "GER",
-        "name": "德国",
-        "score": "1",
-        "flag": "assets/flags/GER.png"
-      },
-      "away": {
-        "code": "PAR",
-        "name": "巴拉圭",
-        "score": "1",
-        "flag": "assets/flags/PAR.png"
+        "code": "SEN",
+        "name": "塞内加尔",
+        "score": "0",
+        "flag": "assets/flags/SEN.png"
       }
     }
   ]
