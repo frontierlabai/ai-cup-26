@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260630-20260703",
-  "generatedAt": "2026-07-01T10:56:24.921Z",
-  "generatedAtBeijing": "北京时间 07-01 18:56",
+  "generatedAt": "2026-07-01T18:23:09.463Z",
+  "generatedAtBeijing": "北京时间 07-02 02:23",
   "matches": [
     {
       "id": "760490",
@@ -83,21 +83,21 @@
       "kickoffBeijing": "07-02 00:00 北京",
       "group": "L 组",
       "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "英格兰 vs 民主刚果",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "英格兰 2-1 民主刚果",
       "href": "https://www.espn.com/soccer/match/_/gameId/760495/congo-dr-england",
       "home": {
         "code": "ENG",
         "name": "英格兰",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/ENG.png"
       },
       "away": {
         "code": "COD",
         "name": "民主刚果",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/COD.png"
       }
     },
@@ -296,6 +296,30 @@
   ],
   "live": [],
   "recentCompleted": [
+    {
+      "id": "760495",
+      "date": "2026-07-01T16:00Z",
+      "kickoffBeijing": "07-02 00:00 北京",
+      "group": "L 组",
+      "venue": "亚特兰大",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "英格兰 2-1 民主刚果",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760495/congo-dr-england",
+      "home": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "2",
+        "flag": "assets/flags/ENG.png"
+      },
+      "away": {
+        "code": "COD",
+        "name": "民主刚果",
+        "score": "1",
+        "flag": "assets/flags/COD.png"
+      }
+    },
     {
       "id": "760491",
       "date": "2026-07-01T02:00Z",
@@ -2195,30 +2219,6 @@
   ],
   "upcoming": [
     {
-      "id": "760495",
-      "date": "2026-07-01T16:00Z",
-      "kickoffBeijing": "07-02 00:00 北京",
-      "group": "L 组",
-      "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "英格兰 vs 民主刚果",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760495/congo-dr-england",
-      "home": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "0",
-        "flag": "assets/flags/ENG.png"
-      },
-      "away": {
-        "code": "COD",
-        "name": "民主刚果",
-        "score": "0",
-        "flag": "assets/flags/COD.png"
-      }
-    },
-    {
       "id": "760493",
       "date": "2026-07-01T20:00Z",
       "kickoffBeijing": "07-02 04:00 北京",
@@ -2385,9 +2385,57 @@
         "score": "0",
         "flag": "assets/flags/CPV.png"
       }
+    },
+    {
+      "id": "760501",
+      "date": "2026-07-04T01:30Z",
+      "kickoffBeijing": "07-04 09:30 北京",
+      "group": "K 组",
+      "venue": "堪萨斯城",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "哥伦比亚 vs 加纳",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760501/ghana-colombia",
+      "home": {
+        "code": "COL",
+        "name": "哥伦比亚",
+        "score": "0",
+        "flag": "assets/flags/COL.png"
+      },
+      "away": {
+        "code": "GHA",
+        "name": "加纳",
+        "score": "0",
+        "flag": "assets/flags/GHA.png"
+      }
     }
   ],
   "scoreboard": [
+    {
+      "id": "760495",
+      "date": "2026-07-01T16:00Z",
+      "kickoffBeijing": "07-02 00:00 北京",
+      "group": "L 组",
+      "venue": "亚特兰大",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-1",
+      "title": "英格兰 2-1 民主刚果",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760495/congo-dr-england",
+      "home": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "2",
+        "flag": "assets/flags/ENG.png"
+      },
+      "away": {
+        "code": "COD",
+        "name": "民主刚果",
+        "score": "1",
+        "flag": "assets/flags/COD.png"
+      }
+    },
     {
       "id": "760491",
       "date": "2026-07-01T02:00Z",
@@ -2413,54 +2461,6 @@
       }
     },
     {
-      "id": "760492",
-      "date": "2026-06-30T21:00Z",
-      "kickoffBeijing": "07-01 05:00 北京",
-      "group": "小组赛",
-      "venue": "纽约新泽西",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "3-0",
-      "title": "法国 3-0 瑞典",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760492/sweden-france",
-      "home": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "3",
-        "flag": "assets/flags/FRA.png"
-      },
-      "away": {
-        "code": "SWE",
-        "name": "瑞典",
-        "score": "0",
-        "flag": "assets/flags/SWE.png"
-      }
-    },
-    {
-      "id": "760495",
-      "date": "2026-07-01T16:00Z",
-      "kickoffBeijing": "07-02 00:00 北京",
-      "group": "L 组",
-      "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "英格兰 vs 民主刚果",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760495/congo-dr-england",
-      "home": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "0",
-        "flag": "assets/flags/ENG.png"
-      },
-      "away": {
-        "code": "COD",
-        "name": "民主刚果",
-        "score": "0",
-        "flag": "assets/flags/COD.png"
-      }
-    },
-    {
       "id": "760493",
       "date": "2026-07-01T20:00Z",
       "kickoffBeijing": "07-02 04:00 北京",
@@ -2482,6 +2482,30 @@
         "name": "塞内加尔",
         "score": "0",
         "flag": "assets/flags/SEN.png"
+      }
+    },
+    {
+      "id": "760494",
+      "date": "2026-07-02T00:00Z",
+      "kickoffBeijing": "07-02 08:00 北京",
+      "group": "小组赛",
+      "venue": "圣克拉拉",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "美国 vs 波黑",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760494/bosnia-herzegovina-united-states",
+      "home": {
+        "code": "USA",
+        "name": "美国",
+        "score": "0",
+        "flag": "assets/flags/USA.png"
+      },
+      "away": {
+        "code": "BIH",
+        "name": "波黑",
+        "score": "0",
+        "flag": "assets/flags/BIH.png"
       }
     }
   ]
