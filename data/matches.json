@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260703-20260706",
-  "generatedAt": "2026-07-04T15:47:06.176Z",
-  "generatedAtBeijing": "北京时间 07-04 23:47",
+  "generatedAt": "2026-07-04T20:01:14.608Z",
+  "generatedAtBeijing": "北京时间 07-05 04:01",
   "matches": [
     {
       "id": "760499",
@@ -83,10 +83,10 @@
       "kickoffBeijing": "07-05 01:00 北京",
       "group": "小组赛",
       "venue": "休斯顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "加拿大 vs 摩洛哥",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-3",
+      "title": "加拿大 0-3 摩洛哥",
       "href": "https://www.espn.com/soccer/match/_/gameId/760502/morocco-canada",
       "home": {
         "code": "CAN",
@@ -97,7 +97,7 @@
       "away": {
         "code": "MAR",
         "name": "摩洛哥",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/MAR.png"
       }
     },
@@ -224,6 +224,30 @@
   ],
   "live": [],
   "recentCompleted": [
+    {
+      "id": "760502",
+      "date": "2026-07-04T17:00Z",
+      "kickoffBeijing": "07-05 01:00 北京",
+      "group": "小组赛",
+      "venue": "休斯顿",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-3",
+      "title": "加拿大 0-3 摩洛哥",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760502/morocco-canada",
+      "home": {
+        "code": "CAN",
+        "name": "加拿大",
+        "score": "0",
+        "flag": "assets/flags/CAN.png"
+      },
+      "away": {
+        "code": "MAR",
+        "name": "摩洛哥",
+        "score": "3",
+        "flag": "assets/flags/MAR.png"
+      }
+    },
     {
       "id": "760501",
       "date": "2026-07-04T01:30Z",
@@ -2339,30 +2363,6 @@
   ],
   "upcoming": [
     {
-      "id": "760502",
-      "date": "2026-07-04T17:00Z",
-      "kickoffBeijing": "07-05 01:00 北京",
-      "group": "小组赛",
-      "venue": "休斯顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "加拿大 vs 摩洛哥",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760502/morocco-canada",
-      "home": {
-        "code": "CAN",
-        "name": "加拿大",
-        "score": "0",
-        "flag": "assets/flags/CAN.png"
-      },
-      "away": {
-        "code": "MAR",
-        "name": "摩洛哥",
-        "score": "0",
-        "flag": "assets/flags/MAR.png"
-      }
-    },
-    {
       "id": "760503",
       "date": "2026-07-04T21:00Z",
       "kickoffBeijing": "07-05 05:00 北京",
@@ -2485,6 +2485,30 @@
   ],
   "scoreboard": [
     {
+      "id": "760502",
+      "date": "2026-07-04T17:00Z",
+      "kickoffBeijing": "07-05 01:00 北京",
+      "group": "小组赛",
+      "venue": "休斯顿",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-3",
+      "title": "加拿大 0-3 摩洛哥",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760502/morocco-canada",
+      "home": {
+        "code": "CAN",
+        "name": "加拿大",
+        "score": "0",
+        "flag": "assets/flags/CAN.png"
+      },
+      "away": {
+        "code": "MAR",
+        "name": "摩洛哥",
+        "score": "3",
+        "flag": "assets/flags/MAR.png"
+      }
+    },
+    {
       "id": "760501",
       "date": "2026-07-04T01:30Z",
       "kickoffBeijing": "07-04 09:30 北京",
@@ -2509,54 +2533,6 @@
       }
     },
     {
-      "id": "760500",
-      "date": "2026-07-03T22:00Z",
-      "kickoffBeijing": "07-04 06:00 北京",
-      "group": "小组赛",
-      "venue": "迈阿密",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "3-2",
-      "title": "阿根廷 3-2 佛得角",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760500/cape-verde-argentina",
-      "home": {
-        "code": "ARG",
-        "name": "阿根廷",
-        "score": "3",
-        "flag": "assets/flags/ARG.png"
-      },
-      "away": {
-        "code": "CPV",
-        "name": "佛得角",
-        "score": "2",
-        "flag": "assets/flags/CPV.png"
-      }
-    },
-    {
-      "id": "760502",
-      "date": "2026-07-04T17:00Z",
-      "kickoffBeijing": "07-05 01:00 北京",
-      "group": "小组赛",
-      "venue": "休斯顿",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "加拿大 vs 摩洛哥",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760502/morocco-canada",
-      "home": {
-        "code": "CAN",
-        "name": "加拿大",
-        "score": "0",
-        "flag": "assets/flags/CAN.png"
-      },
-      "away": {
-        "code": "MAR",
-        "name": "摩洛哥",
-        "score": "0",
-        "flag": "assets/flags/MAR.png"
-      }
-    },
-    {
       "id": "760503",
       "date": "2026-07-04T21:00Z",
       "kickoffBeijing": "07-05 05:00 北京",
@@ -2578,6 +2554,30 @@
         "name": "法国",
         "score": "0",
         "flag": "assets/flags/FRA.png"
+      }
+    },
+    {
+      "id": "760504",
+      "date": "2026-07-05T20:00Z",
+      "kickoffBeijing": "07-06 04:00 北京",
+      "group": "小组赛",
+      "venue": "纽约新泽西",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "巴西 vs 挪威",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760504/norway-brazil",
+      "home": {
+        "code": "BRA",
+        "name": "巴西",
+        "score": "0",
+        "flag": "assets/flags/BRA.png"
+      },
+      "away": {
+        "code": "NOR",
+        "name": "挪威",
+        "score": "0",
+        "flag": "assets/flags/NOR.png"
       }
     }
   ]
