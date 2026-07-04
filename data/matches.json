@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260703-20260706",
-  "generatedAt": "2026-07-04T20:01:14.608Z",
-  "generatedAtBeijing": "北京时间 07-05 04:01",
+  "generatedAt": "2026-07-04T23:45:02.978Z",
+  "generatedAtBeijing": "北京时间 07-05 07:45",
   "matches": [
     {
       "id": "760499",
@@ -107,10 +107,10 @@
       "kickoffBeijing": "07-05 05:00 北京",
       "group": "小组赛",
       "venue": "费城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "巴拉圭 vs 法国",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-1",
+      "title": "巴拉圭 0-1 法国",
       "href": "https://www.espn.com/soccer/match/_/gameId/760503/france-paraguay",
       "home": {
         "code": "PAR",
@@ -121,7 +121,7 @@
       "away": {
         "code": "FRA",
         "name": "法国",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/FRA.png"
       }
     },
@@ -224,6 +224,30 @@
   ],
   "live": [],
   "recentCompleted": [
+    {
+      "id": "760503",
+      "date": "2026-07-04T21:00Z",
+      "kickoffBeijing": "07-05 05:00 北京",
+      "group": "小组赛",
+      "venue": "费城",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-1",
+      "title": "巴拉圭 0-1 法国",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760503/france-paraguay",
+      "home": {
+        "code": "PAR",
+        "name": "巴拉圭",
+        "score": "0",
+        "flag": "assets/flags/PAR.png"
+      },
+      "away": {
+        "code": "FRA",
+        "name": "法国",
+        "score": "1",
+        "flag": "assets/flags/FRA.png"
+      }
+    },
     {
       "id": "760502",
       "date": "2026-07-04T17:00Z",
@@ -2363,30 +2387,6 @@
   ],
   "upcoming": [
     {
-      "id": "760503",
-      "date": "2026-07-04T21:00Z",
-      "kickoffBeijing": "07-05 05:00 北京",
-      "group": "小组赛",
-      "venue": "费城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "巴拉圭 vs 法国",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760503/france-paraguay",
-      "home": {
-        "code": "PAR",
-        "name": "巴拉圭",
-        "score": "0",
-        "flag": "assets/flags/PAR.png"
-      },
-      "away": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "0",
-        "flag": "assets/flags/FRA.png"
-      }
-    },
-    {
       "id": "760504",
       "date": "2026-07-05T20:00Z",
       "kickoffBeijing": "07-06 04:00 北京",
@@ -2485,6 +2485,30 @@
   ],
   "scoreboard": [
     {
+      "id": "760503",
+      "date": "2026-07-04T21:00Z",
+      "kickoffBeijing": "07-05 05:00 北京",
+      "group": "小组赛",
+      "venue": "费城",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "0-1",
+      "title": "巴拉圭 0-1 法国",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760503/france-paraguay",
+      "home": {
+        "code": "PAR",
+        "name": "巴拉圭",
+        "score": "0",
+        "flag": "assets/flags/PAR.png"
+      },
+      "away": {
+        "code": "FRA",
+        "name": "法国",
+        "score": "1",
+        "flag": "assets/flags/FRA.png"
+      }
+    },
+    {
       "id": "760502",
       "date": "2026-07-04T17:00Z",
       "kickoffBeijing": "07-05 01:00 北京",
@@ -2509,54 +2533,6 @@
       }
     },
     {
-      "id": "760501",
-      "date": "2026-07-04T01:30Z",
-      "kickoffBeijing": "07-04 09:30 北京",
-      "group": "K 组",
-      "venue": "堪萨斯城",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "1-0",
-      "title": "哥伦比亚 1-0 加纳",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760501/ghana-colombia",
-      "home": {
-        "code": "COL",
-        "name": "哥伦比亚",
-        "score": "1",
-        "flag": "assets/flags/COL.png"
-      },
-      "away": {
-        "code": "GHA",
-        "name": "加纳",
-        "score": "0",
-        "flag": "assets/flags/GHA.png"
-      }
-    },
-    {
-      "id": "760503",
-      "date": "2026-07-04T21:00Z",
-      "kickoffBeijing": "07-05 05:00 北京",
-      "group": "小组赛",
-      "venue": "费城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "巴拉圭 vs 法国",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760503/france-paraguay",
-      "home": {
-        "code": "PAR",
-        "name": "巴拉圭",
-        "score": "0",
-        "flag": "assets/flags/PAR.png"
-      },
-      "away": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "0",
-        "flag": "assets/flags/FRA.png"
-      }
-    },
-    {
       "id": "760504",
       "date": "2026-07-05T20:00Z",
       "kickoffBeijing": "07-06 04:00 北京",
@@ -2578,6 +2554,30 @@
         "name": "挪威",
         "score": "0",
         "flag": "assets/flags/NOR.png"
+      }
+    },
+    {
+      "id": "760505",
+      "date": "2026-07-06T00:00Z",
+      "kickoffBeijing": "07-06 08:00 北京",
+      "group": "小组赛",
+      "venue": "墨西哥城",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "墨西哥 vs 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760505/england-mexico",
+      "home": {
+        "code": "MEX",
+        "name": "墨西哥",
+        "score": "0",
+        "flag": "assets/flags/MEX.png"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "0",
+        "flag": "assets/flags/ENG.png"
       }
     }
   ]
