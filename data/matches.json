@@ -1,58 +1,10 @@
 {
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
-  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260704-20260707",
-  "generatedAt": "2026-07-05T22:17:18.516Z",
-  "generatedAtBeijing": "北京时间 07-06 06:17",
+  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260705-20260708",
+  "generatedAt": "2026-07-06T12:58:36.973Z",
+  "generatedAtBeijing": "北京时间 07-06 20:58",
   "matches": [
-    {
-      "id": "760502",
-      "date": "2026-07-04T17:00Z",
-      "kickoffBeijing": "07-05 01:00 北京",
-      "group": "小组赛",
-      "venue": "休斯顿",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "0-3",
-      "title": "加拿大 0-3 摩洛哥",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760502/morocco-canada",
-      "home": {
-        "code": "CAN",
-        "name": "加拿大",
-        "score": "0",
-        "flag": "assets/flags/CAN.png"
-      },
-      "away": {
-        "code": "MAR",
-        "name": "摩洛哥",
-        "score": "3",
-        "flag": "assets/flags/MAR.png"
-      }
-    },
-    {
-      "id": "760503",
-      "date": "2026-07-04T21:00Z",
-      "kickoffBeijing": "07-05 05:00 北京",
-      "group": "小组赛",
-      "venue": "费城",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "0-1",
-      "title": "巴拉圭 0-1 法国",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760503/france-paraguay",
-      "home": {
-        "code": "PAR",
-        "name": "巴拉圭",
-        "score": "0",
-        "flag": "assets/flags/PAR.png"
-      },
-      "away": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "1",
-        "flag": "assets/flags/FRA.png"
-      }
-    },
     {
       "id": "760504",
       "date": "2026-07-05T20:00Z",
@@ -79,25 +31,25 @@
     },
     {
       "id": "760505",
-      "date": "2026-07-06T00:00Z",
-      "kickoffBeijing": "07-06 08:00 北京",
+      "date": "2026-07-06T01:00Z",
+      "kickoffBeijing": "07-06 09:00 北京",
       "group": "小组赛",
       "venue": "墨西哥城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "墨西哥 vs 英格兰",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-3",
+      "title": "墨西哥 2-3 英格兰",
       "href": "https://www.espn.com/soccer/match/_/gameId/760505/england-mexico",
       "home": {
         "code": "MEX",
         "name": "墨西哥",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/MEX.png"
       },
       "away": {
         "code": "ENG",
         "name": "英格兰",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/ENG.png"
       }
     },
@@ -200,6 +152,30 @@
   ],
   "live": [],
   "recentCompleted": [
+    {
+      "id": "760505",
+      "date": "2026-07-06T01:00Z",
+      "kickoffBeijing": "07-06 09:00 北京",
+      "group": "小组赛",
+      "venue": "墨西哥城",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-3",
+      "title": "墨西哥 2-3 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760505/england-mexico",
+      "home": {
+        "code": "MEX",
+        "name": "墨西哥",
+        "score": "2",
+        "flag": "assets/flags/MEX.png"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "3",
+        "flag": "assets/flags/ENG.png"
+      }
+    },
     {
       "id": "760504",
       "date": "2026-07-05T20:00Z",
@@ -2387,30 +2363,6 @@
   ],
   "upcoming": [
     {
-      "id": "760505",
-      "date": "2026-07-06T00:00Z",
-      "kickoffBeijing": "07-06 08:00 北京",
-      "group": "小组赛",
-      "venue": "墨西哥城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "墨西哥 vs 英格兰",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760505/england-mexico",
-      "home": {
-        "code": "MEX",
-        "name": "墨西哥",
-        "score": "0",
-        "flag": "assets/flags/MEX.png"
-      },
-      "away": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "0",
-        "flag": "assets/flags/ENG.png"
-      }
-    },
-    {
       "id": "760506",
       "date": "2026-07-06T19:00Z",
       "kickoffBeijing": "07-07 03:00 北京",
@@ -2509,6 +2461,30 @@
   ],
   "scoreboard": [
     {
+      "id": "760505",
+      "date": "2026-07-06T01:00Z",
+      "kickoffBeijing": "07-06 09:00 北京",
+      "group": "小组赛",
+      "venue": "墨西哥城",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-3",
+      "title": "墨西哥 2-3 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760505/england-mexico",
+      "home": {
+        "code": "MEX",
+        "name": "墨西哥",
+        "score": "2",
+        "flag": "assets/flags/MEX.png"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "3",
+        "flag": "assets/flags/ENG.png"
+      }
+    },
+    {
       "id": "760504",
       "date": "2026-07-05T20:00Z",
       "kickoffBeijing": "07-06 04:00 北京",
@@ -2533,54 +2509,6 @@
       }
     },
     {
-      "id": "760503",
-      "date": "2026-07-04T21:00Z",
-      "kickoffBeijing": "07-05 05:00 北京",
-      "group": "小组赛",
-      "venue": "费城",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "0-1",
-      "title": "巴拉圭 0-1 法国",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760503/france-paraguay",
-      "home": {
-        "code": "PAR",
-        "name": "巴拉圭",
-        "score": "0",
-        "flag": "assets/flags/PAR.png"
-      },
-      "away": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "1",
-        "flag": "assets/flags/FRA.png"
-      }
-    },
-    {
-      "id": "760505",
-      "date": "2026-07-06T00:00Z",
-      "kickoffBeijing": "07-06 08:00 北京",
-      "group": "小组赛",
-      "venue": "墨西哥城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "墨西哥 vs 英格兰",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760505/england-mexico",
-      "home": {
-        "code": "MEX",
-        "name": "墨西哥",
-        "score": "0",
-        "flag": "assets/flags/MEX.png"
-      },
-      "away": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "0",
-        "flag": "assets/flags/ENG.png"
-      }
-    },
-    {
       "id": "760506",
       "date": "2026-07-06T19:00Z",
       "kickoffBeijing": "07-07 03:00 北京",
@@ -2602,6 +2530,30 @@
         "name": "西班牙",
         "score": "0",
         "flag": "assets/flags/ESP.png"
+      }
+    },
+    {
+      "id": "760507",
+      "date": "2026-07-07T00:00Z",
+      "kickoffBeijing": "07-07 08:00 北京",
+      "group": "小组赛",
+      "venue": "西雅图",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "美国 vs 比利时",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760507/belgium-united-states",
+      "home": {
+        "code": "USA",
+        "name": "美国",
+        "score": "0",
+        "flag": "assets/flags/USA.png"
+      },
+      "away": {
+        "code": "BEL",
+        "name": "比利时",
+        "score": "0",
+        "flag": "assets/flags/BEL.png"
       }
     }
   ]
