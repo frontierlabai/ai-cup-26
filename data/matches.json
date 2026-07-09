@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260708-20260711",
-  "generatedAt": "2026-07-09T20:10:15.777Z",
-  "generatedAtBeijing": "北京时间 07-10 04:10",
+  "generatedAt": "2026-07-09T21:50:36.096Z",
+  "generatedAtBeijing": "北京时间 07-10 05:50",
   "matches": [
     {
       "id": "760510",
@@ -12,14 +12,14 @@
       "group": "小组赛",
       "venue": "波士顿",
       "statusKind": "live",
-      "statusLabel": "9'",
-      "scoreline": "0-0",
-      "title": "法国 0-0 摩洛哥",
+      "statusLabel": "86'",
+      "scoreline": "2-0",
+      "title": "法国 2-0 摩洛哥",
       "href": "https://www.espn.com/soccer/match/_/gameId/760510",
       "home": {
         "code": "FRA",
         "name": "法国",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/FRA.png"
       },
       "away": {
@@ -110,14 +110,14 @@
       "group": "小组赛",
       "venue": "波士顿",
       "statusKind": "live",
-      "statusLabel": "9'",
-      "scoreline": "0-0",
-      "title": "法国 0-0 摩洛哥",
+      "statusLabel": "86'",
+      "scoreline": "2-0",
+      "title": "法国 2-0 摩洛哥",
       "href": "https://www.espn.com/soccer/match/_/gameId/760510",
       "home": {
         "code": "FRA",
         "name": "法国",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/FRA.png"
       },
       "away": {
@@ -2516,14 +2516,14 @@
       "group": "小组赛",
       "venue": "波士顿",
       "statusKind": "live",
-      "statusLabel": "9'",
-      "scoreline": "0-0",
-      "title": "法国 0-0 摩洛哥",
+      "statusLabel": "86'",
+      "scoreline": "2-0",
+      "title": "法国 2-0 摩洛哥",
       "href": "https://www.espn.com/soccer/match/_/gameId/760510",
       "home": {
         "code": "FRA",
         "name": "法国",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/FRA.png"
       },
       "away": {
