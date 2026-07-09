@@ -1,58 +1,10 @@
 {
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
-  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260707-20260710",
-  "generatedAt": "2026-07-08T23:53:29.001Z",
-  "generatedAtBeijing": "北京时间 07-09 07:53",
+  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260708-20260711",
+  "generatedAt": "2026-07-09T03:33:34.392Z",
+  "generatedAtBeijing": "北京时间 07-09 11:33",
   "matches": [
-    {
-      "id": "760509",
-      "date": "2026-07-07T16:00Z",
-      "kickoffBeijing": "07-08 00:00 北京",
-      "group": "小组赛",
-      "venue": "亚特兰大",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "3-2",
-      "title": "阿根廷 3-2 埃及",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760509/egypt-argentina",
-      "home": {
-        "code": "ARG",
-        "name": "阿根廷",
-        "score": "3",
-        "flag": "assets/flags/ARG.png"
-      },
-      "away": {
-        "code": "EGY",
-        "name": "埃及",
-        "score": "2",
-        "flag": "assets/flags/EGY.png"
-      }
-    },
-    {
-      "id": "760508",
-      "date": "2026-07-07T20:00Z",
-      "kickoffBeijing": "07-08 04:00 北京",
-      "group": "小组赛",
-      "venue": "温哥华",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "0-0",
-      "title": "瑞士 0-0 哥伦比亚",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760508/colombia-switzerland",
-      "home": {
-        "code": "SUI",
-        "name": "瑞士",
-        "score": "0",
-        "flag": "assets/flags/SUI.png"
-      },
-      "away": {
-        "code": "COL",
-        "name": "哥伦比亚",
-        "score": "0",
-        "flag": "assets/flags/COL.png"
-      }
-    },
     {
       "id": "760510",
       "date": "2026-07-09T20:00Z",
@@ -99,6 +51,54 @@
         "name": "比利时",
         "score": "0",
         "flag": "assets/flags/BEL.png"
+      }
+    },
+    {
+      "id": "760512",
+      "date": "2026-07-11T21:00Z",
+      "kickoffBeijing": "07-12 05:00 北京",
+      "group": "小组赛",
+      "venue": "迈阿密",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "挪威 vs 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760512/england-norway",
+      "home": {
+        "code": "NOR",
+        "name": "挪威",
+        "score": "0",
+        "flag": "assets/flags/NOR.png"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "0",
+        "flag": "assets/flags/ENG.png"
+      }
+    },
+    {
+      "id": "760513",
+      "date": "2026-07-12T01:00Z",
+      "kickoffBeijing": "07-12 09:00 北京",
+      "group": "小组赛",
+      "venue": "堪萨斯城",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "阿根廷 vs 瑞士",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760513/switzerland-argentina",
+      "home": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "0",
+        "flag": "assets/flags/ARG.png"
+      },
+      "away": {
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "0",
+        "flag": "assets/flags/SUI.png"
       }
     }
   ],
@@ -2456,6 +2456,54 @@
         "name": "比利时",
         "score": "0",
         "flag": "assets/flags/BEL.png"
+      }
+    },
+    {
+      "id": "760512",
+      "date": "2026-07-11T21:00Z",
+      "kickoffBeijing": "07-12 05:00 北京",
+      "group": "小组赛",
+      "venue": "迈阿密",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "挪威 vs 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760512/england-norway",
+      "home": {
+        "code": "NOR",
+        "name": "挪威",
+        "score": "0",
+        "flag": "assets/flags/NOR.png"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "0",
+        "flag": "assets/flags/ENG.png"
+      }
+    },
+    {
+      "id": "760513",
+      "date": "2026-07-12T01:00Z",
+      "kickoffBeijing": "07-12 09:00 北京",
+      "group": "小组赛",
+      "venue": "堪萨斯城",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "阿根廷 vs 瑞士",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760513/switzerland-argentina",
+      "home": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "0",
+        "flag": "assets/flags/ARG.png"
+      },
+      "away": {
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "0",
+        "flag": "assets/flags/SUI.png"
       }
     }
   ],
