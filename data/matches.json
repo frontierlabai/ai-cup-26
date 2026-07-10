@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260709-20260712",
-  "generatedAt": "2026-07-10T19:46:18.817Z",
-  "generatedAtBeijing": "北京时间 07-11 03:46",
+  "generatedAt": "2026-07-10T20:55:52.178Z",
+  "generatedAtBeijing": "北京时间 07-11 04:55",
   "matches": [
     {
       "id": "760510",
@@ -36,14 +36,14 @@
       "group": "小组赛",
       "venue": "洛杉矶",
       "statusKind": "live",
-      "statusLabel": "45'",
-      "scoreline": "1-1",
-      "title": "西班牙 1-1 比利时",
+      "statusLabel": "90'+3'",
+      "scoreline": "2-1",
+      "title": "西班牙 2-1 比利时",
       "href": "https://www.espn.com/soccer/match/_/gameId/760511",
       "home": {
         "code": "ESP",
         "name": "西班牙",
-        "score": "1",
+        "score": "2",
         "flag": "assets/flags/ESP.png"
       },
       "away": {
@@ -110,14 +110,14 @@
       "group": "小组赛",
       "venue": "洛杉矶",
       "statusKind": "live",
-      "statusLabel": "45'",
-      "scoreline": "1-1",
-      "title": "西班牙 1-1 比利时",
+      "statusLabel": "90'+3'",
+      "scoreline": "2-1",
+      "title": "西班牙 2-1 比利时",
       "href": "https://www.espn.com/soccer/match/_/gameId/760511",
       "home": {
         "code": "ESP",
         "name": "西班牙",
-        "score": "1",
+        "score": "2",
         "flag": "assets/flags/ESP.png"
       },
       "away": {
@@ -2516,14 +2516,14 @@
       "group": "小组赛",
       "venue": "洛杉矶",
       "statusKind": "live",
-      "statusLabel": "45'",
-      "scoreline": "1-1",
-      "title": "西班牙 1-1 比利时",
+      "statusLabel": "90'+3'",
+      "scoreline": "2-1",
+      "title": "西班牙 2-1 比利时",
       "href": "https://www.espn.com/soccer/match/_/gameId/760511",
       "home": {
         "code": "ESP",
         "name": "西班牙",
-        "score": "1",
+        "score": "2",
         "flag": "assets/flags/ESP.png"
       },
       "away": {
