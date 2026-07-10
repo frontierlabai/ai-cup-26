@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260709-20260712",
-  "generatedAt": "2026-07-10T17:58:36.227Z",
-  "generatedAtBeijing": "北京时间 07-11 01:58",
+  "generatedAt": "2026-07-10T19:46:18.817Z",
+  "generatedAtBeijing": "北京时间 07-11 03:46",
   "matches": [
     {
       "id": "760510",
@@ -35,21 +35,21 @@
       "kickoffBeijing": "07-11 03:00 北京",
       "group": "小组赛",
       "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "西班牙 vs 比利时",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760511/belgium-spain",
+      "statusKind": "live",
+      "statusLabel": "45'",
+      "scoreline": "1-1",
+      "title": "西班牙 1-1 比利时",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760511",
       "home": {
         "code": "ESP",
         "name": "西班牙",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/ESP.png"
       },
       "away": {
         "code": "BEL",
         "name": "比利时",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/BEL.png"
       }
     },
@@ -102,7 +102,32 @@
       }
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "760511",
+      "date": "2026-07-10T19:00Z",
+      "kickoffBeijing": "07-11 03:00 北京",
+      "group": "小组赛",
+      "venue": "洛杉矶",
+      "statusKind": "live",
+      "statusLabel": "45'",
+      "scoreline": "1-1",
+      "title": "西班牙 1-1 比利时",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760511",
+      "home": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "1",
+        "flag": "assets/flags/ESP.png"
+      },
+      "away": {
+        "code": "BEL",
+        "name": "比利时",
+        "score": "1",
+        "flag": "assets/flags/BEL.png"
+      }
+    }
+  ],
   "recentCompleted": [
     {
       "id": "760510",
@@ -2435,30 +2460,6 @@
   ],
   "upcoming": [
     {
-      "id": "760511",
-      "date": "2026-07-10T19:00Z",
-      "kickoffBeijing": "07-11 03:00 北京",
-      "group": "小组赛",
-      "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "西班牙 vs 比利时",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760511/belgium-spain",
-      "home": {
-        "code": "ESP",
-        "name": "西班牙",
-        "score": "0",
-        "flag": "assets/flags/ESP.png"
-      },
-      "away": {
-        "code": "BEL",
-        "name": "比利时",
-        "score": "0",
-        "flag": "assets/flags/BEL.png"
-      }
-    },
-    {
       "id": "760512",
       "date": "2026-07-11T21:00Z",
       "kickoffBeijing": "07-12 05:00 北京",
@@ -2509,6 +2510,30 @@
   ],
   "scoreboard": [
     {
+      "id": "760511",
+      "date": "2026-07-10T19:00Z",
+      "kickoffBeijing": "07-11 03:00 北京",
+      "group": "小组赛",
+      "venue": "洛杉矶",
+      "statusKind": "live",
+      "statusLabel": "45'",
+      "scoreline": "1-1",
+      "title": "西班牙 1-1 比利时",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760511",
+      "home": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "1",
+        "flag": "assets/flags/ESP.png"
+      },
+      "away": {
+        "code": "BEL",
+        "name": "比利时",
+        "score": "1",
+        "flag": "assets/flags/BEL.png"
+      }
+    },
+    {
       "id": "760510",
       "date": "2026-07-09T20:00Z",
       "kickoffBeijing": "07-10 04:00 北京",
@@ -2557,51 +2582,27 @@
       }
     },
     {
-      "id": "760511",
-      "date": "2026-07-10T19:00Z",
-      "kickoffBeijing": "07-11 03:00 北京",
+      "id": "760509",
+      "date": "2026-07-07T16:00Z",
+      "kickoffBeijing": "07-08 00:00 北京",
       "group": "小组赛",
-      "venue": "洛杉矶",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "西班牙 vs 比利时",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760511/belgium-spain",
+      "venue": "亚特兰大",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-2",
+      "title": "阿根廷 3-2 埃及",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760509/egypt-argentina",
       "home": {
-        "code": "ESP",
-        "name": "西班牙",
-        "score": "0",
-        "flag": "assets/flags/ESP.png"
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "3",
+        "flag": "assets/flags/ARG.png"
       },
       "away": {
-        "code": "BEL",
-        "name": "比利时",
-        "score": "0",
-        "flag": "assets/flags/BEL.png"
-      }
-    },
-    {
-      "id": "760512",
-      "date": "2026-07-11T21:00Z",
-      "kickoffBeijing": "07-12 05:00 北京",
-      "group": "小组赛",
-      "venue": "迈阿密",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "挪威 vs 英格兰",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760512/england-norway",
-      "home": {
-        "code": "NOR",
-        "name": "挪威",
-        "score": "0",
-        "flag": "assets/flags/NOR.png"
-      },
-      "away": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "0",
-        "flag": "assets/flags/ENG.png"
+        "code": "EGY",
+        "name": "埃及",
+        "score": "2",
+        "flag": "assets/flags/EGY.png"
       }
     }
   ]
