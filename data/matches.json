@@ -1,34 +1,10 @@
 {
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
-  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260709-20260712",
-  "generatedAt": "2026-07-10T23:13:00.704Z",
-  "generatedAtBeijing": "北京时间 07-11 07:13",
+  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260710-20260713",
+  "generatedAt": "2026-07-11T00:13:27.001Z",
+  "generatedAtBeijing": "北京时间 07-11 08:13",
   "matches": [
-    {
-      "id": "760510",
-      "date": "2026-07-09T20:00Z",
-      "kickoffBeijing": "07-10 04:00 北京",
-      "group": "小组赛",
-      "venue": "波士顿",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "2-0",
-      "title": "法国 2-0 摩洛哥",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760510/morocco-france",
-      "home": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "2",
-        "flag": "assets/flags/FRA.png"
-      },
-      "away": {
-        "code": "MAR",
-        "name": "摩洛哥",
-        "score": "0",
-        "flag": "assets/flags/MAR.png"
-      }
-    },
     {
       "id": "760511",
       "date": "2026-07-10T19:00Z",
