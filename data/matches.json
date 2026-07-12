@@ -1,34 +1,10 @@
 {
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
-  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260710-20260713",
-  "generatedAt": "2026-07-11T23:57:42.836Z",
-  "generatedAtBeijing": "北京时间 07-12 07:57",
+  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260711-20260714",
+  "generatedAt": "2026-07-12T03:44:19.518Z",
+  "generatedAtBeijing": "北京时间 07-12 11:44",
   "matches": [
-    {
-      "id": "760511",
-      "date": "2026-07-10T19:00Z",
-      "kickoffBeijing": "07-11 03:00 北京",
-      "group": "小组赛",
-      "venue": "洛杉矶",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "2-1",
-      "title": "西班牙 2-1 比利时",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760511/belgium-spain",
-      "home": {
-        "code": "ESP",
-        "name": "西班牙",
-        "score": "2",
-        "flag": "assets/flags/ESP.png"
-      },
-      "away": {
-        "code": "BEL",
-        "name": "比利时",
-        "score": "1",
-        "flag": "assets/flags/BEL.png"
-      }
-    },
     {
       "id": "760512",
       "date": "2026-07-11T21:00Z",
@@ -59,26 +35,75 @@
       "kickoffBeijing": "07-12 09:00 北京",
       "group": "小组赛",
       "venue": "堪萨斯城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "阿根廷 vs 瑞士",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760513/switzerland-argentina",
+      "statusKind": "live",
+      "statusLabel": "120'+4'",
+      "scoreline": "3-1",
+      "title": "阿根廷 3-1 瑞士",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760513",
       "home": {
         "code": "ARG",
         "name": "阿根廷",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/ARG.png"
       },
       "away": {
         "code": "SUI",
         "name": "瑞士",
+        "score": "1",
+        "flag": "assets/flags/SUI.png"
+      }
+    },
+    {
+      "id": "760514",
+      "date": "2026-07-14T19:00Z",
+      "kickoffBeijing": "07-15 03:00 北京",
+      "group": "小组赛",
+      "venue": "达拉斯",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "法国 vs 西班牙",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760514/spain-france",
+      "home": {
+        "code": "FRA",
+        "name": "法国",
         "score": "0",
+        "flag": "assets/flags/FRA.png"
+      },
+      "away": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "0",
+        "flag": "assets/flags/ESP.png"
+      }
+    }
+  ],
+  "live": [
+    {
+      "id": "760513",
+      "date": "2026-07-12T01:00Z",
+      "kickoffBeijing": "07-12 09:00 北京",
+      "group": "小组赛",
+      "venue": "堪萨斯城",
+      "statusKind": "live",
+      "statusLabel": "120'+4'",
+      "scoreline": "3-1",
+      "title": "阿根廷 3-1 瑞士",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760513",
+      "home": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "3",
+        "flag": "assets/flags/ARG.png"
+      },
+      "away": {
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "1",
         "flag": "assets/flags/SUI.png"
       }
     }
   ],
-  "live": [],
   "recentCompleted": [
     {
       "id": "760512",
@@ -2459,31 +2484,55 @@
   ],
   "upcoming": [
     {
+      "id": "760514",
+      "date": "2026-07-14T19:00Z",
+      "kickoffBeijing": "07-15 03:00 北京",
+      "group": "小组赛",
+      "venue": "达拉斯",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "法国 vs 西班牙",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760514/spain-france",
+      "home": {
+        "code": "FRA",
+        "name": "法国",
+        "score": "0",
+        "flag": "assets/flags/FRA.png"
+      },
+      "away": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "0",
+        "flag": "assets/flags/ESP.png"
+      }
+    }
+  ],
+  "scoreboard": [
+    {
       "id": "760513",
       "date": "2026-07-12T01:00Z",
       "kickoffBeijing": "07-12 09:00 北京",
       "group": "小组赛",
       "venue": "堪萨斯城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "阿根廷 vs 瑞士",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760513/switzerland-argentina",
+      "statusKind": "live",
+      "statusLabel": "120'+4'",
+      "scoreline": "3-1",
+      "title": "阿根廷 3-1 瑞士",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760513",
       "home": {
         "code": "ARG",
         "name": "阿根廷",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/ARG.png"
       },
       "away": {
         "code": "SUI",
         "name": "瑞士",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/SUI.png"
       }
-    }
-  ],
-  "scoreboard": [
+    },
     {
       "id": "760512",
       "date": "2026-07-11T21:00Z",
@@ -2533,27 +2582,27 @@
       }
     },
     {
-      "id": "760513",
-      "date": "2026-07-12T01:00Z",
-      "kickoffBeijing": "07-12 09:00 北京",
+      "id": "760510",
+      "date": "2026-07-09T20:00Z",
+      "kickoffBeijing": "07-10 04:00 北京",
       "group": "小组赛",
-      "venue": "堪萨斯城",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "阿根廷 vs 瑞士",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760513/switzerland-argentina",
+      "venue": "波士顿",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "2-0",
+      "title": "法国 2-0 摩洛哥",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760510/morocco-france",
       "home": {
-        "code": "ARG",
-        "name": "阿根廷",
-        "score": "0",
-        "flag": "assets/flags/ARG.png"
+        "code": "FRA",
+        "name": "法国",
+        "score": "2",
+        "flag": "assets/flags/FRA.png"
       },
       "away": {
-        "code": "SUI",
-        "name": "瑞士",
+        "code": "MAR",
+        "name": "摩洛哥",
         "score": "0",
-        "flag": "assets/flags/SUI.png"
+        "flag": "assets/flags/MAR.png"
       }
     }
   ]
