@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260713-20260716",
-  "generatedAt": "2026-07-14T19:23:20.585Z",
-  "generatedAtBeijing": "北京时间 07-15 03:23",
+  "generatedAt": "2026-07-14T20:38:25.033Z",
+  "generatedAtBeijing": "北京时间 07-15 04:38",
   "matches": [
     {
       "id": "760514",
@@ -12,9 +12,9 @@
       "group": "小组赛",
       "venue": "达拉斯",
       "statusKind": "live",
-      "statusLabel": "23'",
-      "scoreline": "0-1",
-      "title": "法国 0-1 西班牙",
+      "statusLabel": "76'",
+      "scoreline": "0-2",
+      "title": "法国 0-2 西班牙",
       "href": "https://www.espn.com/soccer/match/_/gameId/760514",
       "home": {
         "code": "FRA",
@@ -25,7 +25,7 @@
       "away": {
         "code": "ESP",
         "name": "西班牙",
-        "score": "1",
+        "score": "2",
         "flag": "assets/flags/ESP.png"
       }
     },
@@ -62,9 +62,9 @@
       "group": "小组赛",
       "venue": "达拉斯",
       "statusKind": "live",
-      "statusLabel": "23'",
-      "scoreline": "0-1",
-      "title": "法国 0-1 西班牙",
+      "statusLabel": "76'",
+      "scoreline": "0-2",
+      "title": "法国 0-2 西班牙",
       "href": "https://www.espn.com/soccer/match/_/gameId/760514",
       "home": {
         "code": "FRA",
@@ -75,7 +75,7 @@
       "away": {
         "code": "ESP",
         "name": "西班牙",
-        "score": "1",
+        "score": "2",
         "flag": "assets/flags/ESP.png"
       }
     }
@@ -2516,9 +2516,9 @@
       "group": "小组赛",
       "venue": "达拉斯",
       "statusKind": "live",
-      "statusLabel": "23'",
-      "scoreline": "0-1",
-      "title": "法国 0-1 西班牙",
+      "statusLabel": "76'",
+      "scoreline": "0-2",
+      "title": "法国 0-2 西班牙",
       "href": "https://www.espn.com/soccer/match/_/gameId/760514",
       "home": {
         "code": "FRA",
@@ -2529,7 +2529,7 @@
       "away": {
         "code": "ESP",
         "name": "西班牙",
-        "score": "1",
+        "score": "2",
         "flag": "assets/flags/ESP.png"
       }
     },
