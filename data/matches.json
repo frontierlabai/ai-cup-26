@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260714-20260717",
-  "generatedAt": "2026-07-15T21:02:39.577Z",
-  "generatedAtBeijing": "北京时间 07-16 05:02",
+  "generatedAt": "2026-07-15T22:10:43.381Z",
+  "generatedAtBeijing": "北京时间 07-16 06:10",
   "matches": [
     {
       "id": "760514",
@@ -35,11 +35,11 @@
       "kickoffBeijing": "07-16 03:00 北京",
       "group": "小组赛",
       "venue": "亚特兰大",
-      "statusKind": "live",
-      "statusLabel": "90'+11'",
+      "statusKind": "final",
+      "statusLabel": "完赛",
       "scoreline": "1-2",
       "title": "英格兰 1-2 阿根廷",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760515",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760515/argentina-england",
       "home": {
         "code": "ENG",
         "name": "英格兰",
@@ -54,18 +54,19 @@
       }
     }
   ],
-  "live": [
+  "live": [],
+  "recentCompleted": [
     {
       "id": "760515",
       "date": "2026-07-15T19:00Z",
       "kickoffBeijing": "07-16 03:00 北京",
       "group": "小组赛",
       "venue": "亚特兰大",
-      "statusKind": "live",
-      "statusLabel": "90'+11'",
+      "statusKind": "final",
+      "statusLabel": "完赛",
       "scoreline": "1-2",
       "title": "英格兰 1-2 阿根廷",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760515",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760515/argentina-england",
       "home": {
         "code": "ENG",
         "name": "英格兰",
@@ -78,9 +79,7 @@
         "score": "2",
         "flag": "assets/flags/ARG.png"
       }
-    }
-  ],
-  "recentCompleted": [
+    },
     {
       "id": "760514",
       "date": "2026-07-14T19:00Z",
@@ -2514,11 +2513,11 @@
       "kickoffBeijing": "07-16 03:00 北京",
       "group": "小组赛",
       "venue": "亚特兰大",
-      "statusKind": "live",
-      "statusLabel": "90'+11'",
+      "statusKind": "final",
+      "statusLabel": "完赛",
       "scoreline": "1-2",
       "title": "英格兰 1-2 阿根廷",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760515",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760515/argentina-england",
       "home": {
         "code": "ENG",
         "name": "英格兰",
