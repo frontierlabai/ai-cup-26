@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260714-20260717",
-  "generatedAt": "2026-07-15T19:51:10.619Z",
-  "generatedAtBeijing": "北京时间 07-16 03:51",
+  "generatedAt": "2026-07-15T21:02:39.577Z",
+  "generatedAtBeijing": "北京时间 07-16 05:02",
   "matches": [
     {
       "id": "760514",
@@ -36,20 +36,20 @@
       "group": "小组赛",
       "venue": "亚特兰大",
       "statusKind": "live",
-      "statusLabel": "中场",
-      "scoreline": "0-0",
-      "title": "英格兰 0-0 阿根廷",
+      "statusLabel": "90'+11'",
+      "scoreline": "1-2",
+      "title": "英格兰 1-2 阿根廷",
       "href": "https://www.espn.com/soccer/match/_/gameId/760515",
       "home": {
         "code": "ENG",
         "name": "英格兰",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/ENG.png"
       },
       "away": {
         "code": "ARG",
         "name": "阿根廷",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/ARG.png"
       }
     }
@@ -62,20 +62,20 @@
       "group": "小组赛",
       "venue": "亚特兰大",
       "statusKind": "live",
-      "statusLabel": "中场",
-      "scoreline": "0-0",
-      "title": "英格兰 0-0 阿根廷",
+      "statusLabel": "90'+11'",
+      "scoreline": "1-2",
+      "title": "英格兰 1-2 阿根廷",
       "href": "https://www.espn.com/soccer/match/_/gameId/760515",
       "home": {
         "code": "ENG",
         "name": "英格兰",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/ENG.png"
       },
       "away": {
         "code": "ARG",
         "name": "阿根廷",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/ARG.png"
       }
     }
@@ -2515,20 +2515,20 @@
       "group": "小组赛",
       "venue": "亚特兰大",
       "statusKind": "live",
-      "statusLabel": "中场",
-      "scoreline": "0-0",
-      "title": "英格兰 0-0 阿根廷",
+      "statusLabel": "90'+11'",
+      "scoreline": "1-2",
+      "title": "英格兰 1-2 阿根廷",
       "href": "https://www.espn.com/soccer/match/_/gameId/760515",
       "home": {
         "code": "ENG",
         "name": "英格兰",
-        "score": "0",
+        "score": "1",
         "flag": "assets/flags/ENG.png"
       },
       "away": {
         "code": "ARG",
         "name": "阿根廷",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/ARG.png"
       }
     },
