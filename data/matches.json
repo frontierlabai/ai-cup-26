@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260714-20260717",
-  "generatedAt": "2026-07-15T18:38:58.569Z",
-  "generatedAtBeijing": "北京时间 07-16 02:38",
+  "generatedAt": "2026-07-15T19:51:10.619Z",
+  "generatedAtBeijing": "北京时间 07-16 03:51",
   "matches": [
     {
       "id": "760514",
@@ -35,11 +35,11 @@
       "kickoffBeijing": "07-16 03:00 北京",
       "group": "小组赛",
       "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "英格兰 vs 阿根廷",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760515/argentina-england",
+      "statusKind": "live",
+      "statusLabel": "中场",
+      "scoreline": "0-0",
+      "title": "英格兰 0-0 阿根廷",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760515",
       "home": {
         "code": "ENG",
         "name": "英格兰",
@@ -54,7 +54,32 @@
       }
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "760515",
+      "date": "2026-07-15T19:00Z",
+      "kickoffBeijing": "07-16 03:00 北京",
+      "group": "小组赛",
+      "venue": "亚特兰大",
+      "statusKind": "live",
+      "statusLabel": "中场",
+      "scoreline": "0-0",
+      "title": "英格兰 0-0 阿根廷",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760515",
+      "home": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "0",
+        "flag": "assets/flags/ENG.png"
+      },
+      "away": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "0",
+        "flag": "assets/flags/ARG.png"
+      }
+    }
+  ],
   "recentCompleted": [
     {
       "id": "760514",
@@ -2481,18 +2506,19 @@
       }
     }
   ],
-  "upcoming": [
+  "upcoming": [],
+  "scoreboard": [
     {
       "id": "760515",
       "date": "2026-07-15T19:00Z",
       "kickoffBeijing": "07-16 03:00 北京",
       "group": "小组赛",
       "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "英格兰 vs 阿根廷",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760515/argentina-england",
+      "statusKind": "live",
+      "statusLabel": "中场",
+      "scoreline": "0-0",
+      "title": "英格兰 0-0 阿根廷",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760515",
       "home": {
         "code": "ENG",
         "name": "英格兰",
@@ -2505,9 +2531,7 @@
         "score": "0",
         "flag": "assets/flags/ARG.png"
       }
-    }
-  ],
-  "scoreboard": [
+    },
     {
       "id": "760514",
       "date": "2026-07-14T19:00Z",
@@ -2557,27 +2581,27 @@
       }
     },
     {
-      "id": "760515",
-      "date": "2026-07-15T19:00Z",
-      "kickoffBeijing": "07-16 03:00 北京",
+      "id": "760512",
+      "date": "2026-07-11T21:00Z",
+      "kickoffBeijing": "07-12 05:00 北京",
       "group": "小组赛",
-      "venue": "亚特兰大",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "英格兰 vs 阿根廷",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760515/argentina-england",
+      "venue": "迈阿密",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "1-2",
+      "title": "挪威 1-2 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760512/england-norway",
       "home": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "0",
-        "flag": "assets/flags/ENG.png"
+        "code": "NOR",
+        "name": "挪威",
+        "score": "1",
+        "flag": "assets/flags/NOR.png"
       },
       "away": {
-        "code": "ARG",
-        "name": "阿根廷",
-        "score": "0",
-        "flag": "assets/flags/ARG.png"
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "2",
+        "flag": "assets/flags/ENG.png"
       }
     }
   ]
