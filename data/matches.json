@@ -1,34 +1,10 @@
 {
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
-  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260714-20260717",
-  "generatedAt": "2026-07-15T23:15:44.971Z",
-  "generatedAtBeijing": "北京时间 07-16 07:15",
+  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260715-20260718",
+  "generatedAt": "2026-07-16T00:13:43.841Z",
+  "generatedAtBeijing": "北京时间 07-16 08:13",
   "matches": [
-    {
-      "id": "760514",
-      "date": "2026-07-14T19:00Z",
-      "kickoffBeijing": "07-15 03:00 北京",
-      "group": "小组赛",
-      "venue": "达拉斯",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "0-2",
-      "title": "法国 0-2 西班牙",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760514/spain-france",
-      "home": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "0",
-        "flag": "assets/flags/FRA.png"
-      },
-      "away": {
-        "code": "ESP",
-        "name": "西班牙",
-        "score": "2",
-        "flag": "assets/flags/ESP.png"
-      }
-    },
     {
       "id": "760515",
       "date": "2026-07-15T19:00Z",
@@ -51,6 +27,30 @@
         "name": "阿根廷",
         "score": "2",
         "flag": "assets/flags/ARG.png"
+      }
+    },
+    {
+      "id": "760516",
+      "date": "2026-07-18T21:00Z",
+      "kickoffBeijing": "07-19 05:00 北京",
+      "group": "小组赛",
+      "venue": "迈阿密",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "法国 vs 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760516/england-france",
+      "home": {
+        "code": "FRA",
+        "name": "法国",
+        "score": "0",
+        "flag": "assets/flags/FRA.png"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "0",
+        "flag": "assets/flags/ENG.png"
       }
     }
   ],
@@ -2505,7 +2505,32 @@
       }
     }
   ],
-  "upcoming": [],
+  "upcoming": [
+    {
+      "id": "760516",
+      "date": "2026-07-18T21:00Z",
+      "kickoffBeijing": "07-19 05:00 北京",
+      "group": "小组赛",
+      "venue": "迈阿密",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "法国 vs 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760516/england-france",
+      "home": {
+        "code": "FRA",
+        "name": "法国",
+        "score": "0",
+        "flag": "assets/flags/FRA.png"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "0",
+        "flag": "assets/flags/ENG.png"
+      }
+    }
+  ],
   "scoreboard": [
     {
       "id": "760515",
@@ -2556,50 +2581,26 @@
       }
     },
     {
-      "id": "760513",
-      "date": "2026-07-12T01:00Z",
-      "kickoffBeijing": "07-12 09:00 北京",
-      "group": "小组赛",
-      "venue": "堪萨斯城",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "3-1",
-      "title": "阿根廷 3-1 瑞士",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760513/switzerland-argentina",
-      "home": {
-        "code": "ARG",
-        "name": "阿根廷",
-        "score": "3",
-        "flag": "assets/flags/ARG.png"
-      },
-      "away": {
-        "code": "SUI",
-        "name": "瑞士",
-        "score": "1",
-        "flag": "assets/flags/SUI.png"
-      }
-    },
-    {
-      "id": "760512",
-      "date": "2026-07-11T21:00Z",
-      "kickoffBeijing": "07-12 05:00 北京",
+      "id": "760516",
+      "date": "2026-07-18T21:00Z",
+      "kickoffBeijing": "07-19 05:00 北京",
       "group": "小组赛",
       "venue": "迈阿密",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "1-2",
-      "title": "挪威 1-2 英格兰",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760512/england-norway",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "法国 vs 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760516/england-france",
       "home": {
-        "code": "NOR",
-        "name": "挪威",
-        "score": "1",
-        "flag": "assets/flags/NOR.png"
+        "code": "FRA",
+        "name": "法国",
+        "score": "0",
+        "flag": "assets/flags/FRA.png"
       },
       "away": {
         "code": "ENG",
         "name": "英格兰",
-        "score": "2",
+        "score": "0",
         "flag": "assets/flags/ENG.png"
       }
     }
