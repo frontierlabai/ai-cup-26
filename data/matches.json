@@ -1,34 +1,10 @@
 {
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
-  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260715-20260718",
-  "generatedAt": "2026-07-16T23:13:38.677Z",
-  "generatedAtBeijing": "北京时间 07-17 07:13",
+  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260716-20260719",
+  "generatedAt": "2026-07-17T00:15:06.986Z",
+  "generatedAtBeijing": "北京时间 07-17 08:15",
   "matches": [
-    {
-      "id": "760515",
-      "date": "2026-07-15T19:00Z",
-      "kickoffBeijing": "07-16 03:00 北京",
-      "group": "小组赛",
-      "venue": "亚特兰大",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "1-2",
-      "title": "英格兰 1-2 阿根廷",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760515/argentina-england",
-      "home": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "1",
-        "flag": "assets/flags/ENG.png"
-      },
-      "away": {
-        "code": "ARG",
-        "name": "阿根廷",
-        "score": "2",
-        "flag": "assets/flags/ARG.png"
-      }
-    },
     {
       "id": "760516",
       "date": "2026-07-18T21:00Z",
@@ -51,6 +27,30 @@
         "name": "英格兰",
         "score": "0",
         "flag": "assets/flags/ENG.png"
+      }
+    },
+    {
+      "id": "760517",
+      "date": "2026-07-19T19:00Z",
+      "kickoffBeijing": "07-20 03:00 北京",
+      "group": "小组赛",
+      "venue": "纽约新泽西",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "西班牙 vs 阿根廷",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760517/argentina-spain",
+      "home": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "0",
+        "flag": "assets/flags/ESP.png"
+      },
+      "away": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "0",
+        "flag": "assets/flags/ARG.png"
       }
     }
   ],
@@ -2529,6 +2529,30 @@
         "score": "0",
         "flag": "assets/flags/ENG.png"
       }
+    },
+    {
+      "id": "760517",
+      "date": "2026-07-19T19:00Z",
+      "kickoffBeijing": "07-20 03:00 北京",
+      "group": "小组赛",
+      "venue": "纽约新泽西",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "西班牙 vs 阿根廷",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760517/argentina-spain",
+      "home": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "0",
+        "flag": "assets/flags/ESP.png"
+      },
+      "away": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "0",
+        "flag": "assets/flags/ARG.png"
+      }
     }
   ],
   "scoreboard": [
@@ -2602,6 +2626,30 @@
         "name": "英格兰",
         "score": "0",
         "flag": "assets/flags/ENG.png"
+      }
+    },
+    {
+      "id": "760517",
+      "date": "2026-07-19T19:00Z",
+      "kickoffBeijing": "07-20 03:00 北京",
+      "group": "小组赛",
+      "venue": "纽约新泽西",
+      "statusKind": "upcoming",
+      "statusLabel": "待开赛",
+      "scoreline": "VS",
+      "title": "西班牙 vs 阿根廷",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760517/argentina-spain",
+      "home": {
+        "code": "ESP",
+        "name": "西班牙",
+        "score": "0",
+        "flag": "assets/flags/ESP.png"
+      },
+      "away": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "score": "0",
+        "flag": "assets/flags/ARG.png"
       }
     }
   ]
