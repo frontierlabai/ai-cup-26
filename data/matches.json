@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260717-20260720",
-  "generatedAt": "2026-07-18T20:34:05.538Z",
-  "generatedAtBeijing": "北京时间 07-19 04:34",
+  "generatedAt": "2026-07-18T21:31:51.826Z",
+  "generatedAtBeijing": "北京时间 07-19 05:31",
   "matches": [
     {
       "id": "760516",
@@ -11,11 +11,11 @@
       "kickoffBeijing": "07-19 05:00 北京",
       "group": "小组赛",
       "venue": "迈阿密",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "法国 vs 英格兰",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760516/england-france",
+      "statusKind": "live",
+      "statusLabel": "32'",
+      "scoreline": "0-2",
+      "title": "法国 0-2 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760516",
       "home": {
         "code": "FRA",
         "name": "法国",
@@ -25,7 +25,7 @@
       "away": {
         "code": "ENG",
         "name": "英格兰",
-        "score": "0",
+        "score": "2",
         "flag": "assets/flags/ENG.png"
       }
     },
@@ -54,7 +54,32 @@
       }
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "760516",
+      "date": "2026-07-18T21:00Z",
+      "kickoffBeijing": "07-19 05:00 北京",
+      "group": "小组赛",
+      "venue": "迈阿密",
+      "statusKind": "live",
+      "statusLabel": "32'",
+      "scoreline": "0-2",
+      "title": "法国 0-2 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760516",
+      "home": {
+        "code": "FRA",
+        "name": "法国",
+        "score": "0",
+        "flag": "assets/flags/FRA.png"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "2",
+        "flag": "assets/flags/ENG.png"
+      }
+    }
+  ],
   "recentCompleted": [
     {
       "id": "760515",
@@ -2507,30 +2532,6 @@
   ],
   "upcoming": [
     {
-      "id": "760516",
-      "date": "2026-07-18T21:00Z",
-      "kickoffBeijing": "07-19 05:00 北京",
-      "group": "小组赛",
-      "venue": "迈阿密",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "法国 vs 英格兰",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760516/england-france",
-      "home": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "0",
-        "flag": "assets/flags/FRA.png"
-      },
-      "away": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "0",
-        "flag": "assets/flags/ENG.png"
-      }
-    },
-    {
       "id": "760517",
       "date": "2026-07-19T19:00Z",
       "kickoffBeijing": "07-20 03:00 北京",
@@ -2556,6 +2557,30 @@
     }
   ],
   "scoreboard": [
+    {
+      "id": "760516",
+      "date": "2026-07-18T21:00Z",
+      "kickoffBeijing": "07-19 05:00 北京",
+      "group": "小组赛",
+      "venue": "迈阿密",
+      "statusKind": "live",
+      "statusLabel": "32'",
+      "scoreline": "0-2",
+      "title": "法国 0-2 英格兰",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760516",
+      "home": {
+        "code": "FRA",
+        "name": "法国",
+        "score": "0",
+        "flag": "assets/flags/FRA.png"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰",
+        "score": "2",
+        "flag": "assets/flags/ENG.png"
+      }
+    },
     {
       "id": "760515",
       "date": "2026-07-15T19:00Z",
@@ -2605,51 +2630,27 @@
       }
     },
     {
-      "id": "760516",
-      "date": "2026-07-18T21:00Z",
-      "kickoffBeijing": "07-19 05:00 北京",
+      "id": "760513",
+      "date": "2026-07-12T01:00Z",
+      "kickoffBeijing": "07-12 09:00 北京",
       "group": "小组赛",
-      "venue": "迈阿密",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "法国 vs 英格兰",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760516/england-france",
+      "venue": "堪萨斯城",
+      "statusKind": "final",
+      "statusLabel": "完赛",
+      "scoreline": "3-1",
+      "title": "阿根廷 3-1 瑞士",
+      "href": "https://www.espn.com/soccer/match/_/gameId/760513/switzerland-argentina",
       "home": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "0",
-        "flag": "assets/flags/FRA.png"
-      },
-      "away": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "0",
-        "flag": "assets/flags/ENG.png"
-      }
-    },
-    {
-      "id": "760517",
-      "date": "2026-07-19T19:00Z",
-      "kickoffBeijing": "07-20 03:00 北京",
-      "group": "小组赛",
-      "venue": "纽约新泽西",
-      "statusKind": "upcoming",
-      "statusLabel": "待开赛",
-      "scoreline": "VS",
-      "title": "西班牙 vs 阿根廷",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760517/argentina-spain",
-      "home": {
-        "code": "ESP",
-        "name": "西班牙",
-        "score": "0",
-        "flag": "assets/flags/ESP.png"
-      },
-      "away": {
         "code": "ARG",
         "name": "阿根廷",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/ARG.png"
+      },
+      "away": {
+        "code": "SUI",
+        "name": "瑞士",
+        "score": "1",
+        "flag": "assets/flags/SUI.png"
       }
     }
   ]
