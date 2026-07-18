@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
   "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260717-20260720",
-  "generatedAt": "2026-07-18T21:31:51.826Z",
-  "generatedAtBeijing": "北京时间 07-19 05:31",
+  "generatedAt": "2026-07-18T22:29:52.758Z",
+  "generatedAtBeijing": "北京时间 07-19 06:29",
   "matches": [
     {
       "id": "760516",
@@ -12,20 +12,20 @@
       "group": "小组赛",
       "venue": "迈阿密",
       "statusKind": "live",
-      "statusLabel": "32'",
-      "scoreline": "0-2",
-      "title": "法国 0-2 英格兰",
+      "statusLabel": "67'",
+      "scoreline": "3-4",
+      "title": "法国 3-4 英格兰",
       "href": "https://www.espn.com/soccer/match/_/gameId/760516",
       "home": {
         "code": "FRA",
         "name": "法国",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/FRA.png"
       },
       "away": {
         "code": "ENG",
         "name": "英格兰",
-        "score": "2",
+        "score": "4",
         "flag": "assets/flags/ENG.png"
       }
     },
@@ -62,20 +62,20 @@
       "group": "小组赛",
       "venue": "迈阿密",
       "statusKind": "live",
-      "statusLabel": "32'",
-      "scoreline": "0-2",
-      "title": "法国 0-2 英格兰",
+      "statusLabel": "67'",
+      "scoreline": "3-4",
+      "title": "法国 3-4 英格兰",
       "href": "https://www.espn.com/soccer/match/_/gameId/760516",
       "home": {
         "code": "FRA",
         "name": "法国",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/FRA.png"
       },
       "away": {
         "code": "ENG",
         "name": "英格兰",
-        "score": "2",
+        "score": "4",
         "flag": "assets/flags/ENG.png"
       }
     }
@@ -2564,20 +2564,20 @@
       "group": "小组赛",
       "venue": "迈阿密",
       "statusKind": "live",
-      "statusLabel": "32'",
-      "scoreline": "0-2",
-      "title": "法国 0-2 英格兰",
+      "statusLabel": "67'",
+      "scoreline": "3-4",
+      "title": "法国 3-4 英格兰",
       "href": "https://www.espn.com/soccer/match/_/gameId/760516",
       "home": {
         "code": "FRA",
         "name": "法国",
-        "score": "0",
+        "score": "3",
         "flag": "assets/flags/FRA.png"
       },
       "away": {
         "code": "ENG",
         "name": "英格兰",
-        "score": "2",
+        "score": "4",
         "flag": "assets/flags/ENG.png"
       }
     },
