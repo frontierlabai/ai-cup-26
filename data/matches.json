@@ -1,34 +1,10 @@
 {
   "schemaVersion": 1,
   "source": "ESPN FIFA World Cup scoreboard",
-  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260718-20260721",
-  "generatedAt": "2026-07-19T23:09:30.205Z",
-  "generatedAtBeijing": "北京时间 07-20 07:09",
+  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260719-20260722",
+  "generatedAt": "2026-07-20T00:12:12.157Z",
+  "generatedAtBeijing": "北京时间 07-20 08:12",
   "matches": [
-    {
-      "id": "760516",
-      "date": "2026-07-18T21:00Z",
-      "kickoffBeijing": "07-19 05:00 北京",
-      "group": "小组赛",
-      "venue": "迈阿密",
-      "statusKind": "final",
-      "statusLabel": "完赛",
-      "scoreline": "4-6",
-      "title": "法国 4-6 英格兰",
-      "href": "https://www.espn.com/soccer/match/_/gameId/760516/england-france",
-      "home": {
-        "code": "FRA",
-        "name": "法国",
-        "score": "4",
-        "flag": "assets/flags/FRA.png"
-      },
-      "away": {
-        "code": "ENG",
-        "name": "英格兰",
-        "score": "6",
-        "flag": "assets/flags/ENG.png"
-      }
-    },
     {
       "id": "760517",
       "date": "2026-07-19T19:00Z",
